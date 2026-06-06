@@ -1,0 +1,202 @@
+[
+  {
+    "name": "Baseline",
+    "results": [
+      {
+        "prompt": "The capital of France is",
+        "n_tokens": 257,
+        "n_steps": 103,
+        "wall_time_s": 6.567,
+        "tok_per_s": 39.1,
+        "accept_per_step": 2.5
+      },
+      {
+        "prompt": "Explain the concept of machine learning in simple ",
+        "n_tokens": 258,
+        "n_steps": 107,
+        "wall_time_s": 6.797,
+        "tok_per_s": 38.0,
+        "accept_per_step": 2.41
+      },
+      {
+        "prompt": "Write a Python function to find the nth Fibonacci ",
+        "n_tokens": 259,
+        "n_steps": 71,
+        "wall_time_s": 4.657,
+        "tok_per_s": 55.6,
+        "accept_per_step": 3.65
+      },
+      {
+        "prompt": "What are the main causes of climate change?",
+        "n_tokens": 257,
+        "n_steps": 100,
+        "wall_time_s": 6.36,
+        "tok_per_s": 40.4,
+        "accept_per_step": 2.57
+      },
+      {
+        "prompt": "Translate the following to French: Hello, how are ",
+        "n_tokens": 257,
+        "n_steps": 126,
+        "wall_time_s": 6.998,
+        "tok_per_s": 36.7,
+        "accept_per_step": 2.04
+      }
+    ],
+    "mean_tok_per_s": 42.0,
+    "mean_accept_per_step": 2.63,
+    "total_tokens": 1288,
+    "total_time_s": 31.379,
+    "lossless_vs_baseline": true
+  },
+  {
+    "name": "DDD",
+    "results": [
+      {
+        "prompt": "The capital of France is",
+        "n_tokens": 257,
+        "n_steps": 103,
+        "wall_time_s": 6.676,
+        "tok_per_s": 38.5,
+        "accept_per_step": 2.5
+      },
+      {
+        "prompt": "Explain the concept of machine learning in simple ",
+        "n_tokens": 258,
+        "n_steps": 107,
+        "wall_time_s": 5.468,
+        "tok_per_s": 47.2,
+        "accept_per_step": 2.41
+      },
+      {
+        "prompt": "Write a Python function to find the nth Fibonacci ",
+        "n_tokens": 259,
+        "n_steps": 69,
+        "wall_time_s": 4.418,
+        "tok_per_s": 58.6,
+        "accept_per_step": 3.75
+      },
+      {
+        "prompt": "What are the main causes of climate change?",
+        "n_tokens": 257,
+        "n_steps": 100,
+        "wall_time_s": 5.016,
+        "tok_per_s": 51.2,
+        "accept_per_step": 2.57
+      },
+      {
+        "prompt": "Translate the following to French: Hello, how are ",
+        "n_tokens": 257,
+        "n_steps": 126,
+        "wall_time_s": 6.16,
+        "tok_per_s": 41.7,
+        "accept_per_step": 2.04
+      }
+    ],
+    "mean_tok_per_s": 47.4,
+    "mean_accept_per_step": 2.65,
+    "total_tokens": 1288,
+    "total_time_s": 27.738,
+    "lossless_vs_baseline": true
+  },
+  {
+    "name": "OPT-Tree",
+    "results": [
+      {
+        "prompt": "The capital of France is",
+        "n_tokens": 257,
+        "n_steps": 103,
+        "wall_time_s": 6.864,
+        "tok_per_s": 37.4,
+        "accept_per_step": 2.5
+      },
+      {
+        "prompt": "Explain the concept of machine learning in simple ",
+        "n_tokens": 258,
+        "n_steps": 107,
+        "wall_time_s": 6.844,
+        "tok_per_s": 37.7,
+        "accept_per_step": 2.41
+      },
+      {
+        "prompt": "Write a Python function to find the nth Fibonacci ",
+        "n_tokens": 259,
+        "n_steps": 71,
+        "wall_time_s": 4.471,
+        "tok_per_s": 57.9,
+        "accept_per_step": 3.65
+      },
+      {
+        "prompt": "What are the main causes of climate change?",
+        "n_tokens": 257,
+        "n_steps": 100,
+        "wall_time_s": 6.377,
+        "tok_per_s": 40.3,
+        "accept_per_step": 2.57
+      },
+      {
+        "prompt": "Translate the following to French: Hello, how are ",
+        "n_tokens": 257,
+        "n_steps": 126,
+        "wall_time_s": 8.052,
+        "tok_per_s": 31.9,
+        "accept_per_step": 2.04
+      }
+    ],
+    "mean_tok_per_s": 41.0,
+    "mean_accept_per_step": 2.63,
+    "total_tokens": 1288,
+    "total_time_s": 32.608,
+    "lossless_vs_baseline": true
+  },
+  {
+    "name": "DDD+OPT-Tree",
+    "results": [
+      {
+        "prompt": "The capital of France is",
+        "n_tokens": 257,
+        "n_steps": 103,
+        "wall_time_s": 6.94,
+        "tok_per_s": 37.0,
+        "accept_per_step": 2.5
+      },
+      {
+        "prompt": "Explain the concept of machine learning in simple ",
+        "n_tokens": 258,
+        "n_steps": 107,
+        "wall_time_s": 9.941,
+        "tok_per_s": 26.0,
+        "accept_per_step": 2.41
+      },
+      {
+        "prompt": "Write a Python function to find the nth Fibonacci ",
+        "n_tokens": 259,
+        "n_steps": 69,
+        "wall_time_s": 4.565,
+        "tok_per_s": 56.7,
+        "accept_per_step": 3.75
+      },
+      {
+        "prompt": "What are the main causes of climate change?",
+        "n_tokens": 257,
+        "n_steps": 100,
+        "wall_time_s": 8.227,
+        "tok_per_s": 31.2,
+        "accept_per_step": 2.57
+      },
+      {
+        "prompt": "Translate the following to French: Hello, how are ",
+        "n_tokens": 257,
+        "n_steps": 126,
+        "wall_time_s": 8.163,
+        "tok_per_s": 31.5,
+        "accept_per_step": 2.04
+      }
+    ],
+    "mean_tok_per_s": 36.5,
+    "mean_accept_per_step": 2.65,
+    "total_tokens": 1288,
+    "total_time_s": 37.836,
+    "lossless_vs_baseline": true
+  }
+]

@@ -1,0 +1,234 @@
+[
+  {
+    "scenario": "\u4e8b\u5b9e\u95ee\u7b54",
+    "use_ddd": false,
+    "results": [
+      {
+        "n_tokens": 130,
+        "n_steps": 60,
+        "wall_s": 3.025,
+        "tok_s": 43.0,
+        "accept": 2.17
+      },
+      {
+        "n_tokens": 129,
+        "n_steps": 49,
+        "wall_s": 2.483,
+        "tok_s": 52.0,
+        "accept": 2.63
+      },
+      {
+        "n_tokens": 131,
+        "n_steps": 56,
+        "wall_s": 2.826,
+        "tok_s": 46.4,
+        "accept": 2.34
+      }
+    ],
+    "mean_tok_s": 47.1,
+    "mean_accept": 2.38
+  },
+  {
+    "scenario": "\u4ee3\u7801\u751f\u6210",
+    "use_ddd": false,
+    "results": [
+      {
+        "n_tokens": 132,
+        "n_steps": 46,
+        "wall_s": 2.337,
+        "tok_s": 56.5,
+        "accept": 2.87
+      },
+      {
+        "n_tokens": 129,
+        "n_steps": 37,
+        "wall_s": 1.899,
+        "tok_s": 67.9,
+        "accept": 3.49
+      },
+      {
+        "n_tokens": 129,
+        "n_steps": 39,
+        "wall_s": 2.002,
+        "tok_s": 64.4,
+        "accept": 3.31
+      }
+    ],
+    "mean_tok_s": 62.9,
+    "mean_accept": 3.22
+  },
+  {
+    "scenario": "\u521b\u610f\u5199\u4f5c",
+    "use_ddd": false,
+    "results": [
+      {
+        "n_tokens": 132,
+        "n_steps": 62,
+        "wall_s": 3.123,
+        "tok_s": 42.3,
+        "accept": 2.13
+      },
+      {
+        "n_tokens": 129,
+        "n_steps": 52,
+        "wall_s": 2.629,
+        "tok_s": 49.1,
+        "accept": 2.48
+      },
+      {
+        "n_tokens": 132,
+        "n_steps": 72,
+        "wall_s": 3.564,
+        "tok_s": 37.0,
+        "accept": 1.83
+      }
+    ],
+    "mean_tok_s": 42.8,
+    "mean_accept": 2.15
+  },
+  {
+    "scenario": "\u7ffb\u8bd1",
+    "use_ddd": false,
+    "results": [
+      {
+        "n_tokens": 130,
+        "n_steps": 88,
+        "wall_s": 4.324,
+        "tok_s": 30.1,
+        "accept": 1.48
+      },
+      {
+        "n_tokens": 132,
+        "n_steps": 65,
+        "wall_s": 3.272,
+        "tok_s": 40.3,
+        "accept": 2.03
+      },
+      {
+        "n_tokens": 129,
+        "n_steps": 67,
+        "wall_s": 3.395,
+        "tok_s": 38.0,
+        "accept": 1.93
+      }
+    ],
+    "mean_tok_s": 36.1,
+    "mean_accept": 1.81
+  },
+  {
+    "scenario": "\u4e8b\u5b9e\u95ee\u7b54",
+    "use_ddd": true,
+    "results": [
+      {
+        "n_tokens": 130,
+        "n_steps": 60,
+        "wall_s": 3.265,
+        "tok_s": 39.8,
+        "accept": 2.17
+      },
+      {
+        "n_tokens": 129,
+        "n_steps": 49,
+        "wall_s": 2.579,
+        "tok_s": 50.0,
+        "accept": 2.63
+      },
+      {
+        "n_tokens": 131,
+        "n_steps": 55,
+        "wall_s": 2.978,
+        "tok_s": 44.0,
+        "accept": 2.38
+      }
+    ],
+    "mean_tok_s": 44.6,
+    "mean_accept": 2.39
+  },
+  {
+    "scenario": "\u4ee3\u7801\u751f\u6210",
+    "use_ddd": true,
+    "results": [
+      {
+        "n_tokens": 132,
+        "n_steps": 46,
+        "wall_s": 2.5,
+        "tok_s": 52.8,
+        "accept": 2.87
+      },
+      {
+        "n_tokens": 129,
+        "n_steps": 37,
+        "wall_s": 2.041,
+        "tok_s": 63.2,
+        "accept": 3.49
+      },
+      {
+        "n_tokens": 129,
+        "n_steps": 38,
+        "wall_s": 2.096,
+        "tok_s": 61.6,
+        "accept": 3.39
+      }
+    ],
+    "mean_tok_s": 59.2,
+    "mean_accept": 3.25
+  },
+  {
+    "scenario": "\u521b\u610f\u5199\u4f5c",
+    "use_ddd": true,
+    "results": [
+      {
+        "n_tokens": 132,
+        "n_steps": 62,
+        "wall_s": 3.265,
+        "tok_s": 40.4,
+        "accept": 2.13
+      },
+      {
+        "n_tokens": 129,
+        "n_steps": 52,
+        "wall_s": 2.826,
+        "tok_s": 45.6,
+        "accept": 2.48
+      },
+      {
+        "n_tokens": 132,
+        "n_steps": 72,
+        "wall_s": 3.696,
+        "tok_s": 35.7,
+        "accept": 1.83
+      }
+    ],
+    "mean_tok_s": 40.6,
+    "mean_accept": 2.15
+  },
+  {
+    "scenario": "\u7ffb\u8bd1",
+    "use_ddd": true,
+    "results": [
+      {
+        "n_tokens": 130,
+        "n_steps": 88,
+        "wall_s": 4.397,
+        "tok_s": 29.6,
+        "accept": 1.48
+      },
+      {
+        "n_tokens": 132,
+        "n_steps": 63,
+        "wall_s": 3.201,
+        "tok_s": 41.2,
+        "accept": 2.1
+      },
+      {
+        "n_tokens": 129,
+        "n_steps": 67,
+        "wall_s": 3.368,
+        "tok_s": 38.3,
+        "accept": 1.93
+      }
+    ],
+    "mean_tok_s": 36.4,
+    "mean_accept": 1.84
+  }
+]

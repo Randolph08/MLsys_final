@@ -1,0 +1,34 @@
+{
+  "num_steps": 512,
+  "phases": {
+    "phase_draft_ms": {
+      "label": "\u2460 Drafter Construction (Expand + Rerank)",
+      "mean_ms": 12.256,
+      "median_ms": 12.245,
+      "p95_ms": 12.419,
+      "std_ms": 0.17,
+      "mean_ratio_pct": 26.2
+    },
+    "phase_verify_ms": {
+      "label": "\u2461 Target Verify (32-layer tree forward)",
+      "mean_ms": 34.237,
+      "median_ms": 34.165,
+      "p95_ms": 35.037,
+      "std_ms": 0.291,
+      "mean_ratio_pct": 73.3
+    },
+    "phase_reject_kv_ms": {
+      "label": "\u2462 Rejection Sampling + KV Update",
+      "mean_ms": 0.205,
+      "median_ms": 0.204,
+      "p95_ms": 0.223,
+      "std_ms": 0.01,
+      "mean_ratio_pct": 0.4
+    }
+  },
+  "overall": {
+    "mean_total_ms": 46.698,
+    "median_total_ms": 46.614,
+    "mean_accept_length": 2.52
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "num_steps": 512,
+  "num_steps_with_accepts": 512,
+  "total_tokens_accepted": 1288,
+  "total_tokens_tested": 1643,
+  "overall_acceptance_rate": 0.7839,
+  "mean_accept_length": 2.52,
+  "median_accept_length": 2.0,
+  "per_depth": {
+    "0": {
+      "depth": 0,
+      "accepted": 512,
+      "tested": 512,
+      "acceptance_rate": 1.0
+    },
+    "1": {
+      "depth": 1,
+      "accepted": 348,
+      "tested": 512,
+      "acceptance_rate": 0.6797
+    },
+    "2": {
+      "depth": 2,
+      "accepted": 223,
+      "tested": 333,
+      "acceptance_rate": 0.6697
+    },
+    "3": {
+      "depth": 3,
+      "accepted": 104,
+      "tested": 156,
+      "acceptance_rate": 0.6667
+    },
+    "4": {
+      "depth": 4,
+      "accepted": 61,
+      "tested": 75,
+      "acceptance_rate": 0.8133
+    },
+    "5": {
+      "depth": 5,
+      "accepted": 26,
+      "tested": 39,
+      "acceptance_rate": 0.6667
+    },
+    "6": {
+      "depth": 6,
+      "accepted": 14,
+      "tested": 16,
+      "acceptance_rate": 0.875
+    }
+  }
+}

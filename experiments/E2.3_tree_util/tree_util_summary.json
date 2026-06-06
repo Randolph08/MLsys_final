@@ -1,0 +1,62 @@
+{
+  "num_steps": 512,
+  "node_utilization": {
+    "mean_pct": 4.19,
+    "median_pct": 3.33,
+    "p95_pct": 9.08,
+    "min_pct": 1.67,
+    "max_pct": 11.67
+  },
+  "per_step_avg": {
+    "n_verify": 60,
+    "n_accepted": 2.52
+  },
+  "accept_length": {
+    "mean": 2.52,
+    "median": 2.0
+  },
+  "per_depth": {
+    "0": {
+      "depth": 0,
+      "n_verify": 512,
+      "n_accepted": 512,
+      "utilization_pct": 100.0
+    },
+    "1": {
+      "depth": 1,
+      "n_verify": 4817,
+      "n_accepted": 348,
+      "utilization_pct": 7.22
+    },
+    "2": {
+      "depth": 2,
+      "n_verify": 15705,
+      "n_accepted": 223,
+      "utilization_pct": 1.42
+    },
+    "3": {
+      "depth": 3,
+      "n_verify": 6444,
+      "n_accepted": 104,
+      "utilization_pct": 1.61
+    },
+    "4": {
+      "depth": 4,
+      "n_verify": 2145,
+      "n_accepted": 61,
+      "utilization_pct": 2.84
+    },
+    "5": {
+      "depth": 5,
+      "n_verify": 798,
+      "n_accepted": 26,
+      "utilization_pct": 3.26
+    },
+    "6": {
+      "depth": 6,
+      "n_verify": 299,
+      "n_accepted": 14,
+      "utilization_pct": 4.68
+    }
+  }
+}

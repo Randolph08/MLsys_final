@@ -1,0 +1,4874 @@
+[
+  {
+    "step": 0,
+    "accept_length": 1,
+    "accepted_depths": [
+      0
+    ],
+    "rejected_depth": 1
+  },
+  {
+    "step": 1,
+    "accept_length": 1,
+    "accepted_depths": [
+      0
+    ],
+    "rejected_depth": 1
+  },
+  {
+    "step": 2,
+    "accept_length": 1,
+    "accepted_depths": [
+      0
+    ],
+    "rejected_depth": 1
+  },
+  {
+    "step": 3,
+    "accept_length": 1,
+    "accepted_depths": [
+      0
+    ],
+    "rejected_depth": 1
+  },
+  {
+    "step": 4,
+    "accept_length": 1,
+    "accepted_depths": [
+      0
+    ],
+    "rejected_depth": 1
+  },
+  {
+    "step": 5,
+    "accept_length": 2,
+    "accepted_depths": [
+      0,
+      1
+    ],
+    "rejected_depth": 2
+  },
+  {
+    "step": 6,
+    "accept_length": 3,
+    "accepted_depths": [
+      0,
+      1,
+      2
+    ],
+    "rejected_depth": null
+  },
+  {
+    "step": 7,
+    "accept_length": 1,
+    "accepted_depths": [
+      0
+    ],
+    "rejected_depth": 1
+  },
+  {
+    "step": 8,
+    "accept_length": 3,
+    "accepted_depths": [
+      0,
+      1,
+      2
+    ],
+    "rejected_depth": null
+  },
+  {
+    "step": 9,
+    "accept_length": 2,
+    "accepted_depths": [
+      0,
+      1
+    ],
+    "rejected_depth": 2
+  },
+  {
+    "step": 10,
+    "accept_length": 2,
+    "accepted_depths": [
+      0,
+      1
+    ],
+    "rejected_depth": null
+  },
+  {
+    "step": 11,
+    "accept_length": 2,
+    "accepted_depths": [
+      0,
+      1
+    ],
+    "rejected_depth": 2
+  },
+  {
+    "step": 12,
+    "accept_length": 2,
+    "accepted_depths": [
+      0,
+      1
+    ],
+    "rejected_depth": 2
+  },
+  {
+    "step": 13,
+    "accept_length": 1,
+    "accepted_depths": [
+      0
+    ],
+    "rejected_depth": 1
+  },
+  {
+    "step": 14,
+    "accept_length": 4,
+    "accepted_depths": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "rejected_depth": null
+  },
+  {
+    "step": 15,
+    "accept_length": 3,
+    "accepted_depths": [
+      0,
+      1,
+      2
+    ],
+    "rejected_depth": null
+  },
+  {
+    "step": 16,
+    "accept_length": 2,
+    "accepted_depths": [
+      0,
+      1
+    ],
+    "rejected_depth": 2
+  },
+  {
+    "step": 17,
+    "accept_length": 3,
+    "accepted_depths": [
+      0,
+      1,
+      2
+    ],
+    "rejected_depth": 3
+  },
+  {
+    "step": 18,
+    "accept_length": 1,
+    "accepted_depths": [
+      0
+    ],
+    "rejected_depth": 1
+  },
+  {
+    "step": 19,
+    "accept_length": 3,
+    "accepted_depths": [
+      0,
+      1,
+      2
+    ],
+    "rejected_depth": null
+  },
+  {
+    "step": 20,
+    "accept_length": 2,
+    "accepted_depths": [
+      0,
+      1
+    ],
+    "rejected_depth": 2
+  },
+  {
+    "step": 21,
+    "accept_length": 3,
+    "accepted_depths": [
+      0,
+      1,
+      2
+    ],
+    "rejected_depth": null
+  },
+  {
+    "step": 22,
+    "accept_length": 1,
+    "accepted_depths": [
+      0
+    ],
+    "rejected_depth": 1
+  },
+  {
+    "step": 23,
+    "accept_length": 4,
+    "accepted_depths": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "rejected_depth": null
+  },
+  {
+    "step": 24,
+    "accept_length": 2,
+    "accepted_depths": [
+      0,
+      1
+    ],
+    "rejected_depth": 2
+  },
+  {
+    "step": 25,
+    "accept_length": 3,
+    "accepted_depths": [
+      0,
+      1,
+      2
+    ],
+    "rejected_depth": 3
+  },
+  {
+    "step": 26,
+    "accept_length": 2,
+    "accepted_depths": [
+      0,
+      1
+    ],
+    "rejected_depth": null
+  },
+  {
+    "step": 27,
+    "accept_length": 1,
+    "accepted_depths": [
+      0
+    ],
+    "rejected_depth": 1
+  },
+  {
+    "step": 28,
+    "accept_length": 3,
+    "accepted_depths": [
+      0,
+      1,
+      2
+    ],
+    "rejected_depth": 3
+  },
+  {
+    "step": 29,
+    "accept_length": 2,
+    "accepted_depths": [
+      0,
+      1
+    ],
+    "rejected_depth": 2
+  },
+  {
+    "step": 30,
+    "accept_length": 2,
+    "accepted_depths": [
+      0,
+      1
+    ],
+    "rejected_depth": 2
+  },
+  {
+    "step": 31,
+    "accept_length": 1,
+    "accepted_depths": [
+      0
+    ],
+    "rejected_depth": 1
+  },
+  {
+    "step": 32,
+    "accept_length": 1,
+    "accepted_depths": [
+      0
+    ],
+    "rejected_depth": 1
+  },
+  {
+    "step": 33,
+    "accept_length": 1,
+    "accepted_depths": [
+      0
+    ],
+    "rejected_depth": 1
+  },
+  {
+    "step": 34,
+    "accept_length": 4,
+    "accepted_depths": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "rejected_depth": null
+  },
+  {
+    "step": 35,
+    "accept_length": 5,
+    "accepted_depths": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "rejected_depth": 5
+  },
+  {
+    "step": 36,
+    "accept_length": 3,
+    "accepted_depths": [
+      0,
+      1,
+      2
+    ],
+    "rejected_depth": null
+  },
+  {
+    "step": 37,
+    "accept_length": 2,
+    "accepted_depths": [
+      0,
+      1
+    ],
+    "rejected_depth": 2
+  },
+  {
+    "step": 38,
+    "accept_length": 2,
+    "accepted_depths": [
+      0,
+      1
+    ],
+    "rejected_depth": 2
+  },
+  {
+    "step": 39,
+    "accept_length": 2,
+    "accepted_depths": [
+      0,
+      1
+    ],
+    "rejected_depth": 2
+  },
+  {
+    "step": 40,
+    "accept_length": 2,
+    "accepted_depths": [
+      0,
+      1
+    ],
+    "rejected_depth": 2
+  },
+  {
+    "step": 41,
+    "accept_length": 2,
+    "accepted_depths": [
+      0,
+      1
+    ],
+    "rejected_depth": 2
+  },
+  {
+    "step": 42,
+    "accept_length": 3,
+    "accepted_depths": [
+      0,
+      1,
+      2
+    ],
+    "rejected_depth": null
+  },
+  {
+    "step": 43,
+    "accept_length": 2,
+    "accepted_depths": [
+      0,
+      1
+    ],
+    "rejected_depth": 2
+  },
+  {
+    "step": 44,
+    "accept_length": 1,
+    "accepted_depths": [
+      0
+    ],
+    "rejected_depth": 1
+  },
+  {
+    "step": 45,
+    "accept_length": 2,
+    "accepted_depths": [
+      0,
+      1
+    ],
+    "rejected_depth": 2
+  },
+  {
+    "step": 46,
+    "accept_length": 1,
+    "accepted_depths": [
+      0
+    ],
+    "rejected_depth": 1
+  },
+  {
+    "step": 47,
+    "accept_length": 1,
+    "accepted_depths": [
+      0
+    ],
+    "rejected_depth": 1
+  },
+  {
+    "step": 48,
+    "accept_length": 5,
+    "accepted_depths": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "rejected_depth": null
+  },
+  {
+    "step": 49,
+    "accept_length": 2,
+    "accepted_depths": [
+      0,
+      1
+    ],
+    "rejected_depth": 2
+  },
+  {
+    "step": 50,
+    "accept_length": 2,
+    "accepted_depths": [
+      0,
+      1
+    ],
+    "rejected_depth": null
+  },
+  {
+    "step": 51,
+    "accept_length": 1,
+    "accepted_depths": [
+      0
+    ],
+    "rejected_depth": 1
+  },
+  {
+    "step": 52,
+    "accept_length": 2,
+    "accepted_depths": [
+      0,
+      1
+    ],
+    "rejected_depth": 2
+  },
+  {
+    "step": 53,
+    "accept_length": 3,
+    "accepted_depths": [
+      0,
+      1,
+      2
+    ],
+    "rejected_depth": null
+  },
+  {
+    "step": 54,
+    "accept_length": 3,
+    "accepted_depths": [
+      0,
+      1,
+      2
+    ],
+    "rejected_depth": 3
+  },
+  {
+    "step": 55,
+    "accept_length": 2,
+    "accepted_depths": [
+      0,
+      1
+    ],
+    "rejected_depth": 2
+  },
+  {
+    "step": 56,
+    "accept_length": 1,
+    "accepted_depths": [
+      0
+    ],
+    "rejected_depth": 1
+  },
+  {
+    "step": 57,
+    "accept_length": 3,
+    "accepted_depths": [
+      0,
+      1,
+      2
+    ],
+    "rejected_depth": 3
+  },
+  {
+    "step": 58,
+    "accept_length": 3,
+    "accepted_depths": [
+      0,
+      1,
+      2
+    ],
+    "rejected_depth": null
+  },
+  {
+    "step": 59,
+    "accept_length": 4,
+    "accepted_depths": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "rejected_depth": null
+  },
+  {
+    "step": 60,
+    "accept_length": 3,
+    "accepted_depths": [
+      0,
+      1,
+      2
+    ],
+    "rejected_depth": 3
+  },
+  {
+    "step": 61,
+    "accept_length": 2,
+    "accepted_depths": [
+      0,
+      1
+    ],
+    "rejected_depth": 2
+  },
+  {
+    "step": 62,
+    "accept_length": 6,
+    "accepted_depths": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "rejected_depth": null
+  },
+  {
+    "step": 63,
+    "accept_length": 5,
+    "accepted_depths": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "rejected_depth": null
+  },
+  {
+    "step": 64,
+    "accept_length": 1,
+    "accepted_depths": [
+      0
+    ],
+    "rejected_depth": 1
+  },
+  {
+    "step": 65,
+    "accept_length": 2,
+    "accepted_depths": [
+      0,
+      1
+    ],
+    "rejected_depth": 2
+  },
+  {
+    "step": 66,
+    "accept_length": 5,
+    "accepted_depths": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "rejected_depth": null
+  },
+  {
+    "step": 67,
+    "accept_length": 2,
+    "accepted_depths": [
+      0,
+      1
+    ],
+    "rejected_depth": 2
+  },
+  {
+    "step": 68,
+    "accept_length": 2,
+    "accepted_depths": [
+      0,
+      1
+    ],
+    "rejected_depth": 2
+  },
+  {
+    "step": 69,
+    "accept_length": 4,
+    "accepted_depths": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "rejected_depth": 4
+  },
+  {
+    "step": 70,
+    "accept_length": 1,
+    "accepted_depths": [
+      0
+    ],
+    "rejected_depth": 1
+  },
+  {
+    "step": 71,
+    "accept_length": 2,
+    "accepted_depths": [
+      0,
+      1
+    ],
+    "rejected_depth": 2
+  },
+  {
+    "step": 72,
+    "accept_length": 3,
+    "accepted_depths": [
+      0,
+      1,
+      2
+    ],
+    "rejected_depth": 3
+  },
+  {
+    "step": 73,
+    "accept_length": 1,
+    "accepted_depths": [
+      0
+    ],
+    "rejected_depth": 1
+  },
+  {
+    "step": 74,
+    "accept_length": 2,
+    "accepted_depths": [
+      0,
+      1
+    ],
+    "rejected_depth": 2
+  },
+  {
+    "step": 75,
+    "accept_length": 1,
+    "accepted_depths": [
+      0
+    ],
+    "rejected_depth": 1
+  },
+  {
+    "step": 76,
+    "accept_length": 5,
+    "accepted_depths": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "rejected_depth": null
+  },
+  {
+    "step": 77,
+    "accept_length": 7,
+    "accepted_depths": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "rejected_depth": null
+  },
+  {
+    "step": 78,
+    "accept_length": 3,
+    "accepted_depths": [
+      0,
+      1,
+      2
+    ],
+    "rejected_depth": 3
+  },
+  {
+    "step": 79,
+    "accept_length": 3,
+    "accepted_depths": [
+      0,
+      1,
+      2
+    ],
+    "rejected_depth": null
+  },
+  {
+    "step": 80,
+    "accept_length": 1,
+    "accepted_depths": [
+      0
+    ],
+    "rejected_depth": 1
+  },
+  {
+    "step": 81,
+    "accept_length": 5,
+    "accepted_depths": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "rejected_depth": null
+  },
+  {
+    "step": 82,
+    "accept_length": 1,
+    "accepted_depths": [
+      0
+    ],
+    "rejected_depth": 1
+  },
+  {
+    "step": 83,
+    "accept_length": 1,
+    "accepted_depths": [
+      0
+    ],
+    "rejected_depth": 1
+  },
+  {
+    "step": 84,
+    "accept_length": 4,
+    "accepted_depths": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "rejected_depth": null
+  },
+  {
+    "step": 85,
+    "accept_length": 3,
+    "accepted_depths": [
+      0,
+      1,
+      2
+    ],
+    "rejected_depth": null
+  },
+  {
+    "step": 86,
+    "accept_length": 5,
+    "accepted_depths": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "rejected_depth": null
+  },
+  {
+    "step": 87,
+    "accept_length": 4,
+    "accepted_depths": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "rejected_depth": null
+  },
+  {
+    "step": 88,
+    "accept_length": 7,
+    "accepted_depths": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "rejected_depth": null
+  },
+  {
+    "step": 89,
+    "accept_length": 1,
+    "accepted_depths": [
+      0
+    ],
+    "rejected_depth": 1
+  },
+  {
+    "step": 90,
+    "accept_length": 1,
+    "accepted_depths": [
+      0
+    ],
+    "rejected_depth": 1
+  },
+  {
+    "step": 91,
+    "accept_length": 2,
+    "accepted_depths": [
+      0,
+      1
+    ],
+    "rejected_depth": 2
+  },
+  {
+    "step": 92,
+    "accept_length": 2,
+    "accepted_depths": [
+      0,
+      1
+    ],
+    "rejected_depth": 2
+  },
+  {
+    "step": 93,
+    "accept_length": 1,
+    "accepted_depths": [
+      0
+    ],
+    "rejected_depth": 1
+  },
+  {
+    "step": 94,
+    "accept_length": 4,
+    "accepted_depths": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "rejected_depth": 4
+  },
+  {
+    "step": 95,
+    "accept_length": 3,
+    "accepted_depths": [
+      0,
+      1,
+      2
+    ],
+    "rejected_depth": null
+  },
+  {
+    "step": 96,
+    "accept_length": 1,
+    "accepted_depths": [
+      0
+    ],
+    "rejected_depth": 1
+  },
+  {
+    "step": 97,
+    "accept_length": 2,
+    "accepted_depths": [
+      0,
+      1
+    ],
+    "rejected_depth": 2
+  },
+  {
+    "step": 98,
+    "accept_length": 3,
+    "accepted_depths": [
+      0,
+      1,
+      2
+    ],
+    "rejected_depth": 3
+  },
+  {
+    "step": 99,
+    "accept_length": 2,
+    "accepted_depths": [
+      0,
+      1
+    ],
+    "rejected_depth": 2
+  },
+  {
+    "step": 100,
+    "accept_length": 4,
+    "accepted_depths": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "rejected_depth": null
+  },
+  {
+    "step": 101,
+    "accept_length": 4,
+    "accepted_depths": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "rejected_depth": 4
+  },
+  {
+    "step": 102,
+    "accept_length": 4,
+    "accepted_depths": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "rejected_depth": 4
+  },
+  {
+    "step": 103,
+    "accept_length": 2,
+    "accepted_depths": [
+      0,
+      1
+    ],
+    "rejected_depth": 2
+  },
+  {
+    "step": 0,
+    "accept_length": 2,
+    "accepted_depths": [
+      0,
+      1
+    ],
+    "rejected_depth": 2
+  },
+  {
+    "step": 1,
+    "accept_length": 1,
+    "accepted_depths": [
+      0
+    ],
+    "rejected_depth": 1
+  },
+  {
+    "step": 2,
+    "accept_length": 2,
+    "accepted_depths": [
+      0,
+      1
+    ],
+    "rejected_depth": 2
+  },
+  {
+    "step": 3,
+    "accept_length": 1,
+    "accepted_depths": [
+      0
+    ],
+    "rejected_depth": 1
+  },
+  {
+    "step": 4,
+    "accept_length": 1,
+    "accepted_depths": [
+      0
+    ],
+    "rejected_depth": 1
+  },
+  {
+    "step": 5,
+    "accept_length": 1,
+    "accepted_depths": [
+      0
+    ],
+    "rejected_depth": 1
+  },
+  {
+    "step": 6,
+    "accept_length": 5,
+    "accepted_depths": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "rejected_depth": null
+  },
+  {
+    "step": 7,
+    "accept_length": 3,
+    "accepted_depths": [
+      0,
+      1,
+      2
+    ],
+    "rejected_depth": null
+  },
+  {
+    "step": 8,
+    "accept_length": 1,
+    "accepted_depths": [
+      0
+    ],
+    "rejected_depth": 1
+  },
+  {
+    "step": 9,
+    "accept_length": 1,
+    "accepted_depths": [
+      0
+    ],
+    "rejected_depth": 1
+  },
+  {
+    "step": 10,
+    "accept_length": 3,
+    "accepted_depths": [
+      0,
+      1,
+      2
+    ],
+    "rejected_depth": null
+  },
+  {
+    "step": 11,
+    "accept_length": 1,
+    "accepted_depths": [
+      0
+    ],
+    "rejected_depth": 1
+  },
+  {
+    "step": 12,
+    "accept_length": 3,
+    "accepted_depths": [
+      0,
+      1,
+      2
+    ],
+    "rejected_depth": null
+  },
+  {
+    "step": 13,
+    "accept_length": 1,
+    "accepted_depths": [
+      0
+    ],
+    "rejected_depth": 1
+  },
+  {
+    "step": 14,
+    "accept_length": 3,
+    "accepted_depths": [
+      0,
+      1,
+      2
+    ],
+    "rejected_depth": null
+  },
+  {
+    "step": 15,
+    "accept_length": 2,
+    "accepted_depths": [
+      0,
+      1
+    ],
+    "rejected_depth": 2
+  },
+  {
+    "step": 16,
+    "accept_length": 1,
+    "accepted_depths": [
+      0
+    ],
+    "rejected_depth": 1
+  },
+  {
+    "step": 17,
+    "accept_length": 1,
+    "accepted_depths": [
+      0
+    ],
+    "rejected_depth": 1
+  },
+  {
+    "step": 18,
+    "accept_length": 1,
+    "accepted_depths": [
+      0
+    ],
+    "rejected_depth": 1
+  },
+  {
+    "step": 19,
+    "accept_length": 1,
+    "accepted_depths": [
+      0
+    ],
+    "rejected_depth": 1
+  },
+  {
+    "step": 20,
+    "accept_length": 1,
+    "accepted_depths": [
+      0
+    ],
+    "rejected_depth": 1
+  },
+  {
+    "step": 21,
+    "accept_length": 2,
+    "accepted_depths": [
+      0,
+      1
+    ],
+    "rejected_depth": 2
+  },
+  {
+    "step": 22,
+    "accept_length": 2,
+    "accepted_depths": [
+      0,
+      1
+    ],
+    "rejected_depth": 2
+  },
+  {
+    "step": 23,
+    "accept_length": 1,
+    "accepted_depths": [
+      0
+    ],
+    "rejected_depth": 1
+  },
+  {
+    "step": 24,
+    "accept_length": 3,
+    "accepted_depths": [
+      0,
+      1,
+      2
+    ],
+    "rejected_depth": 3
+  },
+  {
+    "step": 25,
+    "accept_length": 2,
+    "accepted_depths": [
+      0,
+      1
+    ],
+    "rejected_depth": 2
+  },
+  {
+    "step": 26,
+    "accept_length": 1,
+    "accepted_depths": [
+      0
+    ],
+    "rejected_depth": 1
+  },
+  {
+    "step": 27,
+    "accept_length": 1,
+    "accepted_depths": [
+      0
+    ],
+    "rejected_depth": 1
+  },
+  {
+    "step": 28,
+    "accept_length": 2,
+    "accepted_depths": [
+      0,
+      1
+    ],
+    "rejected_depth": 2
+  },
+  {
+    "step": 29,
+    "accept_length": 2,
+    "accepted_depths": [
+      0,
+      1
+    ],
+    "rejected_depth": 2
+  },
+  {
+    "step": 30,
+    "accept_length": 3,
+    "accepted_depths": [
+      0,
+      1,
+      2
+    ],
+    "rejected_depth": null
+  },
+  {
+    "step": 31,
+    "accept_length": 1,
+    "accepted_depths": [
+      0
+    ],
+    "rejected_depth": 1
+  },
+  {
+    "step": 32,
+    "accept_length": 1,
+    "accepted_depths": [
+      0
+    ],
+    "rejected_depth": 1
+  },
+  {
+    "step": 33,
+    "accept_length": 5,
+    "accepted_depths": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "rejected_depth": 5
+  },
+  {
+    "step": 34,
+    "accept_length": 1,
+    "accepted_depths": [
+      0
+    ],
+    "rejected_depth": 1
+  },
+  {
+    "step": 35,
+    "accept_length": 3,
+    "accepted_depths": [
+      0,
+      1,
+      2
+    ],
+    "rejected_depth": 3
+  },
+  {
+    "step": 36,
+    "accept_length": 3,
+    "accepted_depths": [
+      0,
+      1,
+      2
+    ],
+    "rejected_depth": 3
+  },
+  {
+    "step": 37,
+    "accept_length": 2,
+    "accepted_depths": [
+      0,
+      1
+    ],
+    "rejected_depth": 2
+  },
+  {
+    "step": 38,
+    "accept_length": 2,
+    "accepted_depths": [
+      0,
+      1
+    ],
+    "rejected_depth": 2
+  },
+  {
+    "step": 39,
+    "accept_length": 3,
+    "accepted_depths": [
+      0,
+      1,
+      2
+    ],
+    "rejected_depth": 3
+  },
+  {
+    "step": 40,
+    "accept_length": 2,
+    "accepted_depths": [
+      0,
+      1
+    ],
+    "rejected_depth": null
+  },
+  {
+    "step": 41,
+    "accept_length": 4,
+    "accepted_depths": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "rejected_depth": null
+  },
+  {
+    "step": 42,
+    "accept_length": 1,
+    "accepted_depths": [
+      0
+    ],
+    "rejected_depth": 1
+  },
+  {
+    "step": 43,
+    "accept_length": 1,
+    "accepted_depths": [
+      0
+    ],
+    "rejected_depth": 1
+  },
+  {
+    "step": 44,
+    "accept_length": 2,
+    "accepted_depths": [
+      0,
+      1
+    ],
+    "rejected_depth": 2
+  },
+  {
+    "step": 45,
+    "accept_length": 1,
+    "accepted_depths": [
+      0
+    ],
+    "rejected_depth": 1
+  },
+  {
+    "step": 46,
+    "accept_length": 2,
+    "accepted_depths": [
+      0,
+      1
+    ],
+    "rejected_depth": 2
+  },
+  {
+    "step": 47,
+    "accept_length": 2,
+    "accepted_depths": [
+      0,
+      1
+    ],
+    "rejected_depth": 2
+  },
+  {
+    "step": 48,
+    "accept_length": 4,
+    "accepted_depths": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "rejected_depth": 4
+  },
+  {
+    "step": 49,
+    "accept_length": 3,
+    "accepted_depths": [
+      0,
+      1,
+      2
+    ],
+    "rejected_depth": null
+  },
+  {
+    "step": 50,
+    "accept_length": 1,
+    "accepted_depths": [
+      0
+    ],
+    "rejected_depth": 1
+  },
+  {
+    "step": 51,
+    "accept_length": 5,
+    "accepted_depths": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "rejected_depth": 5
+  },
+  {
+    "step": 52,
+    "accept_length": 3,
+    "accepted_depths": [
+      0,
+      1,
+      2
+    ],
+    "rejected_depth": null
+  },
+  {
+    "step": 53,
+    "accept_length": 3,
+    "accepted_depths": [
+      0,
+      1,
+      2
+    ],
+    "rejected_depth": 3
+  },
+  {
+    "step": 54,
+    "accept_length": 3,
+    "accepted_depths": [
+      0,
+      1,
+      2
+    ],
+    "rejected_depth": null
+  },
+  {
+    "step": 55,
+    "accept_length": 1,
+    "accepted_depths": [
+      0
+    ],
+    "rejected_depth": 1
+  },
+  {
+    "step": 56,
+    "accept_length": 1,
+    "accepted_depths": [
+      0
+    ],
+    "rejected_depth": 1
+  },
+  {
+    "step": 57,
+    "accept_length": 2,
+    "accepted_depths": [
+      0,
+      1
+    ],
+    "rejected_depth": 2
+  },
+  {
+    "step": 58,
+    "accept_length": 3,
+    "accepted_depths": [
+      0,
+      1,
+      2
+    ],
+    "rejected_depth": null
+  },
+  {
+    "step": 59,
+    "accept_length": 3,
+    "accepted_depths": [
+      0,
+      1,
+      2
+    ],
+    "rejected_depth": 3
+  },
+  {
+    "step": 60,
+    "accept_length": 4,
+    "accepted_depths": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "rejected_depth": null
+  },
+  {
+    "step": 61,
+    "accept_length": 1,
+    "accepted_depths": [
+      0
+    ],
+    "rejected_depth": 1
+  },
+  {
+    "step": 62,
+    "accept_length": 5,
+    "accepted_depths": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "rejected_depth": null
+  },
+  {
+    "step": 63,
+    "accept_length": 1,
+    "accepted_depths": [
+      0
+    ],
+    "rejected_depth": 1
+  },
+  {
+    "step": 64,
+    "accept_length": 3,
+    "accepted_depths": [
+      0,
+      1,
+      2
+    ],
+    "rejected_depth": null
+  },
+  {
+    "step": 65,
+    "accept_length": 2,
+    "accepted_depths": [
+      0,
+      1
+    ],
+    "rejected_depth": 2
+  },
+  {
+    "step": 66,
+    "accept_length": 1,
+    "accepted_depths": [
+      0
+    ],
+    "rejected_depth": 1
+  },
+  {
+    "step": 67,
+    "accept_length": 2,
+    "accepted_depths": [
+      0,
+      1
+    ],
+    "rejected_depth": 2
+  },
+  {
+    "step": 68,
+    "accept_length": 3,
+    "accepted_depths": [
+      0,
+      1,
+      2
+    ],
+    "rejected_depth": 3
+  },
+  {
+    "step": 69,
+    "accept_length": 2,
+    "accepted_depths": [
+      0,
+      1
+    ],
+    "rejected_depth": 2
+  },
+  {
+    "step": 70,
+    "accept_length": 5,
+    "accepted_depths": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "rejected_depth": 5
+  },
+  {
+    "step": 71,
+    "accept_length": 1,
+    "accepted_depths": [
+      0
+    ],
+    "rejected_depth": 1
+  },
+  {
+    "step": 72,
+    "accept_length": 2,
+    "accepted_depths": [
+      0,
+      1
+    ],
+    "rejected_depth": 2
+  },
+  {
+    "step": 73,
+    "accept_length": 3,
+    "accepted_depths": [
+      0,
+      1,
+      2
+    ],
+    "rejected_depth": 3
+  },
+  {
+    "step": 74,
+    "accept_length": 3,
+    "accepted_depths": [
+      0,
+      1,
+      2
+    ],
+    "rejected_depth": null
+  },
+  {
+    "step": 75,
+    "accept_length": 3,
+    "accepted_depths": [
+      0,
+      1,
+      2
+    ],
+    "rejected_depth": null
+  },
+  {
+    "step": 76,
+    "accept_length": 2,
+    "accepted_depths": [
+      0,
+      1
+    ],
+    "rejected_depth": 2
+  },
+  {
+    "step": 77,
+    "accept_length": 2,
+    "accepted_depths": [
+      0,
+      1
+    ],
+    "rejected_depth": 2
+  },
+  {
+    "step": 78,
+    "accept_length": 3,
+    "accepted_depths": [
+      0,
+      1,
+      2
+    ],
+    "rejected_depth": 3
+  },
+  {
+    "step": 79,
+    "accept_length": 3,
+    "accepted_depths": [
+      0,
+      1,
+      2
+    ],
+    "rejected_depth": null
+  },
+  {
+    "step": 80,
+    "accept_length": 3,
+    "accepted_depths": [
+      0,
+      1,
+      2
+    ],
+    "rejected_depth": null
+  },
+  {
+    "step": 81,
+    "accept_length": 5,
+    "accepted_depths": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "rejected_depth": 5
+  },
+  {
+    "step": 82,
+    "accept_length": 3,
+    "accepted_depths": [
+      0,
+      1,
+      2
+    ],
+    "rejected_depth": null
+  },
+  {
+    "step": 83,
+    "accept_length": 3,
+    "accepted_depths": [
+      0,
+      1,
+      2
+    ],
+    "rejected_depth": null
+  },
+  {
+    "step": 84,
+    "accept_length": 4,
+    "accepted_depths": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "rejected_depth": null
+  },
+  {
+    "step": 85,
+    "accept_length": 3,
+    "accepted_depths": [
+      0,
+      1,
+      2
+    ],
+    "rejected_depth": null
+  },
+  {
+    "step": 86,
+    "accept_length": 6,
+    "accepted_depths": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "rejected_depth": 6
+  },
+  {
+    "step": 87,
+    "accept_length": 2,
+    "accepted_depths": [
+      0,
+      1
+    ],
+    "rejected_depth": null
+  },
+  {
+    "step": 88,
+    "accept_length": 2,
+    "accepted_depths": [
+      0,
+      1
+    ],
+    "rejected_depth": 2
+  },
+  {
+    "step": 89,
+    "accept_length": 3,
+    "accepted_depths": [
+      0,
+      1,
+      2
+    ],
+    "rejected_depth": 3
+  },
+  {
+    "step": 90,
+    "accept_length": 5,
+    "accepted_depths": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "rejected_depth": null
+  },
+  {
+    "step": 91,
+    "accept_length": 1,
+    "accepted_depths": [
+      0
+    ],
+    "rejected_depth": 1
+  },
+  {
+    "step": 92,
+    "accept_length": 1,
+    "accepted_depths": [
+      0
+    ],
+    "rejected_depth": 1
+  },
+  {
+    "step": 93,
+    "accept_length": 1,
+    "accepted_depths": [
+      0
+    ],
+    "rejected_depth": 1
+  },
+  {
+    "step": 94,
+    "accept_length": 5,
+    "accepted_depths": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "rejected_depth": null
+  },
+  {
+    "step": 95,
+    "accept_length": 2,
+    "accepted_depths": [
+      0,
+      1
+    ],
+    "rejected_depth": 2
+  },
+  {
+    "step": 96,
+    "accept_length": 1,
+    "accepted_depths": [
+      0
+    ],
+    "rejected_depth": 1
+  },
+  {
+    "step": 97,
+    "accept_length": 3,
+    "accepted_depths": [
+      0,
+      1,
+      2
+    ],
+    "rejected_depth": null
+  },
+  {
+    "step": 98,
+    "accept_length": 3,
+    "accepted_depths": [
+      0,
+      1,
+      2
+    ],
+    "rejected_depth": null
+  },
+  {
+    "step": 99,
+    "accept_length": 4,
+    "accepted_depths": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "rejected_depth": null
+  },
+  {
+    "step": 100,
+    "accept_length": 2,
+    "accepted_depths": [
+      0,
+      1
+    ],
+    "rejected_depth": 2
+  },
+  {
+    "step": 101,
+    "accept_length": 1,
+    "accepted_depths": [
+      0
+    ],
+    "rejected_depth": 1
+  },
+  {
+    "step": 102,
+    "accept_length": 5,
+    "accepted_depths": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "rejected_depth": null
+  },
+  {
+    "step": 103,
+    "accept_length": 5,
+    "accepted_depths": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "rejected_depth": 5
+  },
+  {
+    "step": 104,
+    "accept_length": 3,
+    "accepted_depths": [
+      0,
+      1,
+      2
+    ],
+    "rejected_depth": null
+  },
+  {
+    "step": 105,
+    "accept_length": 4,
+    "accepted_depths": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "rejected_depth": null
+  },
+  {
+    "step": 106,
+    "accept_length": 2,
+    "accepted_depths": [
+      0,
+      1
+    ],
+    "rejected_depth": 2
+  },
+  {
+    "step": 107,
+    "accept_length": 2,
+    "accepted_depths": [
+      0,
+      1
+    ],
+    "rejected_depth": 2
+  },
+  {
+    "step": 0,
+    "accept_length": 1,
+    "accepted_depths": [
+      0
+    ],
+    "rejected_depth": 1
+  },
+  {
+    "step": 1,
+    "accept_length": 1,
+    "accepted_depths": [
+      0
+    ],
+    "rejected_depth": 1
+  },
+  {
+    "step": 2,
+    "accept_length": 3,
+    "accepted_depths": [
+      0,
+      1,
+      2
+    ],
+    "rejected_depth": null
+  },
+  {
+    "step": 3,
+    "accept_length": 2,
+    "accepted_depths": [
+      0,
+      1
+    ],
+    "rejected_depth": null
+  },
+  {
+    "step": 4,
+    "accept_length": 3,
+    "accepted_depths": [
+      0,
+      1,
+      2
+    ],
+    "rejected_depth": 3
+  },
+  {
+    "step": 5,
+    "accept_length": 1,
+    "accepted_depths": [
+      0
+    ],
+    "rejected_depth": 1
+  },
+  {
+    "step": 6,
+    "accept_length": 3,
+    "accepted_depths": [
+      0,
+      1,
+      2
+    ],
+    "rejected_depth": 3
+  },
+  {
+    "step": 7,
+    "accept_length": 2,
+    "accepted_depths": [
+      0,
+      1
+    ],
+    "rejected_depth": 2
+  },
+  {
+    "step": 8,
+    "accept_length": 1,
+    "accepted_depths": [
+      0
+    ],
+    "rejected_depth": 1
+  },
+  {
+    "step": 9,
+    "accept_length": 1,
+    "accepted_depths": [
+      0
+    ],
+    "rejected_depth": 1
+  },
+  {
+    "step": 10,
+    "accept_length": 1,
+    "accepted_depths": [
+      0
+    ],
+    "rejected_depth": 1
+  },
+  {
+    "step": 11,
+    "accept_length": 1,
+    "accepted_depths": [
+      0
+    ],
+    "rejected_depth": 1
+  },
+  {
+    "step": 12,
+    "accept_length": 2,
+    "accepted_depths": [
+      0,
+      1
+    ],
+    "rejected_depth": 2
+  },
+  {
+    "step": 13,
+    "accept_length": 2,
+    "accepted_depths": [
+      0,
+      1
+    ],
+    "rejected_depth": 2
+  },
+  {
+    "step": 14,
+    "accept_length": 2,
+    "accepted_depths": [
+      0,
+      1
+    ],
+    "rejected_depth": null
+  },
+  {
+    "step": 15,
+    "accept_length": 3,
+    "accepted_depths": [
+      0,
+      1,
+      2
+    ],
+    "rejected_depth": null
+  },
+  {
+    "step": 16,
+    "accept_length": 6,
+    "accepted_depths": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "rejected_depth": null
+  },
+  {
+    "step": 17,
+    "accept_length": 3,
+    "accepted_depths": [
+      0,
+      1,
+      2
+    ],
+    "rejected_depth": null
+  },
+  {
+    "step": 18,
+    "accept_length": 3,
+    "accepted_depths": [
+      0,
+      1,
+      2
+    ],
+    "rejected_depth": null
+  },
+  {
+    "step": 19,
+    "accept_length": 2,
+    "accepted_depths": [
+      0,
+      1
+    ],
+    "rejected_depth": 2
+  },
+  {
+    "step": 20,
+    "accept_length": 3,
+    "accepted_depths": [
+      0,
+      1,
+      2
+    ],
+    "rejected_depth": null
+  },
+  {
+    "step": 21,
+    "accept_length": 1,
+    "accepted_depths": [
+      0
+    ],
+    "rejected_depth": 1
+  },
+  {
+    "step": 22,
+    "accept_length": 3,
+    "accepted_depths": [
+      0,
+      1,
+      2
+    ],
+    "rejected_depth": 3
+  },
+  {
+    "step": 23,
+    "accept_length": 3,
+    "accepted_depths": [
+      0,
+      1,
+      2
+    ],
+    "rejected_depth": null
+  },
+  {
+    "step": 24,
+    "accept_length": 2,
+    "accepted_depths": [
+      0,
+      1
+    ],
+    "rejected_depth": 2
+  },
+  {
+    "step": 25,
+    "accept_length": 5,
+    "accepted_depths": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "rejected_depth": null
+  },
+  {
+    "step": 26,
+    "accept_length": 3,
+    "accepted_depths": [
+      0,
+      1,
+      2
+    ],
+    "rejected_depth": 3
+  },
+  {
+    "step": 27,
+    "accept_length": 7,
+    "accepted_depths": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "rejected_depth": null
+  },
+  {
+    "step": 28,
+    "accept_length": 2,
+    "accepted_depths": [
+      0,
+      1
+    ],
+    "rejected_depth": 2
+  },
+  {
+    "step": 29,
+    "accept_length": 4,
+    "accepted_depths": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "rejected_depth": 4
+  },
+  {
+    "step": 30,
+    "accept_length": 7,
+    "accepted_depths": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "rejected_depth": null
+  },
+  {
+    "step": 31,
+    "accept_length": 5,
+    "accepted_depths": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "rejected_depth": null
+  },
+  {
+    "step": 32,
+    "accept_length": 2,
+    "accepted_depths": [
+      0,
+      1
+    ],
+    "rejected_depth": null
+  },
+  {
+    "step": 33,
+    "accept_length": 3,
+    "accepted_depths": [
+      0,
+      1,
+      2
+    ],
+    "rejected_depth": null
+  },
+  {
+    "step": 34,
+    "accept_length": 4,
+    "accepted_depths": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "rejected_depth": null
+  },
+  {
+    "step": 35,
+    "accept_length": 3,
+    "accepted_depths": [
+      0,
+      1,
+      2
+    ],
+    "rejected_depth": 3
+  },
+  {
+    "step": 36,
+    "accept_length": 7,
+    "accepted_depths": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "rejected_depth": null
+  },
+  {
+    "step": 37,
+    "accept_length": 4,
+    "accepted_depths": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "rejected_depth": null
+  },
+  {
+    "step": 38,
+    "accept_length": 1,
+    "accepted_depths": [
+      0
+    ],
+    "rejected_depth": 1
+  },
+  {
+    "step": 39,
+    "accept_length": 5,
+    "accepted_depths": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "rejected_depth": 5
+  },
+  {
+    "step": 40,
+    "accept_length": 6,
+    "accepted_depths": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "rejected_depth": null
+  },
+  {
+    "step": 41,
+    "accept_length": 3,
+    "accepted_depths": [
+      0,
+      1,
+      2
+    ],
+    "rejected_depth": null
+  },
+  {
+    "step": 42,
+    "accept_length": 3,
+    "accepted_depths": [
+      0,
+      1,
+      2
+    ],
+    "rejected_depth": null
+  },
+  {
+    "step": 43,
+    "accept_length": 7,
+    "accepted_depths": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "rejected_depth": null
+  },
+  {
+    "step": 44,
+    "accept_length": 4,
+    "accepted_depths": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "rejected_depth": null
+  },
+  {
+    "step": 45,
+    "accept_length": 4,
+    "accepted_depths": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "rejected_depth": 4
+  },
+  {
+    "step": 46,
+    "accept_length": 2,
+    "accepted_depths": [
+      0,
+      1
+    ],
+    "rejected_depth": 2
+  },
+  {
+    "step": 47,
+    "accept_length": 2,
+    "accepted_depths": [
+      0,
+      1
+    ],
+    "rejected_depth": null
+  },
+  {
+    "step": 48,
+    "accept_length": 3,
+    "accepted_depths": [
+      0,
+      1,
+      2
+    ],
+    "rejected_depth": null
+  },
+  {
+    "step": 49,
+    "accept_length": 7,
+    "accepted_depths": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "rejected_depth": null
+  },
+  {
+    "step": 50,
+    "accept_length": 4,
+    "accepted_depths": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "rejected_depth": 4
+  },
+  {
+    "step": 51,
+    "accept_length": 7,
+    "accepted_depths": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "rejected_depth": null
+  },
+  {
+    "step": 52,
+    "accept_length": 7,
+    "accepted_depths": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "rejected_depth": null
+  },
+  {
+    "step": 53,
+    "accept_length": 5,
+    "accepted_depths": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "rejected_depth": null
+  },
+  {
+    "step": 54,
+    "accept_length": 7,
+    "accepted_depths": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "rejected_depth": null
+  },
+  {
+    "step": 55,
+    "accept_length": 5,
+    "accepted_depths": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "rejected_depth": 5
+  },
+  {
+    "step": 56,
+    "accept_length": 6,
+    "accepted_depths": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "rejected_depth": null
+  },
+  {
+    "step": 57,
+    "accept_length": 3,
+    "accepted_depths": [
+      0,
+      1,
+      2
+    ],
+    "rejected_depth": 3
+  },
+  {
+    "step": 58,
+    "accept_length": 3,
+    "accepted_depths": [
+      0,
+      1,
+      2
+    ],
+    "rejected_depth": null
+  },
+  {
+    "step": 59,
+    "accept_length": 5,
+    "accepted_depths": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "rejected_depth": null
+  },
+  {
+    "step": 60,
+    "accept_length": 5,
+    "accepted_depths": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "rejected_depth": null
+  },
+  {
+    "step": 61,
+    "accept_length": 1,
+    "accepted_depths": [
+      0
+    ],
+    "rejected_depth": 1
+  },
+  {
+    "step": 62,
+    "accept_length": 6,
+    "accepted_depths": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "rejected_depth": 6
+  },
+  {
+    "step": 63,
+    "accept_length": 4,
+    "accepted_depths": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "rejected_depth": null
+  },
+  {
+    "step": 64,
+    "accept_length": 3,
+    "accepted_depths": [
+      0,
+      1,
+      2
+    ],
+    "rejected_depth": 3
+  },
+  {
+    "step": 65,
+    "accept_length": 4,
+    "accepted_depths": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "rejected_depth": null
+  },
+  {
+    "step": 66,
+    "accept_length": 3,
+    "accepted_depths": [
+      0,
+      1,
+      2
+    ],
+    "rejected_depth": null
+  },
+  {
+    "step": 67,
+    "accept_length": 3,
+    "accepted_depths": [
+      0,
+      1,
+      2
+    ],
+    "rejected_depth": null
+  },
+  {
+    "step": 68,
+    "accept_length": 5,
+    "accepted_depths": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "rejected_depth": null
+  },
+  {
+    "step": 69,
+    "accept_length": 5,
+    "accepted_depths": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "rejected_depth": 5
+  },
+  {
+    "step": 70,
+    "accept_length": 3,
+    "accepted_depths": [
+      0,
+      1,
+      2
+    ],
+    "rejected_depth": null
+  },
+  {
+    "step": 71,
+    "accept_length": 7,
+    "accepted_depths": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "rejected_depth": null
+  },
+  {
+    "step": 0,
+    "accept_length": 2,
+    "accepted_depths": [
+      0,
+      1
+    ],
+    "rejected_depth": 2
+  },
+  {
+    "step": 1,
+    "accept_length": 6,
+    "accepted_depths": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "rejected_depth": null
+  },
+  {
+    "step": 2,
+    "accept_length": 1,
+    "accepted_depths": [
+      0
+    ],
+    "rejected_depth": 1
+  },
+  {
+    "step": 3,
+    "accept_length": 1,
+    "accepted_depths": [
+      0
+    ],
+    "rejected_depth": 1
+  },
+  {
+    "step": 4,
+    "accept_length": 2,
+    "accepted_depths": [
+      0,
+      1
+    ],
+    "rejected_depth": 2
+  },
+  {
+    "step": 5,
+    "accept_length": 2,
+    "accepted_depths": [
+      0,
+      1
+    ],
+    "rejected_depth": 2
+  },
+  {
+    "step": 6,
+    "accept_length": 1,
+    "accepted_depths": [
+      0
+    ],
+    "rejected_depth": 1
+  },
+  {
+    "step": 7,
+    "accept_length": 3,
+    "accepted_depths": [
+      0,
+      1,
+      2
+    ],
+    "rejected_depth": null
+  },
+  {
+    "step": 8,
+    "accept_length": 2,
+    "accepted_depths": [
+      0,
+      1
+    ],
+    "rejected_depth": 2
+  },
+  {
+    "step": 9,
+    "accept_length": 1,
+    "accepted_depths": [
+      0
+    ],
+    "rejected_depth": 1
+  },
+  {
+    "step": 10,
+    "accept_length": 2,
+    "accepted_depths": [
+      0,
+      1
+    ],
+    "rejected_depth": 2
+  },
+  {
+    "step": 11,
+    "accept_length": 1,
+    "accepted_depths": [
+      0
+    ],
+    "rejected_depth": 1
+  },
+  {
+    "step": 12,
+    "accept_length": 2,
+    "accepted_depths": [
+      0,
+      1
+    ],
+    "rejected_depth": 2
+  },
+  {
+    "step": 13,
+    "accept_length": 2,
+    "accepted_depths": [
+      0,
+      1
+    ],
+    "rejected_depth": 2
+  },
+  {
+    "step": 14,
+    "accept_length": 1,
+    "accepted_depths": [
+      0
+    ],
+    "rejected_depth": 1
+  },
+  {
+    "step": 15,
+    "accept_length": 4,
+    "accepted_depths": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "rejected_depth": null
+  },
+  {
+    "step": 16,
+    "accept_length": 1,
+    "accepted_depths": [
+      0
+    ],
+    "rejected_depth": 1
+  },
+  {
+    "step": 17,
+    "accept_length": 3,
+    "accepted_depths": [
+      0,
+      1,
+      2
+    ],
+    "rejected_depth": 3
+  },
+  {
+    "step": 18,
+    "accept_length": 3,
+    "accepted_depths": [
+      0,
+      1,
+      2
+    ],
+    "rejected_depth": null
+  },
+  {
+    "step": 19,
+    "accept_length": 1,
+    "accepted_depths": [
+      0
+    ],
+    "rejected_depth": 1
+  },
+  {
+    "step": 20,
+    "accept_length": 1,
+    "accepted_depths": [
+      0
+    ],
+    "rejected_depth": 1
+  },
+  {
+    "step": 21,
+    "accept_length": 3,
+    "accepted_depths": [
+      0,
+      1,
+      2
+    ],
+    "rejected_depth": 3
+  },
+  {
+    "step": 22,
+    "accept_length": 2,
+    "accepted_depths": [
+      0,
+      1
+    ],
+    "rejected_depth": 2
+  },
+  {
+    "step": 23,
+    "accept_length": 3,
+    "accepted_depths": [
+      0,
+      1,
+      2
+    ],
+    "rejected_depth": 3
+  },
+  {
+    "step": 24,
+    "accept_length": 2,
+    "accepted_depths": [
+      0,
+      1
+    ],
+    "rejected_depth": 2
+  },
+  {
+    "step": 25,
+    "accept_length": 3,
+    "accepted_depths": [
+      0,
+      1,
+      2
+    ],
+    "rejected_depth": 3
+  },
+  {
+    "step": 26,
+    "accept_length": 1,
+    "accepted_depths": [
+      0
+    ],
+    "rejected_depth": 1
+  },
+  {
+    "step": 27,
+    "accept_length": 3,
+    "accepted_depths": [
+      0,
+      1,
+      2
+    ],
+    "rejected_depth": null
+  },
+  {
+    "step": 28,
+    "accept_length": 1,
+    "accepted_depths": [
+      0
+    ],
+    "rejected_depth": 1
+  },
+  {
+    "step": 29,
+    "accept_length": 2,
+    "accepted_depths": [
+      0,
+      1
+    ],
+    "rejected_depth": 2
+  },
+  {
+    "step": 30,
+    "accept_length": 1,
+    "accepted_depths": [
+      0
+    ],
+    "rejected_depth": 1
+  },
+  {
+    "step": 31,
+    "accept_length": 2,
+    "accepted_depths": [
+      0,
+      1
+    ],
+    "rejected_depth": 2
+  },
+  {
+    "step": 32,
+    "accept_length": 2,
+    "accepted_depths": [
+      0,
+      1
+    ],
+    "rejected_depth": 2
+  },
+  {
+    "step": 33,
+    "accept_length": 3,
+    "accepted_depths": [
+      0,
+      1,
+      2
+    ],
+    "rejected_depth": 3
+  },
+  {
+    "step": 34,
+    "accept_length": 1,
+    "accepted_depths": [
+      0
+    ],
+    "rejected_depth": 1
+  },
+  {
+    "step": 35,
+    "accept_length": 1,
+    "accepted_depths": [
+      0
+    ],
+    "rejected_depth": 1
+  },
+  {
+    "step": 36,
+    "accept_length": 3,
+    "accepted_depths": [
+      0,
+      1,
+      2
+    ],
+    "rejected_depth": 3
+  },
+  {
+    "step": 37,
+    "accept_length": 4,
+    "accepted_depths": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "rejected_depth": 4
+  },
+  {
+    "step": 38,
+    "accept_length": 1,
+    "accepted_depths": [
+      0
+    ],
+    "rejected_depth": 1
+  },
+  {
+    "step": 39,
+    "accept_length": 1,
+    "accepted_depths": [
+      0
+    ],
+    "rejected_depth": 1
+  },
+  {
+    "step": 40,
+    "accept_length": 1,
+    "accepted_depths": [
+      0
+    ],
+    "rejected_depth": 1
+  },
+  {
+    "step": 41,
+    "accept_length": 3,
+    "accepted_depths": [
+      0,
+      1,
+      2
+    ],
+    "rejected_depth": null
+  },
+  {
+    "step": 42,
+    "accept_length": 1,
+    "accepted_depths": [
+      0
+    ],
+    "rejected_depth": 1
+  },
+  {
+    "step": 43,
+    "accept_length": 1,
+    "accepted_depths": [
+      0
+    ],
+    "rejected_depth": 1
+  },
+  {
+    "step": 44,
+    "accept_length": 3,
+    "accepted_depths": [
+      0,
+      1,
+      2
+    ],
+    "rejected_depth": null
+  },
+  {
+    "step": 45,
+    "accept_length": 4,
+    "accepted_depths": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "rejected_depth": null
+  },
+  {
+    "step": 46,
+    "accept_length": 1,
+    "accepted_depths": [
+      0
+    ],
+    "rejected_depth": 1
+  },
+  {
+    "step": 47,
+    "accept_length": 3,
+    "accepted_depths": [
+      0,
+      1,
+      2
+    ],
+    "rejected_depth": null
+  },
+  {
+    "step": 48,
+    "accept_length": 2,
+    "accepted_depths": [
+      0,
+      1
+    ],
+    "rejected_depth": null
+  },
+  {
+    "step": 49,
+    "accept_length": 1,
+    "accepted_depths": [
+      0
+    ],
+    "rejected_depth": 1
+  },
+  {
+    "step": 50,
+    "accept_length": 4,
+    "accepted_depths": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "rejected_depth": 4
+  },
+  {
+    "step": 51,
+    "accept_length": 1,
+    "accepted_depths": [
+      0
+    ],
+    "rejected_depth": 1
+  },
+  {
+    "step": 52,
+    "accept_length": 5,
+    "accepted_depths": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "rejected_depth": null
+  },
+  {
+    "step": 53,
+    "accept_length": 2,
+    "accepted_depths": [
+      0,
+      1
+    ],
+    "rejected_depth": 2
+  },
+  {
+    "step": 54,
+    "accept_length": 1,
+    "accepted_depths": [
+      0
+    ],
+    "rejected_depth": 1
+  },
+  {
+    "step": 55,
+    "accept_length": 1,
+    "accepted_depths": [
+      0
+    ],
+    "rejected_depth": 1
+  },
+  {
+    "step": 56,
+    "accept_length": 3,
+    "accepted_depths": [
+      0,
+      1,
+      2
+    ],
+    "rejected_depth": null
+  },
+  {
+    "step": 57,
+    "accept_length": 1,
+    "accepted_depths": [
+      0
+    ],
+    "rejected_depth": 1
+  },
+  {
+    "step": 58,
+    "accept_length": 2,
+    "accepted_depths": [
+      0,
+      1
+    ],
+    "rejected_depth": 2
+  },
+  {
+    "step": 59,
+    "accept_length": 4,
+    "accepted_depths": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "rejected_depth": null
+  },
+  {
+    "step": 60,
+    "accept_length": 5,
+    "accepted_depths": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "rejected_depth": null
+  },
+  {
+    "step": 61,
+    "accept_length": 6,
+    "accepted_depths": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "rejected_depth": null
+  },
+  {
+    "step": 62,
+    "accept_length": 6,
+    "accepted_depths": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "rejected_depth": null
+  },
+  {
+    "step": 63,
+    "accept_length": 2,
+    "accepted_depths": [
+      0,
+      1
+    ],
+    "rejected_depth": 2
+  },
+  {
+    "step": 64,
+    "accept_length": 3,
+    "accepted_depths": [
+      0,
+      1,
+      2
+    ],
+    "rejected_depth": null
+  },
+  {
+    "step": 65,
+    "accept_length": 4,
+    "accepted_depths": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "rejected_depth": null
+  },
+  {
+    "step": 66,
+    "accept_length": 2,
+    "accepted_depths": [
+      0,
+      1
+    ],
+    "rejected_depth": 2
+  },
+  {
+    "step": 67,
+    "accept_length": 4,
+    "accepted_depths": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "rejected_depth": null
+  },
+  {
+    "step": 68,
+    "accept_length": 1,
+    "accepted_depths": [
+      0
+    ],
+    "rejected_depth": 1
+  },
+  {
+    "step": 69,
+    "accept_length": 1,
+    "accepted_depths": [
+      0
+    ],
+    "rejected_depth": 1
+  },
+  {
+    "step": 70,
+    "accept_length": 1,
+    "accepted_depths": [
+      0
+    ],
+    "rejected_depth": 1
+  },
+  {
+    "step": 71,
+    "accept_length": 3,
+    "accepted_depths": [
+      0,
+      1,
+      2
+    ],
+    "rejected_depth": null
+  },
+  {
+    "step": 72,
+    "accept_length": 1,
+    "accepted_depths": [
+      0
+    ],
+    "rejected_depth": 1
+  },
+  {
+    "step": 73,
+    "accept_length": 1,
+    "accepted_depths": [
+      0
+    ],
+    "rejected_depth": 1
+  },
+  {
+    "step": 74,
+    "accept_length": 4,
+    "accepted_depths": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "rejected_depth": null
+  },
+  {
+    "step": 75,
+    "accept_length": 2,
+    "accepted_depths": [
+      0,
+      1
+    ],
+    "rejected_depth": 2
+  },
+  {
+    "step": 76,
+    "accept_length": 3,
+    "accepted_depths": [
+      0,
+      1,
+      2
+    ],
+    "rejected_depth": null
+  },
+  {
+    "step": 77,
+    "accept_length": 2,
+    "accepted_depths": [
+      0,
+      1
+    ],
+    "rejected_depth": 2
+  },
+  {
+    "step": 78,
+    "accept_length": 6,
+    "accepted_depths": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "rejected_depth": null
+  },
+  {
+    "step": 79,
+    "accept_length": 3,
+    "accepted_depths": [
+      0,
+      1,
+      2
+    ],
+    "rejected_depth": 3
+  },
+  {
+    "step": 80,
+    "accept_length": 2,
+    "accepted_depths": [
+      0,
+      1
+    ],
+    "rejected_depth": 2
+  },
+  {
+    "step": 81,
+    "accept_length": 3,
+    "accepted_depths": [
+      0,
+      1,
+      2
+    ],
+    "rejected_depth": 3
+  },
+  {
+    "step": 82,
+    "accept_length": 4,
+    "accepted_depths": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "rejected_depth": null
+  },
+  {
+    "step": 83,
+    "accept_length": 2,
+    "accepted_depths": [
+      0,
+      1
+    ],
+    "rejected_depth": 2
+  },
+  {
+    "step": 84,
+    "accept_length": 4,
+    "accepted_depths": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "rejected_depth": 4
+  },
+  {
+    "step": 85,
+    "accept_length": 3,
+    "accepted_depths": [
+      0,
+      1,
+      2
+    ],
+    "rejected_depth": 3
+  },
+  {
+    "step": 86,
+    "accept_length": 7,
+    "accepted_depths": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "rejected_depth": null
+  },
+  {
+    "step": 87,
+    "accept_length": 7,
+    "accepted_depths": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "rejected_depth": null
+  },
+  {
+    "step": 88,
+    "accept_length": 3,
+    "accepted_depths": [
+      0,
+      1,
+      2
+    ],
+    "rejected_depth": null
+  },
+  {
+    "step": 89,
+    "accept_length": 3,
+    "accepted_depths": [
+      0,
+      1,
+      2
+    ],
+    "rejected_depth": null
+  },
+  {
+    "step": 90,
+    "accept_length": 1,
+    "accepted_depths": [
+      0
+    ],
+    "rejected_depth": 1
+  },
+  {
+    "step": 91,
+    "accept_length": 1,
+    "accepted_depths": [
+      0
+    ],
+    "rejected_depth": 1
+  },
+  {
+    "step": 92,
+    "accept_length": 1,
+    "accepted_depths": [
+      0
+    ],
+    "rejected_depth": 1
+  },
+  {
+    "step": 93,
+    "accept_length": 6,
+    "accepted_depths": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "rejected_depth": null
+  },
+  {
+    "step": 94,
+    "accept_length": 7,
+    "accepted_depths": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "rejected_depth": null
+  },
+  {
+    "step": 95,
+    "accept_length": 2,
+    "accepted_depths": [
+      0,
+      1
+    ],
+    "rejected_depth": 2
+  },
+  {
+    "step": 96,
+    "accept_length": 2,
+    "accepted_depths": [
+      0,
+      1
+    ],
+    "rejected_depth": 2
+  },
+  {
+    "step": 97,
+    "accept_length": 3,
+    "accepted_depths": [
+      0,
+      1,
+      2
+    ],
+    "rejected_depth": null
+  },
+  {
+    "step": 98,
+    "accept_length": 6,
+    "accepted_depths": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "rejected_depth": null
+  },
+  {
+    "step": 99,
+    "accept_length": 3,
+    "accepted_depths": [
+      0,
+      1,
+      2
+    ],
+    "rejected_depth": 3
+  },
+  {
+    "step": 100,
+    "accept_length": 2,
+    "accepted_depths": [
+      0,
+      1
+    ],
+    "rejected_depth": 2
+  },
+  {
+    "step": 0,
+    "accept_length": 1,
+    "accepted_depths": [
+      0
+    ],
+    "rejected_depth": 1
+  },
+  {
+    "step": 1,
+    "accept_length": 1,
+    "accepted_depths": [
+      0
+    ],
+    "rejected_depth": 1
+  },
+  {
+    "step": 2,
+    "accept_length": 1,
+    "accepted_depths": [
+      0
+    ],
+    "rejected_depth": 1
+  },
+  {
+    "step": 3,
+    "accept_length": 1,
+    "accepted_depths": [
+      0
+    ],
+    "rejected_depth": 1
+  },
+  {
+    "step": 4,
+    "accept_length": 1,
+    "accepted_depths": [
+      0
+    ],
+    "rejected_depth": 1
+  },
+  {
+    "step": 5,
+    "accept_length": 1,
+    "accepted_depths": [
+      0
+    ],
+    "rejected_depth": 1
+  },
+  {
+    "step": 6,
+    "accept_length": 2,
+    "accepted_depths": [
+      0,
+      1
+    ],
+    "rejected_depth": 2
+  },
+  {
+    "step": 7,
+    "accept_length": 1,
+    "accepted_depths": [
+      0
+    ],
+    "rejected_depth": 1
+  },
+  {
+    "step": 8,
+    "accept_length": 4,
+    "accepted_depths": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "rejected_depth": null
+  },
+  {
+    "step": 9,
+    "accept_length": 1,
+    "accepted_depths": [
+      0
+    ],
+    "rejected_depth": 1
+  },
+  {
+    "step": 10,
+    "accept_length": 2,
+    "accepted_depths": [
+      0,
+      1
+    ],
+    "rejected_depth": 2
+  },
+  {
+    "step": 11,
+    "accept_length": 1,
+    "accepted_depths": [
+      0
+    ],
+    "rejected_depth": 1
+  },
+  {
+    "step": 12,
+    "accept_length": 1,
+    "accepted_depths": [
+      0
+    ],
+    "rejected_depth": 1
+  },
+  {
+    "step": 13,
+    "accept_length": 1,
+    "accepted_depths": [
+      0
+    ],
+    "rejected_depth": 1
+  },
+  {
+    "step": 14,
+    "accept_length": 1,
+    "accepted_depths": [
+      0
+    ],
+    "rejected_depth": 1
+  },
+  {
+    "step": 15,
+    "accept_length": 4,
+    "accepted_depths": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "rejected_depth": null
+  },
+  {
+    "step": 16,
+    "accept_length": 3,
+    "accepted_depths": [
+      0,
+      1,
+      2
+    ],
+    "rejected_depth": null
+  },
+  {
+    "step": 17,
+    "accept_length": 3,
+    "accepted_depths": [
+      0,
+      1,
+      2
+    ],
+    "rejected_depth": 3
+  },
+  {
+    "step": 18,
+    "accept_length": 1,
+    "accepted_depths": [
+      0
+    ],
+    "rejected_depth": 1
+  },
+  {
+    "step": 19,
+    "accept_length": 1,
+    "accepted_depths": [
+      0
+    ],
+    "rejected_depth": 1
+  },
+  {
+    "step": 20,
+    "accept_length": 1,
+    "accepted_depths": [
+      0
+    ],
+    "rejected_depth": 1
+  },
+  {
+    "step": 21,
+    "accept_length": 2,
+    "accepted_depths": [
+      0,
+      1
+    ],
+    "rejected_depth": null
+  },
+  {
+    "step": 22,
+    "accept_length": 3,
+    "accepted_depths": [
+      0,
+      1,
+      2
+    ],
+    "rejected_depth": 3
+  },
+  {
+    "step": 23,
+    "accept_length": 4,
+    "accepted_depths": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "rejected_depth": null
+  },
+  {
+    "step": 24,
+    "accept_length": 1,
+    "accepted_depths": [
+      0
+    ],
+    "rejected_depth": 1
+  },
+  {
+    "step": 25,
+    "accept_length": 3,
+    "accepted_depths": [
+      0,
+      1,
+      2
+    ],
+    "rejected_depth": 3
+  },
+  {
+    "step": 26,
+    "accept_length": 4,
+    "accepted_depths": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "rejected_depth": null
+  },
+  {
+    "step": 27,
+    "accept_length": 3,
+    "accepted_depths": [
+      0,
+      1,
+      2
+    ],
+    "rejected_depth": 3
+  },
+  {
+    "step": 28,
+    "accept_length": 1,
+    "accepted_depths": [
+      0
+    ],
+    "rejected_depth": 1
+  },
+  {
+    "step": 29,
+    "accept_length": 4,
+    "accepted_depths": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "rejected_depth": null
+  },
+  {
+    "step": 30,
+    "accept_length": 3,
+    "accepted_depths": [
+      0,
+      1,
+      2
+    ],
+    "rejected_depth": 3
+  },
+  {
+    "step": 31,
+    "accept_length": 3,
+    "accepted_depths": [
+      0,
+      1,
+      2
+    ],
+    "rejected_depth": 3
+  },
+  {
+    "step": 32,
+    "accept_length": 2,
+    "accepted_depths": [
+      0,
+      1
+    ],
+    "rejected_depth": 2
+  },
+  {
+    "step": 33,
+    "accept_length": 2,
+    "accepted_depths": [
+      0,
+      1
+    ],
+    "rejected_depth": 2
+  },
+  {
+    "step": 34,
+    "accept_length": 5,
+    "accepted_depths": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "rejected_depth": 5
+  },
+  {
+    "step": 35,
+    "accept_length": 2,
+    "accepted_depths": [
+      0,
+      1
+    ],
+    "rejected_depth": 2
+  },
+  {
+    "step": 36,
+    "accept_length": 4,
+    "accepted_depths": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "rejected_depth": 4
+  },
+  {
+    "step": 37,
+    "accept_length": 4,
+    "accepted_depths": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "rejected_depth": 4
+  },
+  {
+    "step": 38,
+    "accept_length": 5,
+    "accepted_depths": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "rejected_depth": 5
+  },
+  {
+    "step": 39,
+    "accept_length": 3,
+    "accepted_depths": [
+      0,
+      1,
+      2
+    ],
+    "rejected_depth": null
+  },
+  {
+    "step": 40,
+    "accept_length": 3,
+    "accepted_depths": [
+      0,
+      1,
+      2
+    ],
+    "rejected_depth": null
+  },
+  {
+    "step": 41,
+    "accept_length": 1,
+    "accepted_depths": [
+      0
+    ],
+    "rejected_depth": 1
+  },
+  {
+    "step": 42,
+    "accept_length": 2,
+    "accepted_depths": [
+      0,
+      1
+    ],
+    "rejected_depth": null
+  },
+  {
+    "step": 43,
+    "accept_length": 1,
+    "accepted_depths": [
+      0
+    ],
+    "rejected_depth": 1
+  },
+  {
+    "step": 44,
+    "accept_length": 1,
+    "accepted_depths": [
+      0
+    ],
+    "rejected_depth": 1
+  },
+  {
+    "step": 45,
+    "accept_length": 1,
+    "accepted_depths": [
+      0
+    ],
+    "rejected_depth": 1
+  },
+  {
+    "step": 46,
+    "accept_length": 2,
+    "accepted_depths": [
+      0,
+      1
+    ],
+    "rejected_depth": 2
+  },
+  {
+    "step": 47,
+    "accept_length": 1,
+    "accepted_depths": [
+      0
+    ],
+    "rejected_depth": 1
+  },
+  {
+    "step": 48,
+    "accept_length": 1,
+    "accepted_depths": [
+      0
+    ],
+    "rejected_depth": 1
+  },
+  {
+    "step": 49,
+    "accept_length": 1,
+    "accepted_depths": [
+      0
+    ],
+    "rejected_depth": 1
+  },
+  {
+    "step": 50,
+    "accept_length": 1,
+    "accepted_depths": [
+      0
+    ],
+    "rejected_depth": 1
+  },
+  {
+    "step": 51,
+    "accept_length": 2,
+    "accepted_depths": [
+      0,
+      1
+    ],
+    "rejected_depth": 2
+  },
+  {
+    "step": 52,
+    "accept_length": 1,
+    "accepted_depths": [
+      0
+    ],
+    "rejected_depth": 1
+  },
+  {
+    "step": 53,
+    "accept_length": 1,
+    "accepted_depths": [
+      0
+    ],
+    "rejected_depth": 1
+  },
+  {
+    "step": 54,
+    "accept_length": 2,
+    "accepted_depths": [
+      0,
+      1
+    ],
+    "rejected_depth": 2
+  },
+  {
+    "step": 55,
+    "accept_length": 3,
+    "accepted_depths": [
+      0,
+      1,
+      2
+    ],
+    "rejected_depth": 3
+  },
+  {
+    "step": 56,
+    "accept_length": 1,
+    "accepted_depths": [
+      0
+    ],
+    "rejected_depth": 1
+  },
+  {
+    "step": 57,
+    "accept_length": 2,
+    "accepted_depths": [
+      0,
+      1
+    ],
+    "rejected_depth": 2
+  },
+  {
+    "step": 58,
+    "accept_length": 1,
+    "accepted_depths": [
+      0
+    ],
+    "rejected_depth": 1
+  },
+  {
+    "step": 59,
+    "accept_length": 1,
+    "accepted_depths": [
+      0
+    ],
+    "rejected_depth": 1
+  },
+  {
+    "step": 60,
+    "accept_length": 1,
+    "accepted_depths": [
+      0
+    ],
+    "rejected_depth": 1
+  },
+  {
+    "step": 61,
+    "accept_length": 2,
+    "accepted_depths": [
+      0,
+      1
+    ],
+    "rejected_depth": 2
+  },
+  {
+    "step": 62,
+    "accept_length": 3,
+    "accepted_depths": [
+      0,
+      1,
+      2
+    ],
+    "rejected_depth": 3
+  },
+  {
+    "step": 63,
+    "accept_length": 3,
+    "accepted_depths": [
+      0,
+      1,
+      2
+    ],
+    "rejected_depth": null
+  },
+  {
+    "step": 64,
+    "accept_length": 1,
+    "accepted_depths": [
+      0
+    ],
+    "rejected_depth": 1
+  },
+  {
+    "step": 65,
+    "accept_length": 2,
+    "accepted_depths": [
+      0,
+      1
+    ],
+    "rejected_depth": 2
+  },
+  {
+    "step": 66,
+    "accept_length": 1,
+    "accepted_depths": [
+      0
+    ],
+    "rejected_depth": 1
+  },
+  {
+    "step": 67,
+    "accept_length": 2,
+    "accepted_depths": [
+      0,
+      1
+    ],
+    "rejected_depth": 2
+  },
+  {
+    "step": 68,
+    "accept_length": 3,
+    "accepted_depths": [
+      0,
+      1,
+      2
+    ],
+    "rejected_depth": 3
+  },
+  {
+    "step": 69,
+    "accept_length": 1,
+    "accepted_depths": [
+      0
+    ],
+    "rejected_depth": 1
+  },
+  {
+    "step": 70,
+    "accept_length": 1,
+    "accepted_depths": [
+      0
+    ],
+    "rejected_depth": 1
+  },
+  {
+    "step": 71,
+    "accept_length": 1,
+    "accepted_depths": [
+      0
+    ],
+    "rejected_depth": 1
+  },
+  {
+    "step": 72,
+    "accept_length": 3,
+    "accepted_depths": [
+      0,
+      1,
+      2
+    ],
+    "rejected_depth": null
+  },
+  {
+    "step": 73,
+    "accept_length": 1,
+    "accepted_depths": [
+      0
+    ],
+    "rejected_depth": 1
+  },
+  {
+    "step": 74,
+    "accept_length": 1,
+    "accepted_depths": [
+      0
+    ],
+    "rejected_depth": 1
+  },
+  {
+    "step": 75,
+    "accept_length": 2,
+    "accepted_depths": [
+      0,
+      1
+    ],
+    "rejected_depth": 2
+  },
+  {
+    "step": 76,
+    "accept_length": 1,
+    "accepted_depths": [
+      0
+    ],
+    "rejected_depth": 1
+  },
+  {
+    "step": 77,
+    "accept_length": 1,
+    "accepted_depths": [
+      0
+    ],
+    "rejected_depth": 1
+  },
+  {
+    "step": 78,
+    "accept_length": 3,
+    "accepted_depths": [
+      0,
+      1,
+      2
+    ],
+    "rejected_depth": 3
+  },
+  {
+    "step": 79,
+    "accept_length": 1,
+    "accepted_depths": [
+      0
+    ],
+    "rejected_depth": 1
+  },
+  {
+    "step": 80,
+    "accept_length": 1,
+    "accepted_depths": [
+      0
+    ],
+    "rejected_depth": 1
+  },
+  {
+    "step": 81,
+    "accept_length": 5,
+    "accepted_depths": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "rejected_depth": null
+  },
+  {
+    "step": 82,
+    "accept_length": 3,
+    "accepted_depths": [
+      0,
+      1,
+      2
+    ],
+    "rejected_depth": 3
+  },
+  {
+    "step": 83,
+    "accept_length": 1,
+    "accepted_depths": [
+      0
+    ],
+    "rejected_depth": 1
+  },
+  {
+    "step": 84,
+    "accept_length": 1,
+    "accepted_depths": [
+      0
+    ],
+    "rejected_depth": 1
+  },
+  {
+    "step": 85,
+    "accept_length": 3,
+    "accepted_depths": [
+      0,
+      1,
+      2
+    ],
+    "rejected_depth": 3
+  },
+  {
+    "step": 86,
+    "accept_length": 1,
+    "accepted_depths": [
+      0
+    ],
+    "rejected_depth": 1
+  },
+  {
+    "step": 87,
+    "accept_length": 5,
+    "accepted_depths": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "rejected_depth": null
+  },
+  {
+    "step": 88,
+    "accept_length": 1,
+    "accepted_depths": [
+      0
+    ],
+    "rejected_depth": 1
+  },
+  {
+    "step": 89,
+    "accept_length": 2,
+    "accepted_depths": [
+      0,
+      1
+    ],
+    "rejected_depth": 2
+  },
+  {
+    "step": 90,
+    "accept_length": 2,
+    "accepted_depths": [
+      0,
+      1
+    ],
+    "rejected_depth": 2
+  },
+  {
+    "step": 91,
+    "accept_length": 1,
+    "accepted_depths": [
+      0
+    ],
+    "rejected_depth": 1
+  },
+  {
+    "step": 92,
+    "accept_length": 3,
+    "accepted_depths": [
+      0,
+      1,
+      2
+    ],
+    "rejected_depth": 3
+  },
+  {
+    "step": 93,
+    "accept_length": 1,
+    "accepted_depths": [
+      0
+    ],
+    "rejected_depth": 1
+  },
+  {
+    "step": 94,
+    "accept_length": 1,
+    "accepted_depths": [
+      0
+    ],
+    "rejected_depth": 1
+  },
+  {
+    "step": 95,
+    "accept_length": 4,
+    "accepted_depths": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "rejected_depth": 4
+  },
+  {
+    "step": 96,
+    "accept_length": 5,
+    "accepted_depths": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "rejected_depth": null
+  },
+  {
+    "step": 97,
+    "accept_length": 2,
+    "accepted_depths": [
+      0,
+      1
+    ],
+    "rejected_depth": 2
+  },
+  {
+    "step": 98,
+    "accept_length": 1,
+    "accepted_depths": [
+      0
+    ],
+    "rejected_depth": 1
+  },
+  {
+    "step": 99,
+    "accept_length": 5,
+    "accepted_depths": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "rejected_depth": 5
+  },
+  {
+    "step": 100,
+    "accept_length": 2,
+    "accepted_depths": [
+      0,
+      1
+    ],
+    "rejected_depth": 2
+  },
+  {
+    "step": 101,
+    "accept_length": 3,
+    "accepted_depths": [
+      0,
+      1,
+      2
+    ],
+    "rejected_depth": 3
+  },
+  {
+    "step": 102,
+    "accept_length": 2,
+    "accepted_depths": [
+      0,
+      1
+    ],
+    "rejected_depth": null
+  },
+  {
+    "step": 103,
+    "accept_length": 2,
+    "accepted_depths": [
+      0,
+      1
+    ],
+    "rejected_depth": 2
+  },
+  {
+    "step": 104,
+    "accept_length": 2,
+    "accepted_depths": [
+      0,
+      1
+    ],
+    "rejected_depth": 2
+  },
+  {
+    "step": 105,
+    "accept_length": 1,
+    "accepted_depths": [
+      0
+    ],
+    "rejected_depth": 1
+  },
+  {
+    "step": 106,
+    "accept_length": 3,
+    "accepted_depths": [
+      0,
+      1,
+      2
+    ],
+    "rejected_depth": null
+  },
+  {
+    "step": 107,
+    "accept_length": 2,
+    "accepted_depths": [
+      0,
+      1
+    ],
+    "rejected_depth": 2
+  },
+  {
+    "step": 108,
+    "accept_length": 2,
+    "accepted_depths": [
+      0,
+      1
+    ],
+    "rejected_depth": 2
+  },
+  {
+    "step": 109,
+    "accept_length": 1,
+    "accepted_depths": [
+      0
+    ],
+    "rejected_depth": 1
+  },
+  {
+    "step": 110,
+    "accept_length": 1,
+    "accepted_depths": [
+      0
+    ],
+    "rejected_depth": 1
+  },
+  {
+    "step": 111,
+    "accept_length": 2,
+    "accepted_depths": [
+      0,
+      1
+    ],
+    "rejected_depth": 2
+  },
+  {
+    "step": 112,
+    "accept_length": 3,
+    "accepted_depths": [
+      0,
+      1,
+      2
+    ],
+    "rejected_depth": 3
+  },
+  {
+    "step": 113,
+    "accept_length": 2,
+    "accepted_depths": [
+      0,
+      1
+    ],
+    "rejected_depth": null
+  },
+  {
+    "step": 114,
+    "accept_length": 2,
+    "accepted_depths": [
+      0,
+      1
+    ],
+    "rejected_depth": null
+  },
+  {
+    "step": 115,
+    "accept_length": 2,
+    "accepted_depths": [
+      0,
+      1
+    ],
+    "rejected_depth": 2
+  },
+  {
+    "step": 116,
+    "accept_length": 2,
+    "accepted_depths": [
+      0,
+      1
+    ],
+    "rejected_depth": 2
+  },
+  {
+    "step": 117,
+    "accept_length": 3,
+    "accepted_depths": [
+      0,
+      1,
+      2
+    ],
+    "rejected_depth": null
+  },
+  {
+    "step": 118,
+    "accept_length": 1,
+    "accepted_depths": [
+      0
+    ],
+    "rejected_depth": 1
+  },
+  {
+    "step": 119,
+    "accept_length": 2,
+    "accepted_depths": [
+      0,
+      1
+    ],
+    "rejected_depth": 2
+  },
+  {
+    "step": 120,
+    "accept_length": 1,
+    "accepted_depths": [
+      0
+    ],
+    "rejected_depth": 1
+  },
+  {
+    "step": 121,
+    "accept_length": 3,
+    "accepted_depths": [
+      0,
+      1,
+      2
+    ],
+    "rejected_depth": null
+  },
+  {
+    "step": 122,
+    "accept_length": 1,
+    "accepted_depths": [
+      0
+    ],
+    "rejected_depth": 1
+  },
+  {
+    "step": 123,
+    "accept_length": 5,
+    "accepted_depths": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "rejected_depth": 5
+  },
+  {
+    "step": 124,
+    "accept_length": 3,
+    "accepted_depths": [
+      0,
+      1,
+      2
+    ],
+    "rejected_depth": 3
+  },
+  {
+    "step": 125,
+    "accept_length": 1,
+    "accepted_depths": [
+      0
+    ],
+    "rejected_depth": 1
+  },
+  {
+    "step": 126,
+    "accept_length": 1,
+    "accepted_depths": [
+      0
+    ],
+    "rejected_depth": 1
+  }
+]
