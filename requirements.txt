@@ -1,0 +1,24 @@
+# MLsys Final Project - Speculative Decoding Optimization
+# CUDA 环境 (NVIDIA GPU)
+# 从 EAGLE 官方 requirements 合并 + 实验相关依赖
+
+# Core
+torch==2.6.0
+transformers>=4.53.1
+accelerate==0.26.0
+
+# EAGLE dependencies
+fschat==0.2.31
+gradio==3.50.2
+openai==0.28.0
+anthropic==0.5.0
+sentencepiece==0.1.99
+protobuf==3.19.0
+
+# Experiment & visualization
+matplotlib>=3.7.0
+numpy>=1.24.0
+wandb
+
+# Optional: ROCm environment (AMD GPU)
+# Replace torch with: torch==2.6.0+rocm6.3 (see requirements-rocm.txt)

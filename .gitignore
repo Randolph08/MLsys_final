@@ -1,9 +1,12 @@
-# Python virtual environment
+# Python virtual environment (recreated from requirements.txt)
 .venv/
 
-# Large model files
-models/
-EAGLE_checkpoints/
+# Large model weight files (download from HuggingFace, see download_models.sh)
+**/*.safetensors
+**/*.bin
+
+# HuggingFace cache
+.cache/
 
 # Python cache
 __pycache__/
