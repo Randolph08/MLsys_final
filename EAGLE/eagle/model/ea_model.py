@@ -43,6 +43,8 @@ class EaModel(nn.Module):
             ddd_max_depth=9,
             ddd_check_steps=None,
             ddd_threshold=-10.0,
+            use_ddd_dynamic_budget=False,
+            ddd_min_budget=32,
             # OPT-Tree parameters
             use_opt_tree=False,
             opt_expand_factor=2.0,
@@ -68,6 +70,8 @@ class EaModel(nn.Module):
                                   threshold=threshold, path=base_model_name_or_path, load_emb=True,
                                   use_ddd=use_ddd, ddd_max_depth=ddd_max_depth,
                                   ddd_check_steps=ddd_check_steps, ddd_threshold=ddd_threshold,
+                                  use_ddd_dynamic_budget=use_ddd_dynamic_budget,
+                                  ddd_min_budget=ddd_min_budget,
                                   use_opt_tree=use_opt_tree, opt_expand_factor=opt_expand_factor)
         else:
             self.ea_layer = Model1(config, bias=bias, total_tokens=total_token, depth=depth, top_k=top_k,
@@ -114,6 +118,8 @@ class EaModel(nn.Module):
             ddd_max_depth=9,
             ddd_check_steps=None,
             ddd_threshold=-10.0,
+            use_ddd_dynamic_budget=False,
+            ddd_min_budget=32,
             # OPT-Tree parameters
             use_opt_tree=False,
             opt_expand_factor=2.0,
@@ -169,6 +175,8 @@ class EaModel(nn.Module):
             ddd_max_depth=ddd_max_depth,
             ddd_check_steps=ddd_check_steps,
             ddd_threshold=ddd_threshold,
+            use_ddd_dynamic_budget=use_ddd_dynamic_budget,
+            ddd_min_budget=ddd_min_budget,
             use_opt_tree=use_opt_tree,
             opt_expand_factor=opt_expand_factor,
         )
@@ -321,7 +329,7 @@ class EaModel(nn.Module):
 
             if self.tokenizer.eos_token_id in input_ids[0, input_len:].tolist():
                 break
-            if new_token > max_new_tokens:
+            if new_token >= max_new_tokens:
                 break
             if input_ids.shape[1] > max_length:
                 break
@@ -398,7 +406,7 @@ class EaModel(nn.Module):
 
             if self.tokenizer.eos_token_id in input_ids[0, input_len:].tolist():
                 break
-            if new_token > max_new_tokens:
+            if new_token >= max_new_tokens:
                 break
             if input_ids.shape[1] > max_length:
                 break
@@ -505,7 +513,7 @@ class EaModel(nn.Module):
 
             if self.tokenizer.eos_token_id in input_ids[0, input_len:].tolist():
                 break
-            if new_token > max_new_tokens:
+            if new_token >= max_new_tokens:
                 break
             if input_ids.shape[1] > max_length:
                 break
@@ -581,7 +589,7 @@ class EaModel(nn.Module):
 
             if self.tokenizer.eos_token_id in input_ids[0, input_len:].tolist():
                 break
-            if new_token > max_new_tokens:
+            if new_token >= max_new_tokens:
                 break
             if input_ids.shape[1] > max_length:
                 break

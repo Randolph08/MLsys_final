@@ -1,0 +1,512 @@
+[
+  {
+    "tau": -4,
+    "check_steps": [
+      3,
+      5
+    ],
+    "max_depth": 7,
+    "mean_tok_s": 53.5,
+    "mean_accept": 2.55,
+    "mean_actual_depth": 4.2
+  },
+  {
+    "tau": -4,
+    "check_steps": [
+      3,
+      5
+    ],
+    "max_depth": 9,
+    "mean_tok_s": 52.7,
+    "mean_accept": 2.55,
+    "mean_actual_depth": 4.3
+  },
+  {
+    "tau": -4,
+    "check_steps": [
+      3,
+      5
+    ],
+    "max_depth": 11,
+    "mean_tok_s": 52.7,
+    "mean_accept": 2.55,
+    "mean_actual_depth": 4.4
+  },
+  {
+    "tau": -4,
+    "check_steps": [
+      5,
+      7
+    ],
+    "max_depth": 7,
+    "mean_tok_s": 49.9,
+    "mean_accept": 2.55,
+    "mean_actual_depth": 5.6
+  },
+  {
+    "tau": -4,
+    "check_steps": [
+      5,
+      7
+    ],
+    "max_depth": 9,
+    "mean_tok_s": 48.9,
+    "mean_accept": 2.55,
+    "mean_actual_depth": 5.6
+  },
+  {
+    "tau": -4,
+    "check_steps": [
+      5,
+      7
+    ],
+    "max_depth": 11,
+    "mean_tok_s": 51.2,
+    "mean_accept": 2.55,
+    "mean_actual_depth": 5.6
+  },
+  {
+    "tau": -4,
+    "check_steps": [
+      4,
+      6,
+      8
+    ],
+    "max_depth": 7,
+    "mean_tok_s": 52.9,
+    "mean_accept": 2.55,
+    "mean_actual_depth": 4.9
+  },
+  {
+    "tau": -4,
+    "check_steps": [
+      4,
+      6,
+      8
+    ],
+    "max_depth": 9,
+    "mean_tok_s": 52.9,
+    "mean_accept": 2.55,
+    "mean_actual_depth": 4.9
+  },
+  {
+    "tau": -4,
+    "check_steps": [
+      4,
+      6,
+      8
+    ],
+    "max_depth": 11,
+    "mean_tok_s": 53.1,
+    "mean_accept": 2.55,
+    "mean_actual_depth": 4.9
+  },
+  {
+    "tau": -6,
+    "check_steps": [
+      3,
+      5
+    ],
+    "max_depth": 7,
+    "mean_tok_s": 51.3,
+    "mean_accept": 2.55,
+    "mean_actual_depth": 5.0
+  },
+  {
+    "tau": -6,
+    "check_steps": [
+      3,
+      5
+    ],
+    "max_depth": 9,
+    "mean_tok_s": 45.8,
+    "mean_accept": 2.55,
+    "mean_actual_depth": 5.3
+  },
+  {
+    "tau": -6,
+    "check_steps": [
+      3,
+      5
+    ],
+    "max_depth": 11,
+    "mean_tok_s": 39.2,
+    "mean_accept": 2.55,
+    "mean_actual_depth": 5.6
+  },
+  {
+    "tau": -6,
+    "check_steps": [
+      5,
+      7
+    ],
+    "max_depth": 7,
+    "mean_tok_s": 41.7,
+    "mean_accept": 2.55,
+    "mean_actual_depth": 5.9
+  },
+  {
+    "tau": -6,
+    "check_steps": [
+      5,
+      7
+    ],
+    "max_depth": 9,
+    "mean_tok_s": 49.2,
+    "mean_accept": 2.55,
+    "mean_actual_depth": 6.0
+  },
+  {
+    "tau": -6,
+    "check_steps": [
+      5,
+      7
+    ],
+    "max_depth": 11,
+    "mean_tok_s": 49.4,
+    "mean_accept": 2.55,
+    "mean_actual_depth": 6.0
+  },
+  {
+    "tau": -6,
+    "check_steps": [
+      4,
+      6,
+      8
+    ],
+    "max_depth": 7,
+    "mean_tok_s": 50.3,
+    "mean_accept": 2.55,
+    "mean_actual_depth": 5.3
+  },
+  {
+    "tau": -6,
+    "check_steps": [
+      4,
+      6,
+      8
+    ],
+    "max_depth": 9,
+    "mean_tok_s": 50.1,
+    "mean_accept": 2.55,
+    "mean_actual_depth": 5.5
+  },
+  {
+    "tau": -6,
+    "check_steps": [
+      4,
+      6,
+      8
+    ],
+    "max_depth": 11,
+    "mean_tok_s": 50.0,
+    "mean_accept": 2.55,
+    "mean_actual_depth": 5.5
+  },
+  {
+    "tau": -8,
+    "check_steps": [
+      3,
+      5
+    ],
+    "max_depth": 7,
+    "mean_tok_s": 46.2,
+    "mean_accept": 2.55,
+    "mean_actual_depth": 5.9
+  },
+  {
+    "tau": -8,
+    "check_steps": [
+      3,
+      5
+    ],
+    "max_depth": 9,
+    "mean_tok_s": 46.2,
+    "mean_accept": 2.55,
+    "mean_actual_depth": 6.6
+  },
+  {
+    "tau": -8,
+    "check_steps": [
+      3,
+      5
+    ],
+    "max_depth": 11,
+    "mean_tok_s": 44.7,
+    "mean_accept": 2.55,
+    "mean_actual_depth": 7.2
+  },
+  {
+    "tau": -8,
+    "check_steps": [
+      5,
+      7
+    ],
+    "max_depth": 7,
+    "mean_tok_s": 48.6,
+    "mean_accept": 2.55,
+    "mean_actual_depth": 6.4
+  },
+  {
+    "tau": -8,
+    "check_steps": [
+      5,
+      7
+    ],
+    "max_depth": 9,
+    "mean_tok_s": 47.6,
+    "mean_accept": 2.55,
+    "mean_actual_depth": 6.5
+  },
+  {
+    "tau": -8,
+    "check_steps": [
+      5,
+      7
+    ],
+    "max_depth": 11,
+    "mean_tok_s": 46.7,
+    "mean_accept": 2.55,
+    "mean_actual_depth": 6.7
+  },
+  {
+    "tau": -8,
+    "check_steps": [
+      4,
+      6,
+      8
+    ],
+    "max_depth": 7,
+    "mean_tok_s": 47.5,
+    "mean_accept": 2.55,
+    "mean_actual_depth": 6.0
+  },
+  {
+    "tau": -8,
+    "check_steps": [
+      4,
+      6,
+      8
+    ],
+    "max_depth": 9,
+    "mean_tok_s": 46.5,
+    "mean_accept": 2.55,
+    "mean_actual_depth": 6.4
+  },
+  {
+    "tau": -8,
+    "check_steps": [
+      4,
+      6,
+      8
+    ],
+    "max_depth": 11,
+    "mean_tok_s": 47.4,
+    "mean_accept": 2.55,
+    "mean_actual_depth": 6.4
+  },
+  {
+    "tau": -10,
+    "check_steps": [
+      3,
+      5
+    ],
+    "max_depth": 7,
+    "mean_tok_s": 47.5,
+    "mean_accept": 2.55,
+    "mean_actual_depth": 6.7
+  },
+  {
+    "tau": -10,
+    "check_steps": [
+      3,
+      5
+    ],
+    "max_depth": 9,
+    "mean_tok_s": 45.4,
+    "mean_accept": 2.55,
+    "mean_actual_depth": 7.8
+  },
+  {
+    "tau": -10,
+    "check_steps": [
+      3,
+      5
+    ],
+    "max_depth": 11,
+    "mean_tok_s": 42.6,
+    "mean_accept": 2.55,
+    "mean_actual_depth": 8.8
+  },
+  {
+    "tau": -10,
+    "check_steps": [
+      5,
+      7
+    ],
+    "max_depth": 7,
+    "mean_tok_s": 47.9,
+    "mean_accept": 2.55,
+    "mean_actual_depth": 6.8
+  },
+  {
+    "tau": -10,
+    "check_steps": [
+      5,
+      7
+    ],
+    "max_depth": 9,
+    "mean_tok_s": 46.4,
+    "mean_accept": 2.55,
+    "mean_actual_depth": 7.2
+  },
+  {
+    "tau": -10,
+    "check_steps": [
+      5,
+      7
+    ],
+    "max_depth": 11,
+    "mean_tok_s": 43.7,
+    "mean_accept": 2.55,
+    "mean_actual_depth": 7.5
+  },
+  {
+    "tau": -10,
+    "check_steps": [
+      4,
+      6,
+      8
+    ],
+    "max_depth": 7,
+    "mean_tok_s": 47.8,
+    "mean_accept": 2.55,
+    "mean_actual_depth": 6.7
+  },
+  {
+    "tau": -10,
+    "check_steps": [
+      4,
+      6,
+      8
+    ],
+    "max_depth": 9,
+    "mean_tok_s": 46.7,
+    "mean_accept": 2.55,
+    "mean_actual_depth": 7.3
+  },
+  {
+    "tau": -10,
+    "check_steps": [
+      4,
+      6,
+      8
+    ],
+    "max_depth": 11,
+    "mean_tok_s": 46.0,
+    "mean_accept": 2.55,
+    "mean_actual_depth": 7.5
+  },
+  {
+    "tau": -12,
+    "check_steps": [
+      3,
+      5
+    ],
+    "max_depth": 7,
+    "mean_tok_s": 47.7,
+    "mean_accept": 2.55,
+    "mean_actual_depth": 7.4
+  },
+  {
+    "tau": -12,
+    "check_steps": [
+      3,
+      5
+    ],
+    "max_depth": 9,
+    "mean_tok_s": 34.9,
+    "mean_accept": 2.55,
+    "mean_actual_depth": 9.0
+  },
+  {
+    "tau": -12,
+    "check_steps": [
+      3,
+      5
+    ],
+    "max_depth": 11,
+    "mean_tok_s": 37.7,
+    "mean_accept": 2.55,
+    "mean_actual_depth": 10.5
+  },
+  {
+    "tau": -12,
+    "check_steps": [
+      5,
+      7
+    ],
+    "max_depth": 7,
+    "mean_tok_s": 46.0,
+    "mean_accept": 2.55,
+    "mean_actual_depth": 7.3
+  },
+  {
+    "tau": -12,
+    "check_steps": [
+      5,
+      7
+    ],
+    "max_depth": 9,
+    "mean_tok_s": 45.4,
+    "mean_accept": 2.55,
+    "mean_actual_depth": 8.0
+  },
+  {
+    "tau": -12,
+    "check_steps": [
+      5,
+      7
+    ],
+    "max_depth": 11,
+    "mean_tok_s": 43.3,
+    "mean_accept": 2.55,
+    "mean_actual_depth": 8.7
+  },
+  {
+    "tau": -12,
+    "check_steps": [
+      4,
+      6,
+      8
+    ],
+    "max_depth": 7,
+    "mean_tok_s": 48.0,
+    "mean_accept": 2.55,
+    "mean_actual_depth": 7.2
+  },
+  {
+    "tau": -12,
+    "check_steps": [
+      4,
+      6,
+      8
+    ],
+    "max_depth": 9,
+    "mean_tok_s": 45.8,
+    "mean_accept": 2.55,
+    "mean_actual_depth": 7.9
+  },
+  {
+    "tau": -12,
+    "check_steps": [
+      4,
+      6,
+      8
+    ],
+    "max_depth": 11,
+    "mean_tok_s": 44.4,
+    "mean_accept": 2.55,
+    "mean_actual_depth": 8.2
+  }
+]

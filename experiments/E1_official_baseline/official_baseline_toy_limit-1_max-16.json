@@ -1,0 +1,139 @@
+{
+  "metadata": {
+    "base_model_path": "/home/hzliu/AD/Homework_haozhe/MLsys_final/models/Llama-3.1-8B-Instruct",
+    "ea_model_path": "/home/hzliu/AD/Homework_haozhe/MLsys_final/EAGLE_checkpoints/EAGLE3-LLaMA3.1-Instruct-8B",
+    "prompt_source": "toy",
+    "num_records": 1,
+    "max_new_tokens": 16,
+    "temperature": 0.0,
+    "total_token": 60,
+    "depth": 5,
+    "tree_top_k": 10,
+    "torch_dtype": "fp16",
+    "device_map": "auto",
+    "cuda_visible_devices": "0,1,2,3,4",
+    "use_system_prompt": true
+  },
+  "summary": {
+    "all_records_match": true,
+    "matching_records": 1,
+    "total_records": 1,
+    "methods": {
+      "naive": {
+        "turns": 1,
+        "total_trimmed_tokens": 7,
+        "total_raw_tokens": 8,
+        "total_wall_time_s": 2.7623,
+        "mean_tok_per_s_trimmed": 2.5341,
+        "mean_tok_per_s_raw": 2.8961,
+        "mean_loop_count": 8
+      },
+      "eagle": {
+        "turns": 1,
+        "total_trimmed_tokens": 7,
+        "total_raw_tokens": 8,
+        "total_wall_time_s": 1.2502,
+        "mean_tok_per_s_trimmed": 5.5992,
+        "mean_tok_per_s_raw": 6.3991,
+        "mean_loop_count": 2
+      }
+    },
+    "speedup_eagle_vs_naive_trimmed_mean": 2.2095
+  },
+  "records": [
+    {
+      "question_id": "toy-0",
+      "source": "toy",
+      "category": null,
+      "num_turns": 1,
+      "all_turns_match": true,
+      "turn_matches": [
+        true
+      ],
+      "methods": {
+        "naive": {
+          "turns": [
+            {
+              "method": "naive",
+              "raw_token_ids": [
+                791,
+                6864,
+                315,
+                9822,
+                374,
+                12366,
+                13,
+                128009
+              ],
+              "trimmed_token_ids": [
+                791,
+                6864,
+                315,
+                9822,
+                374,
+                12366,
+                13
+              ],
+              "raw_tokens": 8,
+              "trimmed_tokens": 7,
+              "reported_new_token": 8,
+              "loop_count": 8,
+              "wall_time_s": 2.7623,
+              "tok_per_s_raw": 2.8961,
+              "tok_per_s_trimmed": 2.5341,
+              "turn_index": 0,
+              "prompt_chars": 765,
+              "input_tokens": 141,
+              "user_prompt": "The capital of France is",
+              "decoded_text_preview": "The capital of France is Paris."
+            }
+          ],
+          "total_trimmed_tokens": 7,
+          "total_raw_tokens": 8,
+          "total_wall_time_s": 2.7623
+        },
+        "eagle": {
+          "turns": [
+            {
+              "method": "eagle",
+              "raw_token_ids": [
+                791,
+                6864,
+                315,
+                9822,
+                374,
+                12366,
+                13,
+                128009
+              ],
+              "trimmed_token_ids": [
+                791,
+                6864,
+                315,
+                9822,
+                374,
+                12366,
+                13
+              ],
+              "raw_tokens": 8,
+              "trimmed_tokens": 7,
+              "reported_new_token": 8,
+              "loop_count": 2,
+              "wall_time_s": 1.2502,
+              "tok_per_s_raw": 6.3991,
+              "tok_per_s_trimmed": 5.5992,
+              "turn_index": 0,
+              "prompt_chars": 765,
+              "input_tokens": 141,
+              "user_prompt": "The capital of France is",
+              "decoded_text_preview": "The capital of France is Paris."
+            }
+          ],
+          "total_trimmed_tokens": 7,
+          "total_raw_tokens": 8,
+          "total_wall_time_s": 1.2502
+        }
+      }
+    }
+  ]
+}

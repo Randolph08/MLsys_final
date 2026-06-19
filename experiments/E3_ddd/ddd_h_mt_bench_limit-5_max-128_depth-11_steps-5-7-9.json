@@ -1,0 +1,4965 @@
+{
+  "metadata": {
+    "base_model_path": "/home/hzliu/AD/Homework_haozhe/MLsys_final/models/Llama-3.1-8B-Instruct",
+    "ea_model_path": "/home/hzliu/AD/Homework_haozhe/MLsys_final/EAGLE_checkpoints/EAGLE3-LLaMA3.1-Instruct-8B",
+    "prompt_source": "mt_bench",
+    "num_records": 5,
+    "max_new_tokens": 128,
+    "total_token": 60,
+    "base_depth": 5,
+    "tree_top_k": 10,
+    "ddd_max_depth": 11,
+    "ddd_check_steps": [
+      5,
+      7,
+      9
+    ],
+    "ddd_threshold": -1000000000.0,
+    "torch_dtype": "fp16",
+    "device_map": "auto",
+    "cuda_visible_devices": "0,1,2,3,4",
+    "use_system_prompt": true,
+    "early_stop_should_be_disabled": true
+  },
+  "summary": {
+    "num_calls": 205,
+    "num_checks": 615,
+    "early_stops": 0,
+    "actual_depth": {
+      "count": 205,
+      "min": 12.0,
+      "max": 12.0,
+      "mean": 12.0,
+      "p05": 12.0,
+      "p10": 12.0,
+      "p25": 12.0,
+      "p50": 12.0,
+      "p75": 12.0,
+      "p90": 12.0,
+      "p95": 12.0,
+      "std": 0.0
+    },
+    "H_global": {
+      "count": 615,
+      "min": -8.601562,
+      "max": -0.001221,
+      "mean": -2.242519,
+      "p05": -5.189844,
+      "p10": -4.40625,
+      "p25": -3.186523,
+      "p50": -1.939453,
+      "p75": -1.023926,
+      "p90": -0.485645,
+      "p95": -0.216248,
+      "std": 1.584554
+    },
+    "H_by_step": {
+      "5": {
+        "count": 205,
+        "min": -4.929688,
+        "max": -0.001221,
+        "mean": -1.384163,
+        "p05": -3.564844,
+        "p10": -2.869531,
+        "p25": -1.87207,
+        "p50": -1.124023,
+        "p75": -0.597656,
+        "p90": -0.212402,
+        "p95": -0.093506,
+        "std": 1.051823
+      },
+      "7": {
+        "count": 205,
+        "min": -6.671875,
+        "max": -0.017456,
+        "mean": -2.109729,
+        "p05": -5.046094,
+        "p10": -3.655469,
+        "p25": -2.789062,
+        "p50": -1.96875,
+        "p75": -1.205078,
+        "p90": -0.524414,
+        "p95": -0.258887,
+        "std": 1.3629
+      },
+      "9": {
+        "count": 205,
+        "min": -8.601562,
+        "max": -0.077637,
+        "mean": -3.233666,
+        "p05": -6.482031,
+        "p10": -5.30625,
+        "p25": -4.164062,
+        "p50": -3.121094,
+        "p75": -2.019531,
+        "p90": -1.200781,
+        "p95": -0.788574,
+        "std": 1.682803
+      }
+    },
+    "suggested_threshold_grid": [
+      -5.19,
+      -4.406,
+      -3.187,
+      -1.939,
+      -1.024
+    ]
+  },
+  "records": [
+    {
+      "question_id": 81,
+      "source": "mt_bench",
+      "category": "writing",
+      "num_turns": 2,
+      "turns": [
+        {
+          "turn_index": 0,
+          "input_tokens": 158,
+          "prompt_chars": 868,
+          "generated_trimmed_tokens": 128,
+          "generated_raw_tokens": 129,
+          "ddd_calls": 23,
+          "wall_time_s": 1.655
+        },
+        {
+          "turn_index": 1,
+          "input_tokens": 310,
+          "prompt_chars": 1662,
+          "generated_trimmed_tokens": 128,
+          "generated_raw_tokens": 132,
+          "ddd_calls": 22,
+          "wall_time_s": 1.6771
+        }
+      ],
+      "ddd_call_records": [
+        {
+          "question_id": 81,
+          "category": "writing",
+          "turn_index": 0,
+          "call_index": 0,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -2.36328125
+            },
+            {
+              "step": 7,
+              "H": -3.40625
+            },
+            {
+              "step": 9,
+              "H": -5.828125
+            }
+          ]
+        },
+        {
+          "question_id": 81,
+          "category": "writing",
+          "turn_index": 0,
+          "call_index": 1,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -0.9482421875
+            },
+            {
+              "step": 7,
+              "H": -2.1953125
+            },
+            {
+              "step": 9,
+              "H": -3.572265625
+            }
+          ]
+        },
+        {
+          "question_id": 81,
+          "category": "writing",
+          "turn_index": 0,
+          "call_index": 2,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -1.3837890625
+            },
+            {
+              "step": 7,
+              "H": -2.2109375
+            },
+            {
+              "step": 9,
+              "H": -2.892578125
+            }
+          ]
+        },
+        {
+          "question_id": 81,
+          "category": "writing",
+          "turn_index": 0,
+          "call_index": 3,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -1.9375
+            },
+            {
+              "step": 7,
+              "H": -2.36328125
+            },
+            {
+              "step": 9,
+              "H": -3.8515625
+            }
+          ]
+        },
+        {
+          "question_id": 81,
+          "category": "writing",
+          "turn_index": 0,
+          "call_index": 4,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -0.6240234375
+            },
+            {
+              "step": 7,
+              "H": -0.83837890625
+            },
+            {
+              "step": 9,
+              "H": -1.248046875
+            }
+          ]
+        },
+        {
+          "question_id": 81,
+          "category": "writing",
+          "turn_index": 0,
+          "call_index": 5,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -0.54296875
+            },
+            {
+              "step": 7,
+              "H": -0.6298828125
+            },
+            {
+              "step": 9,
+              "H": -1.373046875
+            }
+          ]
+        },
+        {
+          "question_id": 81,
+          "category": "writing",
+          "turn_index": 0,
+          "call_index": 6,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -0.21240234375
+            },
+            {
+              "step": 7,
+              "H": -0.501953125
+            },
+            {
+              "step": 9,
+              "H": -0.775390625
+            }
+          ]
+        },
+        {
+          "question_id": 81,
+          "category": "writing",
+          "turn_index": 0,
+          "call_index": 7,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -1.0283203125
+            },
+            {
+              "step": 7,
+              "H": -1.474609375
+            },
+            {
+              "step": 9,
+              "H": -2.58984375
+            }
+          ]
+        },
+        {
+          "question_id": 81,
+          "category": "writing",
+          "turn_index": 0,
+          "call_index": 8,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -1.08203125
+            },
+            {
+              "step": 7,
+              "H": -1.8515625
+            },
+            {
+              "step": 9,
+              "H": -3.375
+            }
+          ]
+        },
+        {
+          "question_id": 81,
+          "category": "writing",
+          "turn_index": 0,
+          "call_index": 9,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -1.5712890625
+            },
+            {
+              "step": 7,
+              "H": -2.60546875
+            },
+            {
+              "step": 9,
+              "H": -3.310546875
+            }
+          ]
+        },
+        {
+          "question_id": 81,
+          "category": "writing",
+          "turn_index": 0,
+          "call_index": 10,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -0.982421875
+            },
+            {
+              "step": 7,
+              "H": -2.22265625
+            },
+            {
+              "step": 9,
+              "H": -3.318359375
+            }
+          ]
+        },
+        {
+          "question_id": 81,
+          "category": "writing",
+          "turn_index": 0,
+          "call_index": 11,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -0.02685546875
+            },
+            {
+              "step": 7,
+              "H": -0.39111328125
+            },
+            {
+              "step": 9,
+              "H": -1.314453125
+            }
+          ]
+        },
+        {
+          "question_id": 81,
+          "category": "writing",
+          "turn_index": 0,
+          "call_index": 12,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -2.0546875
+            },
+            {
+              "step": 7,
+              "H": -3.47265625
+            },
+            {
+              "step": 9,
+              "H": -3.9765625
+            }
+          ]
+        },
+        {
+          "question_id": 81,
+          "category": "writing",
+          "turn_index": 0,
+          "call_index": 13,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -0.8291015625
+            },
+            {
+              "step": 7,
+              "H": -1.80078125
+            },
+            {
+              "step": 9,
+              "H": -3.296875
+            }
+          ]
+        },
+        {
+          "question_id": 81,
+          "category": "writing",
+          "turn_index": 0,
+          "call_index": 14,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -1.001953125
+            },
+            {
+              "step": 7,
+              "H": -1.904296875
+            },
+            {
+              "step": 9,
+              "H": -2.69140625
+            }
+          ]
+        },
+        {
+          "question_id": 81,
+          "category": "writing",
+          "turn_index": 0,
+          "call_index": 15,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -0.039215087890625
+            },
+            {
+              "step": 7,
+              "H": -0.201171875
+            },
+            {
+              "step": 9,
+              "H": -0.62109375
+            }
+          ]
+        },
+        {
+          "question_id": 81,
+          "category": "writing",
+          "turn_index": 0,
+          "call_index": 16,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -0.8046875
+            },
+            {
+              "step": 7,
+              "H": -1.28125
+            },
+            {
+              "step": 9,
+              "H": -2.384765625
+            }
+          ]
+        },
+        {
+          "question_id": 81,
+          "category": "writing",
+          "turn_index": 0,
+          "call_index": 17,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -2.185546875
+            },
+            {
+              "step": 7,
+              "H": -3.224609375
+            },
+            {
+              "step": 9,
+              "H": -4.1953125
+            }
+          ]
+        },
+        {
+          "question_id": 81,
+          "category": "writing",
+          "turn_index": 0,
+          "call_index": 18,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -0.3603515625
+            },
+            {
+              "step": 7,
+              "H": -1.5615234375
+            },
+            {
+              "step": 9,
+              "H": -3.2109375
+            }
+          ]
+        },
+        {
+          "question_id": 81,
+          "category": "writing",
+          "turn_index": 0,
+          "call_index": 19,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -2.810546875
+            },
+            {
+              "step": 7,
+              "H": -3.828125
+            },
+            {
+              "step": 9,
+              "H": -5.15625
+            }
+          ]
+        },
+        {
+          "question_id": 81,
+          "category": "writing",
+          "turn_index": 0,
+          "call_index": 20,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -1.40234375
+            },
+            {
+              "step": 7,
+              "H": -2.142578125
+            },
+            {
+              "step": 9,
+              "H": -2.99609375
+            }
+          ]
+        },
+        {
+          "question_id": 81,
+          "category": "writing",
+          "turn_index": 0,
+          "call_index": 21,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -1.833984375
+            },
+            {
+              "step": 7,
+              "H": -2.12890625
+            },
+            {
+              "step": 9,
+              "H": -3.376953125
+            }
+          ]
+        },
+        {
+          "question_id": 81,
+          "category": "writing",
+          "turn_index": 0,
+          "call_index": 22,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -1.0771484375
+            },
+            {
+              "step": 7,
+              "H": -1.44921875
+            },
+            {
+              "step": 9,
+              "H": -2.314453125
+            }
+          ]
+        },
+        {
+          "question_id": 81,
+          "category": "writing",
+          "turn_index": 1,
+          "call_index": 0,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -2.4140625
+            },
+            {
+              "step": 7,
+              "H": -2.7890625
+            },
+            {
+              "step": 9,
+              "H": -3.576171875
+            }
+          ]
+        },
+        {
+          "question_id": 81,
+          "category": "writing",
+          "turn_index": 1,
+          "call_index": 1,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -0.037689208984375
+            },
+            {
+              "step": 7,
+              "H": -0.31689453125
+            },
+            {
+              "step": 9,
+              "H": -1.4033203125
+            }
+          ]
+        },
+        {
+          "question_id": 81,
+          "category": "writing",
+          "turn_index": 1,
+          "call_index": 2,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -0.38818359375
+            },
+            {
+              "step": 7,
+              "H": -0.492919921875
+            },
+            {
+              "step": 9,
+              "H": -0.85400390625
+            }
+          ]
+        },
+        {
+          "question_id": 81,
+          "category": "writing",
+          "turn_index": 1,
+          "call_index": 3,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -0.8408203125
+            },
+            {
+              "step": 7,
+              "H": -2.109375
+            },
+            {
+              "step": 9,
+              "H": -3.59375
+            }
+          ]
+        },
+        {
+          "question_id": 81,
+          "category": "writing",
+          "turn_index": 1,
+          "call_index": 4,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -1.05078125
+            },
+            {
+              "step": 7,
+              "H": -1.41015625
+            },
+            {
+              "step": 9,
+              "H": -2.2109375
+            }
+          ]
+        },
+        {
+          "question_id": 81,
+          "category": "writing",
+          "turn_index": 1,
+          "call_index": 5,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -1.859375
+            },
+            {
+              "step": 7,
+              "H": -2.54296875
+            },
+            {
+              "step": 9,
+              "H": -2.85546875
+            }
+          ]
+        },
+        {
+          "question_id": 81,
+          "category": "writing",
+          "turn_index": 1,
+          "call_index": 6,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -0.3466796875
+            },
+            {
+              "step": 7,
+              "H": -1.240234375
+            },
+            {
+              "step": 9,
+              "H": -2.1953125
+            }
+          ]
+        },
+        {
+          "question_id": 81,
+          "category": "writing",
+          "turn_index": 1,
+          "call_index": 7,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -2.76953125
+            },
+            {
+              "step": 7,
+              "H": -3.423828125
+            },
+            {
+              "step": 9,
+              "H": -4.90625
+            }
+          ]
+        },
+        {
+          "question_id": 81,
+          "category": "writing",
+          "turn_index": 1,
+          "call_index": 8,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -0.218017578125
+            },
+            {
+              "step": 7,
+              "H": -0.6455078125
+            },
+            {
+              "step": 9,
+              "H": -1.203125
+            }
+          ]
+        },
+        {
+          "question_id": 81,
+          "category": "writing",
+          "turn_index": 1,
+          "call_index": 9,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -0.5283203125
+            },
+            {
+              "step": 7,
+              "H": -0.6904296875
+            },
+            {
+              "step": 9,
+              "H": -0.94384765625
+            }
+          ]
+        },
+        {
+          "question_id": 81,
+          "category": "writing",
+          "turn_index": 1,
+          "call_index": 10,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -1.8310546875
+            },
+            {
+              "step": 7,
+              "H": -3.21484375
+            },
+            {
+              "step": 9,
+              "H": -3.87890625
+            }
+          ]
+        },
+        {
+          "question_id": 81,
+          "category": "writing",
+          "turn_index": 1,
+          "call_index": 11,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -3.7890625
+            },
+            {
+              "step": 7,
+              "H": -5.0078125
+            },
+            {
+              "step": 9,
+              "H": -6.4921875
+            }
+          ]
+        },
+        {
+          "question_id": 81,
+          "category": "writing",
+          "turn_index": 1,
+          "call_index": 12,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -1.01953125
+            },
+            {
+              "step": 7,
+              "H": -2.208984375
+            },
+            {
+              "step": 9,
+              "H": -3.4921875
+            }
+          ]
+        },
+        {
+          "question_id": 81,
+          "category": "writing",
+          "turn_index": 1,
+          "call_index": 13,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -1.369140625
+            },
+            {
+              "step": 7,
+              "H": -2.248046875
+            },
+            {
+              "step": 9,
+              "H": -3.67578125
+            }
+          ]
+        },
+        {
+          "question_id": 81,
+          "category": "writing",
+          "turn_index": 1,
+          "call_index": 14,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -1.7802734375
+            },
+            {
+              "step": 7,
+              "H": -2.46875
+            },
+            {
+              "step": 9,
+              "H": -3.1328125
+            }
+          ]
+        },
+        {
+          "question_id": 81,
+          "category": "writing",
+          "turn_index": 1,
+          "call_index": 15,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -1.8720703125
+            },
+            {
+              "step": 7,
+              "H": -2.48828125
+            },
+            {
+              "step": 9,
+              "H": -3.58984375
+            }
+          ]
+        },
+        {
+          "question_id": 81,
+          "category": "writing",
+          "turn_index": 1,
+          "call_index": 16,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -1.3251953125
+            },
+            {
+              "step": 7,
+              "H": -1.98828125
+            },
+            {
+              "step": 9,
+              "H": -4.01953125
+            }
+          ]
+        },
+        {
+          "question_id": 81,
+          "category": "writing",
+          "turn_index": 1,
+          "call_index": 17,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -1.0361328125
+            },
+            {
+              "step": 7,
+              "H": -1.6015625
+            },
+            {
+              "step": 9,
+              "H": -4.1640625
+            }
+          ]
+        },
+        {
+          "question_id": 81,
+          "category": "writing",
+          "turn_index": 1,
+          "call_index": 18,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -1.7998046875
+            },
+            {
+              "step": 7,
+              "H": -2.921875
+            },
+            {
+              "step": 9,
+              "H": -3.98828125
+            }
+          ]
+        },
+        {
+          "question_id": 81,
+          "category": "writing",
+          "turn_index": 1,
+          "call_index": 19,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -0.8544921875
+            },
+            {
+              "step": 7,
+              "H": -1.0771484375
+            },
+            {
+              "step": 9,
+              "H": -1.595703125
+            }
+          ]
+        },
+        {
+          "question_id": 81,
+          "category": "writing",
+          "turn_index": 1,
+          "call_index": 20,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -0.48193359375
+            },
+            {
+              "step": 7,
+              "H": -1.0810546875
+            },
+            {
+              "step": 9,
+              "H": -1.533203125
+            }
+          ]
+        },
+        {
+          "question_id": 81,
+          "category": "writing",
+          "turn_index": 1,
+          "call_index": 21,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -0.7294921875
+            },
+            {
+              "step": 7,
+              "H": -0.76171875
+            },
+            {
+              "step": 9,
+              "H": -1.080078125
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "question_id": 82,
+      "source": "mt_bench",
+      "category": "writing",
+      "num_turns": 2,
+      "turns": [
+        {
+          "turn_index": 0,
+          "input_tokens": 182,
+          "prompt_chars": 991,
+          "generated_trimmed_tokens": 128,
+          "generated_raw_tokens": 137,
+          "ddd_calls": 18,
+          "wall_time_s": 1.3008
+        },
+        {
+          "turn_index": 1,
+          "input_tokens": 331,
+          "prompt_chars": 1847,
+          "generated_trimmed_tokens": 128,
+          "generated_raw_tokens": 128,
+          "ddd_calls": 22,
+          "wall_time_s": 1.6613
+        }
+      ],
+      "ddd_call_records": [
+        {
+          "question_id": 82,
+          "category": "writing",
+          "turn_index": 0,
+          "call_index": 0,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -0.254638671875
+            },
+            {
+              "step": 7,
+              "H": -0.35400390625
+            },
+            {
+              "step": 9,
+              "H": -0.6259765625
+            }
+          ]
+        },
+        {
+          "question_id": 82,
+          "category": "writing",
+          "turn_index": 0,
+          "call_index": 1,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -0.00641632080078125
+            },
+            {
+              "step": 7,
+              "H": -0.0423583984375
+            },
+            {
+              "step": 9,
+              "H": -0.61376953125
+            }
+          ]
+        },
+        {
+          "question_id": 82,
+          "category": "writing",
+          "turn_index": 0,
+          "call_index": 2,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -0.9638671875
+            },
+            {
+              "step": 7,
+              "H": -1.453125
+            },
+            {
+              "step": 9,
+              "H": -2.6328125
+            }
+          ]
+        },
+        {
+          "question_id": 82,
+          "category": "writing",
+          "turn_index": 0,
+          "call_index": 3,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -0.859375
+            },
+            {
+              "step": 7,
+              "H": -1.6943359375
+            },
+            {
+              "step": 9,
+              "H": -2.78125
+            }
+          ]
+        },
+        {
+          "question_id": 82,
+          "category": "writing",
+          "turn_index": 0,
+          "call_index": 4,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -1.5009765625
+            },
+            {
+              "step": 7,
+              "H": -2.322265625
+            },
+            {
+              "step": 9,
+              "H": -3.18359375
+            }
+          ]
+        },
+        {
+          "question_id": 82,
+          "category": "writing",
+          "turn_index": 0,
+          "call_index": 5,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -0.4638671875
+            },
+            {
+              "step": 7,
+              "H": -1.171875
+            },
+            {
+              "step": 9,
+              "H": -2.072265625
+            }
+          ]
+        },
+        {
+          "question_id": 82,
+          "category": "writing",
+          "turn_index": 0,
+          "call_index": 6,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -0.3779296875
+            },
+            {
+              "step": 7,
+              "H": -0.5771484375
+            },
+            {
+              "step": 9,
+              "H": -0.857421875
+            }
+          ]
+        },
+        {
+          "question_id": 82,
+          "category": "writing",
+          "turn_index": 0,
+          "call_index": 7,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -0.478515625
+            },
+            {
+              "step": 7,
+              "H": -1.2294921875
+            },
+            {
+              "step": 9,
+              "H": -2.056640625
+            }
+          ]
+        },
+        {
+          "question_id": 82,
+          "category": "writing",
+          "turn_index": 0,
+          "call_index": 8,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -0.169921875
+            },
+            {
+              "step": 7,
+              "H": -0.37109375
+            },
+            {
+              "step": 9,
+              "H": -1.029296875
+            }
+          ]
+        },
+        {
+          "question_id": 82,
+          "category": "writing",
+          "turn_index": 0,
+          "call_index": 9,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -0.20458984375
+            },
+            {
+              "step": 7,
+              "H": -0.603515625
+            },
+            {
+              "step": 9,
+              "H": -1.79296875
+            }
+          ]
+        },
+        {
+          "question_id": 82,
+          "category": "writing",
+          "turn_index": 0,
+          "call_index": 10,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -0.5693359375
+            },
+            {
+              "step": 7,
+              "H": -0.7548828125
+            },
+            {
+              "step": 9,
+              "H": -1.326171875
+            }
+          ]
+        },
+        {
+          "question_id": 82,
+          "category": "writing",
+          "turn_index": 0,
+          "call_index": 11,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -0.02001953125
+            },
+            {
+              "step": 7,
+              "H": -0.17626953125
+            },
+            {
+              "step": 9,
+              "H": -0.92578125
+            }
+          ]
+        },
+        {
+          "question_id": 82,
+          "category": "writing",
+          "turn_index": 0,
+          "call_index": 12,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -0.4453125
+            },
+            {
+              "step": 7,
+              "H": -0.86328125
+            },
+            {
+              "step": 9,
+              "H": -1.7353515625
+            }
+          ]
+        },
+        {
+          "question_id": 82,
+          "category": "writing",
+          "turn_index": 0,
+          "call_index": 13,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -1.189453125
+            },
+            {
+              "step": 7,
+              "H": -1.951171875
+            },
+            {
+              "step": 9,
+              "H": -2.90234375
+            }
+          ]
+        },
+        {
+          "question_id": 82,
+          "category": "writing",
+          "turn_index": 0,
+          "call_index": 14,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -0.41015625
+            },
+            {
+              "step": 7,
+              "H": -0.865234375
+            },
+            {
+              "step": 9,
+              "H": -1.7431640625
+            }
+          ]
+        },
+        {
+          "question_id": 82,
+          "category": "writing",
+          "turn_index": 0,
+          "call_index": 15,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -0.41162109375
+            },
+            {
+              "step": 7,
+              "H": -0.8984375
+            },
+            {
+              "step": 9,
+              "H": -2.3828125
+            }
+          ]
+        },
+        {
+          "question_id": 82,
+          "category": "writing",
+          "turn_index": 0,
+          "call_index": 16,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -0.13818359375
+            },
+            {
+              "step": 7,
+              "H": -0.25244140625
+            },
+            {
+              "step": 9,
+              "H": -0.724609375
+            }
+          ]
+        },
+        {
+          "question_id": 82,
+          "category": "writing",
+          "turn_index": 0,
+          "call_index": 17,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -0.001220703125
+            },
+            {
+              "step": 7,
+              "H": -0.0174560546875
+            },
+            {
+              "step": 9,
+              "H": -0.2666015625
+            }
+          ]
+        },
+        {
+          "question_id": 82,
+          "category": "writing",
+          "turn_index": 1,
+          "call_index": 0,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -0.7841796875
+            },
+            {
+              "step": 7,
+              "H": -2.1328125
+            },
+            {
+              "step": 9,
+              "H": -3.208984375
+            }
+          ]
+        },
+        {
+          "question_id": 82,
+          "category": "writing",
+          "turn_index": 1,
+          "call_index": 1,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -0.65234375
+            },
+            {
+              "step": 7,
+              "H": -0.9541015625
+            },
+            {
+              "step": 9,
+              "H": -1.8876953125
+            }
+          ]
+        },
+        {
+          "question_id": 82,
+          "category": "writing",
+          "turn_index": 1,
+          "call_index": 2,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -1.8935546875
+            },
+            {
+              "step": 7,
+              "H": -2.58984375
+            },
+            {
+              "step": 9,
+              "H": -4.1875
+            }
+          ]
+        },
+        {
+          "question_id": 82,
+          "category": "writing",
+          "turn_index": 1,
+          "call_index": 3,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -0.8037109375
+            },
+            {
+              "step": 7,
+              "H": -1.37890625
+            },
+            {
+              "step": 9,
+              "H": -1.734375
+            }
+          ]
+        },
+        {
+          "question_id": 82,
+          "category": "writing",
+          "turn_index": 1,
+          "call_index": 4,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -0.6533203125
+            },
+            {
+              "step": 7,
+              "H": -1.5576171875
+            },
+            {
+              "step": 9,
+              "H": -2.517578125
+            }
+          ]
+        },
+        {
+          "question_id": 82,
+          "category": "writing",
+          "turn_index": 1,
+          "call_index": 5,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -1.5947265625
+            },
+            {
+              "step": 7,
+              "H": -2.24609375
+            },
+            {
+              "step": 9,
+              "H": -3.720703125
+            }
+          ]
+        },
+        {
+          "question_id": 82,
+          "category": "writing",
+          "turn_index": 1,
+          "call_index": 6,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -1.634765625
+            },
+            {
+              "step": 7,
+              "H": -2.51953125
+            },
+            {
+              "step": 9,
+              "H": -3.00390625
+            }
+          ]
+        },
+        {
+          "question_id": 82,
+          "category": "writing",
+          "turn_index": 1,
+          "call_index": 7,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -0.54443359375
+            },
+            {
+              "step": 7,
+              "H": -1.3369140625
+            },
+            {
+              "step": 9,
+              "H": -1.859375
+            }
+          ]
+        },
+        {
+          "question_id": 82,
+          "category": "writing",
+          "turn_index": 1,
+          "call_index": 8,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -0.6103515625
+            },
+            {
+              "step": 7,
+              "H": -1.29296875
+            },
+            {
+              "step": 9,
+              "H": -2.65625
+            }
+          ]
+        },
+        {
+          "question_id": 82,
+          "category": "writing",
+          "turn_index": 1,
+          "call_index": 9,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -1.296875
+            },
+            {
+              "step": 7,
+              "H": -1.728515625
+            },
+            {
+              "step": 9,
+              "H": -3.2265625
+            }
+          ]
+        },
+        {
+          "question_id": 82,
+          "category": "writing",
+          "turn_index": 1,
+          "call_index": 10,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -1.4228515625
+            },
+            {
+              "step": 7,
+              "H": -2.75
+            },
+            {
+              "step": 9,
+              "H": -3.7421875
+            }
+          ]
+        },
+        {
+          "question_id": 82,
+          "category": "writing",
+          "turn_index": 1,
+          "call_index": 11,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -0.74072265625
+            },
+            {
+              "step": 7,
+              "H": -1.5576171875
+            },
+            {
+              "step": 9,
+              "H": -2.990234375
+            }
+          ]
+        },
+        {
+          "question_id": 82,
+          "category": "writing",
+          "turn_index": 1,
+          "call_index": 12,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -0.23779296875
+            },
+            {
+              "step": 7,
+              "H": -0.29736328125
+            },
+            {
+              "step": 9,
+              "H": -1.083984375
+            }
+          ]
+        },
+        {
+          "question_id": 82,
+          "category": "writing",
+          "turn_index": 1,
+          "call_index": 13,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -1.0888671875
+            },
+            {
+              "step": 7,
+              "H": -1.689453125
+            },
+            {
+              "step": 9,
+              "H": -2.123046875
+            }
+          ]
+        },
+        {
+          "question_id": 82,
+          "category": "writing",
+          "turn_index": 1,
+          "call_index": 14,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -0.97802734375
+            },
+            {
+              "step": 7,
+              "H": -1.5849609375
+            },
+            {
+              "step": 9,
+              "H": -2.841796875
+            }
+          ]
+        },
+        {
+          "question_id": 82,
+          "category": "writing",
+          "turn_index": 1,
+          "call_index": 15,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -2.0703125
+            },
+            {
+              "step": 7,
+              "H": -3.16015625
+            },
+            {
+              "step": 9,
+              "H": -5.1640625
+            }
+          ]
+        },
+        {
+          "question_id": 82,
+          "category": "writing",
+          "turn_index": 1,
+          "call_index": 16,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -2.166015625
+            },
+            {
+              "step": 7,
+              "H": -3.07421875
+            },
+            {
+              "step": 9,
+              "H": -4.2265625
+            }
+          ]
+        },
+        {
+          "question_id": 82,
+          "category": "writing",
+          "turn_index": 1,
+          "call_index": 17,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -1.2451171875
+            },
+            {
+              "step": 7,
+              "H": -1.98828125
+            },
+            {
+              "step": 9,
+              "H": -2.896484375
+            }
+          ]
+        },
+        {
+          "question_id": 82,
+          "category": "writing",
+          "turn_index": 1,
+          "call_index": 18,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -3.123046875
+            },
+            {
+              "step": 7,
+              "H": -4.54296875
+            },
+            {
+              "step": 9,
+              "H": -5.8203125
+            }
+          ]
+        },
+        {
+          "question_id": 82,
+          "category": "writing",
+          "turn_index": 1,
+          "call_index": 19,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -0.578125
+            },
+            {
+              "step": 7,
+              "H": -0.603515625
+            },
+            {
+              "step": 9,
+              "H": -0.68896484375
+            }
+          ]
+        },
+        {
+          "question_id": 82,
+          "category": "writing",
+          "turn_index": 1,
+          "call_index": 20,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -0.21240234375
+            },
+            {
+              "step": 7,
+              "H": -1.1181640625
+            },
+            {
+              "step": 9,
+              "H": -2.05859375
+            }
+          ]
+        },
+        {
+          "question_id": 82,
+          "category": "writing",
+          "turn_index": 1,
+          "call_index": 21,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -0.127685546875
+            },
+            {
+              "step": 7,
+              "H": -0.1605224609375
+            },
+            {
+              "step": 9,
+              "H": -2.01953125
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "question_id": 83,
+      "source": "mt_bench",
+      "category": "writing",
+      "num_turns": 2,
+      "turns": [
+        {
+          "turn_index": 0,
+          "input_tokens": 191,
+          "prompt_chars": 1033,
+          "generated_trimmed_tokens": 128,
+          "generated_raw_tokens": 135,
+          "ddd_calls": 19,
+          "wall_time_s": 1.3862
+        },
+        {
+          "turn_index": 1,
+          "input_tokens": 343,
+          "prompt_chars": 1789,
+          "generated_trimmed_tokens": 39,
+          "generated_raw_tokens": 40,
+          "ddd_calls": 14,
+          "wall_time_s": 1.0916
+        }
+      ],
+      "ddd_call_records": [
+        {
+          "question_id": 83,
+          "category": "writing",
+          "turn_index": 0,
+          "call_index": 0,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -1.576171875
+            },
+            {
+              "step": 7,
+              "H": -2.20703125
+            },
+            {
+              "step": 9,
+              "H": -3.189453125
+            }
+          ]
+        },
+        {
+          "question_id": 83,
+          "category": "writing",
+          "turn_index": 0,
+          "call_index": 1,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -0.59765625
+            },
+            {
+              "step": 7,
+              "H": -1.2255859375
+            },
+            {
+              "step": 9,
+              "H": -1.69921875
+            }
+          ]
+        },
+        {
+          "question_id": 83,
+          "category": "writing",
+          "turn_index": 0,
+          "call_index": 2,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -1.8330078125
+            },
+            {
+              "step": 7,
+              "H": -2.703125
+            },
+            {
+              "step": 9,
+              "H": -4.05078125
+            }
+          ]
+        },
+        {
+          "question_id": 83,
+          "category": "writing",
+          "turn_index": 0,
+          "call_index": 3,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -0.73828125
+            },
+            {
+              "step": 7,
+              "H": -1.33984375
+            },
+            {
+              "step": 9,
+              "H": -3.294921875
+            }
+          ]
+        },
+        {
+          "question_id": 83,
+          "category": "writing",
+          "turn_index": 0,
+          "call_index": 4,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -0.1942138671875
+            },
+            {
+              "step": 7,
+              "H": -0.5244140625
+            },
+            {
+              "step": 9,
+              "H": -1.40234375
+            }
+          ]
+        },
+        {
+          "question_id": 83,
+          "category": "writing",
+          "turn_index": 0,
+          "call_index": 5,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -0.35546875
+            },
+            {
+              "step": 7,
+              "H": -0.6318359375
+            },
+            {
+              "step": 9,
+              "H": -1.3349609375
+            }
+          ]
+        },
+        {
+          "question_id": 83,
+          "category": "writing",
+          "turn_index": 0,
+          "call_index": 6,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -1.46875
+            },
+            {
+              "step": 7,
+              "H": -2.123046875
+            },
+            {
+              "step": 9,
+              "H": -3.2421875
+            }
+          ]
+        },
+        {
+          "question_id": 83,
+          "category": "writing",
+          "turn_index": 0,
+          "call_index": 7,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -0.6875
+            },
+            {
+              "step": 7,
+              "H": -1.345703125
+            },
+            {
+              "step": 9,
+              "H": -2.3046875
+            }
+          ]
+        },
+        {
+          "question_id": 83,
+          "category": "writing",
+          "turn_index": 0,
+          "call_index": 8,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -3.00390625
+            },
+            {
+              "step": 7,
+              "H": -3.41796875
+            },
+            {
+              "step": 9,
+              "H": -4.1015625
+            }
+          ]
+        },
+        {
+          "question_id": 83,
+          "category": "writing",
+          "turn_index": 0,
+          "call_index": 9,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -0.3271484375
+            },
+            {
+              "step": 7,
+              "H": -1.3564453125
+            },
+            {
+              "step": 9,
+              "H": -2.82421875
+            }
+          ]
+        },
+        {
+          "question_id": 83,
+          "category": "writing",
+          "turn_index": 0,
+          "call_index": 10,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -1.78515625
+            },
+            {
+              "step": 7,
+              "H": -2.19140625
+            },
+            {
+              "step": 9,
+              "H": -2.419921875
+            }
+          ]
+        },
+        {
+          "question_id": 83,
+          "category": "writing",
+          "turn_index": 0,
+          "call_index": 11,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -0.0701904296875
+            },
+            {
+              "step": 7,
+              "H": -0.28466796875
+            },
+            {
+              "step": 9,
+              "H": -0.76416015625
+            }
+          ]
+        },
+        {
+          "question_id": 83,
+          "category": "writing",
+          "turn_index": 0,
+          "call_index": 12,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -0.4912109375
+            },
+            {
+              "step": 7,
+              "H": -0.57421875
+            },
+            {
+              "step": 9,
+              "H": -1.5712890625
+            }
+          ]
+        },
+        {
+          "question_id": 83,
+          "category": "writing",
+          "turn_index": 0,
+          "call_index": 13,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -0.75390625
+            },
+            {
+              "step": 7,
+              "H": -0.84765625
+            },
+            {
+              "step": 9,
+              "H": -1.2587890625
+            }
+          ]
+        },
+        {
+          "question_id": 83,
+          "category": "writing",
+          "turn_index": 0,
+          "call_index": 14,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -0.8056640625
+            },
+            {
+              "step": 7,
+              "H": -1.4453125
+            },
+            {
+              "step": 9,
+              "H": -2.39453125
+            }
+          ]
+        },
+        {
+          "question_id": 83,
+          "category": "writing",
+          "turn_index": 0,
+          "call_index": 15,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -1.271484375
+            },
+            {
+              "step": 7,
+              "H": -1.4560546875
+            },
+            {
+              "step": 9,
+              "H": -2.216796875
+            }
+          ]
+        },
+        {
+          "question_id": 83,
+          "category": "writing",
+          "turn_index": 0,
+          "call_index": 16,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -0.765625
+            },
+            {
+              "step": 7,
+              "H": -1.509765625
+            },
+            {
+              "step": 9,
+              "H": -3.32421875
+            }
+          ]
+        },
+        {
+          "question_id": 83,
+          "category": "writing",
+          "turn_index": 0,
+          "call_index": 17,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -0.01611328125
+            },
+            {
+              "step": 7,
+              "H": -0.236328125
+            },
+            {
+              "step": 9,
+              "H": -1.146484375
+            }
+          ]
+        },
+        {
+          "question_id": 83,
+          "category": "writing",
+          "turn_index": 0,
+          "call_index": 18,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -0.091552734375
+            },
+            {
+              "step": 7,
+              "H": -0.6005859375
+            },
+            {
+              "step": 9,
+              "H": -1.8525390625
+            }
+          ]
+        },
+        {
+          "question_id": 83,
+          "category": "writing",
+          "turn_index": 1,
+          "call_index": 0,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -2.10546875
+            },
+            {
+              "step": 7,
+              "H": -3.474609375
+            },
+            {
+              "step": 9,
+              "H": -6.546875
+            }
+          ]
+        },
+        {
+          "question_id": 83,
+          "category": "writing",
+          "turn_index": 1,
+          "call_index": 1,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -3.318359375
+            },
+            {
+              "step": 7,
+              "H": -5.1640625
+            },
+            {
+              "step": 9,
+              "H": -7.1015625
+            }
+          ]
+        },
+        {
+          "question_id": 83,
+          "category": "writing",
+          "turn_index": 1,
+          "call_index": 2,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -3.3359375
+            },
+            {
+              "step": 7,
+              "H": -4.44140625
+            },
+            {
+              "step": 9,
+              "H": -5.25
+            }
+          ]
+        },
+        {
+          "question_id": 83,
+          "category": "writing",
+          "turn_index": 1,
+          "call_index": 3,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -2.02734375
+            },
+            {
+              "step": 7,
+              "H": -3.4921875
+            },
+            {
+              "step": 9,
+              "H": -5.0078125
+            }
+          ]
+        },
+        {
+          "question_id": 83,
+          "category": "writing",
+          "turn_index": 1,
+          "call_index": 4,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -3.755859375
+            },
+            {
+              "step": 7,
+              "H": -5.1015625
+            },
+            {
+              "step": 9,
+              "H": -7.375
+            }
+          ]
+        },
+        {
+          "question_id": 83,
+          "category": "writing",
+          "turn_index": 1,
+          "call_index": 5,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -4.08984375
+            },
+            {
+              "step": 7,
+              "H": -5.6640625
+            },
+            {
+              "step": 9,
+              "H": -6.81640625
+            }
+          ]
+        },
+        {
+          "question_id": 83,
+          "category": "writing",
+          "turn_index": 1,
+          "call_index": 6,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -4.9296875
+            },
+            {
+              "step": 7,
+              "H": -6.26953125
+            },
+            {
+              "step": 9,
+              "H": -7.83984375
+            }
+          ]
+        },
+        {
+          "question_id": 83,
+          "category": "writing",
+          "turn_index": 1,
+          "call_index": 7,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -3.6484375
+            },
+            {
+              "step": 7,
+              "H": -5.7890625
+            },
+            {
+              "step": 9,
+              "H": -7.62109375
+            }
+          ]
+        },
+        {
+          "question_id": 83,
+          "category": "writing",
+          "turn_index": 1,
+          "call_index": 8,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -4.4140625
+            },
+            {
+              "step": 7,
+              "H": -6.671875
+            },
+            {
+              "step": 9,
+              "H": -8.453125
+            }
+          ]
+        },
+        {
+          "question_id": 83,
+          "category": "writing",
+          "turn_index": 1,
+          "call_index": 9,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -3.357421875
+            },
+            {
+              "step": 7,
+              "H": -5.09765625
+            },
+            {
+              "step": 9,
+              "H": -7.3828125
+            }
+          ]
+        },
+        {
+          "question_id": 83,
+          "category": "writing",
+          "turn_index": 1,
+          "call_index": 10,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -2.50390625
+            },
+            {
+              "step": 7,
+              "H": -3.61328125
+            },
+            {
+              "step": 9,
+              "H": -3.9921875
+            }
+          ]
+        },
+        {
+          "question_id": 83,
+          "category": "writing",
+          "turn_index": 1,
+          "call_index": 11,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -0.986328125
+            },
+            {
+              "step": 7,
+              "H": -2.6953125
+            },
+            {
+              "step": 9,
+              "H": -5.296875
+            }
+          ]
+        },
+        {
+          "question_id": 83,
+          "category": "writing",
+          "turn_index": 1,
+          "call_index": 12,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -1.505859375
+            },
+            {
+              "step": 7,
+              "H": -3.5
+            },
+            {
+              "step": 9,
+              "H": -4.63671875
+            }
+          ]
+        },
+        {
+          "question_id": 83,
+          "category": "writing",
+          "turn_index": 1,
+          "call_index": 13,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -1.9111328125
+            },
+            {
+              "step": 7,
+              "H": -3.10546875
+            },
+            {
+              "step": 9,
+              "H": -3.671875
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "question_id": 84,
+      "source": "mt_bench",
+      "category": "writing",
+      "num_turns": 2,
+      "turns": [
+        {
+          "turn_index": 0,
+          "input_tokens": 175,
+          "prompt_chars": 960,
+          "generated_trimmed_tokens": 128,
+          "generated_raw_tokens": 138,
+          "ddd_calls": 24,
+          "wall_time_s": 1.7307
+        },
+        {
+          "turn_index": 1,
+          "input_tokens": 331,
+          "prompt_chars": 1804,
+          "generated_trimmed_tokens": 128,
+          "generated_raw_tokens": 130,
+          "ddd_calls": 20,
+          "wall_time_s": 1.5178
+        }
+      ],
+      "ddd_call_records": [
+        {
+          "question_id": 84,
+          "category": "writing",
+          "turn_index": 0,
+          "call_index": 0,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -3.078125
+            },
+            {
+              "step": 7,
+              "H": -3.6015625
+            },
+            {
+              "step": 9,
+              "H": -4.33203125
+            }
+          ]
+        },
+        {
+          "question_id": 84,
+          "category": "writing",
+          "turn_index": 0,
+          "call_index": 1,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -2.587890625
+            },
+            {
+              "step": 7,
+              "H": -3.44921875
+            },
+            {
+              "step": 9,
+              "H": -3.681640625
+            }
+          ]
+        },
+        {
+          "question_id": 84,
+          "category": "writing",
+          "turn_index": 0,
+          "call_index": 2,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -1.25
+            },
+            {
+              "step": 7,
+              "H": -1.5224609375
+            },
+            {
+              "step": 9,
+              "H": -1.982421875
+            }
+          ]
+        },
+        {
+          "question_id": 84,
+          "category": "writing",
+          "turn_index": 0,
+          "call_index": 3,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -1.236328125
+            },
+            {
+              "step": 7,
+              "H": -1.779296875
+            },
+            {
+              "step": 9,
+              "H": -3.0546875
+            }
+          ]
+        },
+        {
+          "question_id": 84,
+          "category": "writing",
+          "turn_index": 0,
+          "call_index": 4,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -0.101318359375
+            },
+            {
+              "step": 7,
+              "H": -0.5244140625
+            },
+            {
+              "step": 9,
+              "H": -1.8046875
+            }
+          ]
+        },
+        {
+          "question_id": 84,
+          "category": "writing",
+          "turn_index": 0,
+          "call_index": 5,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -1.45703125
+            },
+            {
+              "step": 7,
+              "H": -2.14453125
+            },
+            {
+              "step": 9,
+              "H": -2.705078125
+            }
+          ]
+        },
+        {
+          "question_id": 84,
+          "category": "writing",
+          "turn_index": 0,
+          "call_index": 6,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -0.5478515625
+            },
+            {
+              "step": 7,
+              "H": -1.2587890625
+            },
+            {
+              "step": 9,
+              "H": -2.16796875
+            }
+          ]
+        },
+        {
+          "question_id": 84,
+          "category": "writing",
+          "turn_index": 0,
+          "call_index": 7,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -1.03515625
+            },
+            {
+              "step": 7,
+              "H": -2.2265625
+            },
+            {
+              "step": 9,
+              "H": -4.296875
+            }
+          ]
+        },
+        {
+          "question_id": 84,
+          "category": "writing",
+          "turn_index": 0,
+          "call_index": 8,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -1.59375
+            },
+            {
+              "step": 7,
+              "H": -2.58203125
+            },
+            {
+              "step": 9,
+              "H": -3.923828125
+            }
+          ]
+        },
+        {
+          "question_id": 84,
+          "category": "writing",
+          "turn_index": 0,
+          "call_index": 9,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -1.630859375
+            },
+            {
+              "step": 7,
+              "H": -2.93359375
+            },
+            {
+              "step": 9,
+              "H": -5.0546875
+            }
+          ]
+        },
+        {
+          "question_id": 84,
+          "category": "writing",
+          "turn_index": 0,
+          "call_index": 10,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -1.9814453125
+            },
+            {
+              "step": 7,
+              "H": -3.3828125
+            },
+            {
+              "step": 9,
+              "H": -4.75390625
+            }
+          ]
+        },
+        {
+          "question_id": 84,
+          "category": "writing",
+          "turn_index": 0,
+          "call_index": 11,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -1.69140625
+            },
+            {
+              "step": 7,
+              "H": -2.49609375
+            },
+            {
+              "step": 9,
+              "H": -4.03125
+            }
+          ]
+        },
+        {
+          "question_id": 84,
+          "category": "writing",
+          "turn_index": 0,
+          "call_index": 12,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -1.123046875
+            },
+            {
+              "step": 7,
+              "H": -1.5458984375
+            },
+            {
+              "step": 9,
+              "H": -1.6796875
+            }
+          ]
+        },
+        {
+          "question_id": 84,
+          "category": "writing",
+          "turn_index": 0,
+          "call_index": 13,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -0.5078125
+            },
+            {
+              "step": 7,
+              "H": -0.7744140625
+            },
+            {
+              "step": 9,
+              "H": -3.13671875
+            }
+          ]
+        },
+        {
+          "question_id": 84,
+          "category": "writing",
+          "turn_index": 0,
+          "call_index": 14,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -3.275390625
+            },
+            {
+              "step": 7,
+              "H": -5.01171875
+            },
+            {
+              "step": 9,
+              "H": -6.0703125
+            }
+          ]
+        },
+        {
+          "question_id": 84,
+          "category": "writing",
+          "turn_index": 0,
+          "call_index": 15,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -1.7353515625
+            },
+            {
+              "step": 7,
+              "H": -2.91015625
+            },
+            {
+              "step": 9,
+              "H": -4.78515625
+            }
+          ]
+        },
+        {
+          "question_id": 84,
+          "category": "writing",
+          "turn_index": 0,
+          "call_index": 16,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -1.5263671875
+            },
+            {
+              "step": 7,
+              "H": -2.09765625
+            },
+            {
+              "step": 9,
+              "H": -2.828125
+            }
+          ]
+        },
+        {
+          "question_id": 84,
+          "category": "writing",
+          "turn_index": 0,
+          "call_index": 17,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -0.34033203125
+            },
+            {
+              "step": 7,
+              "H": -0.67919921875
+            },
+            {
+              "step": 9,
+              "H": -1.4765625
+            }
+          ]
+        },
+        {
+          "question_id": 84,
+          "category": "writing",
+          "turn_index": 0,
+          "call_index": 18,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -1.8076171875
+            },
+            {
+              "step": 7,
+              "H": -2.57421875
+            },
+            {
+              "step": 9,
+              "H": -4.39453125
+            }
+          ]
+        },
+        {
+          "question_id": 84,
+          "category": "writing",
+          "turn_index": 0,
+          "call_index": 19,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -2.271484375
+            },
+            {
+              "step": 7,
+              "H": -3.68359375
+            },
+            {
+              "step": 9,
+              "H": -5.09765625
+            }
+          ]
+        },
+        {
+          "question_id": 84,
+          "category": "writing",
+          "turn_index": 0,
+          "call_index": 20,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -1.4990234375
+            },
+            {
+              "step": 7,
+              "H": -2.2421875
+            },
+            {
+              "step": 9,
+              "H": -3.306640625
+            }
+          ]
+        },
+        {
+          "question_id": 84,
+          "category": "writing",
+          "turn_index": 0,
+          "call_index": 21,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -1.083984375
+            },
+            {
+              "step": 7,
+              "H": -2.181640625
+            },
+            {
+              "step": 9,
+              "H": -3.779296875
+            }
+          ]
+        },
+        {
+          "question_id": 84,
+          "category": "writing",
+          "turn_index": 0,
+          "call_index": 22,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -0.5625
+            },
+            {
+              "step": 7,
+              "H": -1.03515625
+            },
+            {
+              "step": 9,
+              "H": -1.59765625
+            }
+          ]
+        },
+        {
+          "question_id": 84,
+          "category": "writing",
+          "turn_index": 0,
+          "call_index": 23,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -1.724609375
+            },
+            {
+              "step": 7,
+              "H": -2.158203125
+            },
+            {
+              "step": 9,
+              "H": -3.3984375
+            }
+          ]
+        },
+        {
+          "question_id": 84,
+          "category": "writing",
+          "turn_index": 1,
+          "call_index": 0,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -0.8935546875
+            },
+            {
+              "step": 7,
+              "H": -1.205078125
+            },
+            {
+              "step": 9,
+              "H": -1.7734375
+            }
+          ]
+        },
+        {
+          "question_id": 84,
+          "category": "writing",
+          "turn_index": 1,
+          "call_index": 1,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -0.02392578125
+            },
+            {
+              "step": 7,
+              "H": -0.04541015625
+            },
+            {
+              "step": 9,
+              "H": -0.07763671875
+            }
+          ]
+        },
+        {
+          "question_id": 84,
+          "category": "writing",
+          "turn_index": 1,
+          "call_index": 2,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -1.2587890625
+            },
+            {
+              "step": 7,
+              "H": -1.75
+            },
+            {
+              "step": 9,
+              "H": -2.2265625
+            }
+          ]
+        },
+        {
+          "question_id": 84,
+          "category": "writing",
+          "turn_index": 1,
+          "call_index": 3,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -0.8798828125
+            },
+            {
+              "step": 7,
+              "H": -1.9697265625
+            },
+            {
+              "step": 9,
+              "H": -3.533203125
+            }
+          ]
+        },
+        {
+          "question_id": 84,
+          "category": "writing",
+          "turn_index": 1,
+          "call_index": 4,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -1.9892578125
+            },
+            {
+              "step": 7,
+              "H": -2.44921875
+            },
+            {
+              "step": 9,
+              "H": -3.0078125
+            }
+          ]
+        },
+        {
+          "question_id": 84,
+          "category": "writing",
+          "turn_index": 1,
+          "call_index": 5,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -0.8232421875
+            },
+            {
+              "step": 7,
+              "H": -1.822265625
+            },
+            {
+              "step": 9,
+              "H": -2.9453125
+            }
+          ]
+        },
+        {
+          "question_id": 84,
+          "category": "writing",
+          "turn_index": 1,
+          "call_index": 6,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -2.537109375
+            },
+            {
+              "step": 7,
+              "H": -3.380859375
+            },
+            {
+              "step": 9,
+              "H": -5.3125
+            }
+          ]
+        },
+        {
+          "question_id": 84,
+          "category": "writing",
+          "turn_index": 1,
+          "call_index": 7,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -2.2421875
+            },
+            {
+              "step": 7,
+              "H": -3.125
+            },
+            {
+              "step": 9,
+              "H": -4.62109375
+            }
+          ]
+        },
+        {
+          "question_id": 84,
+          "category": "writing",
+          "turn_index": 1,
+          "call_index": 8,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -0.366943359375
+            },
+            {
+              "step": 7,
+              "H": -0.8408203125
+            },
+            {
+              "step": 9,
+              "H": -2.640625
+            }
+          ]
+        },
+        {
+          "question_id": 84,
+          "category": "writing",
+          "turn_index": 1,
+          "call_index": 9,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -0.96533203125
+            },
+            {
+              "step": 7,
+              "H": -2.03515625
+            },
+            {
+              "step": 9,
+              "H": -3.12109375
+            }
+          ]
+        },
+        {
+          "question_id": 84,
+          "category": "writing",
+          "turn_index": 1,
+          "call_index": 10,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -1.123046875
+            },
+            {
+              "step": 7,
+              "H": -1.255859375
+            },
+            {
+              "step": 9,
+              "H": -4.33203125
+            }
+          ]
+        },
+        {
+          "question_id": 84,
+          "category": "writing",
+          "turn_index": 1,
+          "call_index": 11,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -3.52734375
+            },
+            {
+              "step": 7,
+              "H": -4.515625
+            },
+            {
+              "step": 9,
+              "H": -6.42578125
+            }
+          ]
+        },
+        {
+          "question_id": 84,
+          "category": "writing",
+          "turn_index": 1,
+          "call_index": 12,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -1.62890625
+            },
+            {
+              "step": 7,
+              "H": -2.78125
+            },
+            {
+              "step": 9,
+              "H": -3.90625
+            }
+          ]
+        },
+        {
+          "question_id": 84,
+          "category": "writing",
+          "turn_index": 1,
+          "call_index": 13,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -1.15625
+            },
+            {
+              "step": 7,
+              "H": -1.87890625
+            },
+            {
+              "step": 9,
+              "H": -2.890625
+            }
+          ]
+        },
+        {
+          "question_id": 84,
+          "category": "writing",
+          "turn_index": 1,
+          "call_index": 14,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -0.10968017578125
+            },
+            {
+              "step": 7,
+              "H": -0.2178955078125
+            },
+            {
+              "step": 9,
+              "H": -0.414306640625
+            }
+          ]
+        },
+        {
+          "question_id": 84,
+          "category": "writing",
+          "turn_index": 1,
+          "call_index": 15,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -0.233642578125
+            },
+            {
+              "step": 7,
+              "H": -0.33154296875
+            },
+            {
+              "step": 9,
+              "H": -0.84130859375
+            }
+          ]
+        },
+        {
+          "question_id": 84,
+          "category": "writing",
+          "turn_index": 1,
+          "call_index": 16,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -1.1533203125
+            },
+            {
+              "step": 7,
+              "H": -2.14453125
+            },
+            {
+              "step": 9,
+              "H": -3.87109375
+            }
+          ]
+        },
+        {
+          "question_id": 84,
+          "category": "writing",
+          "turn_index": 1,
+          "call_index": 17,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -0.279296875
+            },
+            {
+              "step": 7,
+              "H": -0.5400390625
+            },
+            {
+              "step": 9,
+              "H": -1.939453125
+            }
+          ]
+        },
+        {
+          "question_id": 84,
+          "category": "writing",
+          "turn_index": 1,
+          "call_index": 18,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -2.84375
+            },
+            {
+              "step": 7,
+              "H": -3.7265625
+            },
+            {
+              "step": 9,
+              "H": -4.984375
+            }
+          ]
+        },
+        {
+          "question_id": 84,
+          "category": "writing",
+          "turn_index": 1,
+          "call_index": 19,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -1.890625
+            },
+            {
+              "step": 7,
+              "H": -2.578125
+            },
+            {
+              "step": 9,
+              "H": -2.8984375
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "question_id": 85,
+      "source": "mt_bench",
+      "category": "writing",
+      "num_turns": 2,
+      "turns": [
+        {
+          "turn_index": 0,
+          "input_tokens": 158,
+          "prompt_chars": 867,
+          "generated_trimmed_tokens": 128,
+          "generated_raw_tokens": 130,
+          "ddd_calls": 23,
+          "wall_time_s": 1.6628
+        },
+        {
+          "turn_index": 1,
+          "input_tokens": 319,
+          "prompt_chars": 1664,
+          "generated_trimmed_tokens": 128,
+          "generated_raw_tokens": 136,
+          "ddd_calls": 20,
+          "wall_time_s": 1.5089
+        }
+      ],
+      "ddd_call_records": [
+        {
+          "question_id": 85,
+          "category": "writing",
+          "turn_index": 0,
+          "call_index": 0,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -1.8056640625
+            },
+            {
+              "step": 7,
+              "H": -2.826171875
+            },
+            {
+              "step": 9,
+              "H": -4.890625
+            }
+          ]
+        },
+        {
+          "question_id": 85,
+          "category": "writing",
+          "turn_index": 0,
+          "call_index": 1,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -1.26953125
+            },
+            {
+              "step": 7,
+              "H": -1.7763671875
+            },
+            {
+              "step": 9,
+              "H": -4.4453125
+            }
+          ]
+        },
+        {
+          "question_id": 85,
+          "category": "writing",
+          "turn_index": 0,
+          "call_index": 2,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -1.0166015625
+            },
+            {
+              "step": 7,
+              "H": -1.8994140625
+            },
+            {
+              "step": 9,
+              "H": -2.849609375
+            }
+          ]
+        },
+        {
+          "question_id": 85,
+          "category": "writing",
+          "turn_index": 0,
+          "call_index": 3,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -1.1240234375
+            },
+            {
+              "step": 7,
+              "H": -1.4140625
+            },
+            {
+              "step": 9,
+              "H": -2.08203125
+            }
+          ]
+        },
+        {
+          "question_id": 85,
+          "category": "writing",
+          "turn_index": 0,
+          "call_index": 4,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -1.8232421875
+            },
+            {
+              "step": 7,
+              "H": -2.609375
+            },
+            {
+              "step": 9,
+              "H": -3.96484375
+            }
+          ]
+        },
+        {
+          "question_id": 85,
+          "category": "writing",
+          "turn_index": 0,
+          "call_index": 5,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -1.9443359375
+            },
+            {
+              "step": 7,
+              "H": -2.984375
+            },
+            {
+              "step": 9,
+              "H": -4.67578125
+            }
+          ]
+        },
+        {
+          "question_id": 85,
+          "category": "writing",
+          "turn_index": 0,
+          "call_index": 6,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -2.326171875
+            },
+            {
+              "step": 7,
+              "H": -3.40625
+            },
+            {
+              "step": 9,
+              "H": -4.62109375
+            }
+          ]
+        },
+        {
+          "question_id": 85,
+          "category": "writing",
+          "turn_index": 0,
+          "call_index": 7,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -0.9794921875
+            },
+            {
+              "step": 7,
+              "H": -1.2578125
+            },
+            {
+              "step": 9,
+              "H": -1.8193359375
+            }
+          ]
+        },
+        {
+          "question_id": 85,
+          "category": "writing",
+          "turn_index": 0,
+          "call_index": 8,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -1.64453125
+            },
+            {
+              "step": 7,
+              "H": -2.4296875
+            },
+            {
+              "step": 9,
+              "H": -3.09375
+            }
+          ]
+        },
+        {
+          "question_id": 85,
+          "category": "writing",
+          "turn_index": 0,
+          "call_index": 9,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -1.685546875
+            },
+            {
+              "step": 7,
+              "H": -2.18359375
+            },
+            {
+              "step": 9,
+              "H": -2.546875
+            }
+          ]
+        },
+        {
+          "question_id": 85,
+          "category": "writing",
+          "turn_index": 0,
+          "call_index": 10,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -1.744140625
+            },
+            {
+              "step": 7,
+              "H": -2.50390625
+            },
+            {
+              "step": 9,
+              "H": -3.65234375
+            }
+          ]
+        },
+        {
+          "question_id": 85,
+          "category": "writing",
+          "turn_index": 0,
+          "call_index": 11,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -2.73828125
+            },
+            {
+              "step": 7,
+              "H": -3.47265625
+            },
+            {
+              "step": 9,
+              "H": -4.5625
+            }
+          ]
+        },
+        {
+          "question_id": 85,
+          "category": "writing",
+          "turn_index": 0,
+          "call_index": 12,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -2.88671875
+            },
+            {
+              "step": 7,
+              "H": -3.5859375
+            },
+            {
+              "step": 9,
+              "H": -4.5078125
+            }
+          ]
+        },
+        {
+          "question_id": 85,
+          "category": "writing",
+          "turn_index": 0,
+          "call_index": 13,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -1.8046875
+            },
+            {
+              "step": 7,
+              "H": -2.66796875
+            },
+            {
+              "step": 9,
+              "H": -3.71875
+            }
+          ]
+        },
+        {
+          "question_id": 85,
+          "category": "writing",
+          "turn_index": 0,
+          "call_index": 14,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -0.70458984375
+            },
+            {
+              "step": 7,
+              "H": -1.669921875
+            },
+            {
+              "step": 9,
+              "H": -2.73046875
+            }
+          ]
+        },
+        {
+          "question_id": 85,
+          "category": "writing",
+          "turn_index": 0,
+          "call_index": 15,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -0.84375
+            },
+            {
+              "step": 7,
+              "H": -1.68359375
+            },
+            {
+              "step": 9,
+              "H": -3.16796875
+            }
+          ]
+        },
+        {
+          "question_id": 85,
+          "category": "writing",
+          "turn_index": 0,
+          "call_index": 16,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -2.1484375
+            },
+            {
+              "step": 7,
+              "H": -2.939453125
+            },
+            {
+              "step": 9,
+              "H": -4.421875
+            }
+          ]
+        },
+        {
+          "question_id": 85,
+          "category": "writing",
+          "turn_index": 0,
+          "call_index": 17,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -2.77734375
+            },
+            {
+              "step": 7,
+              "H": -3.5546875
+            },
+            {
+              "step": 9,
+              "H": -5.75390625
+            }
+          ]
+        },
+        {
+          "question_id": 85,
+          "category": "writing",
+          "turn_index": 0,
+          "call_index": 18,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -0.68212890625
+            },
+            {
+              "step": 7,
+              "H": -1.48828125
+            },
+            {
+              "step": 9,
+              "H": -2.80859375
+            }
+          ]
+        },
+        {
+          "question_id": 85,
+          "category": "writing",
+          "turn_index": 0,
+          "call_index": 19,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -1.431640625
+            },
+            {
+              "step": 7,
+              "H": -1.9619140625
+            },
+            {
+              "step": 9,
+              "H": -2.552734375
+            }
+          ]
+        },
+        {
+          "question_id": 85,
+          "category": "writing",
+          "turn_index": 0,
+          "call_index": 20,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -0.8427734375
+            },
+            {
+              "step": 7,
+              "H": -1.34375
+            },
+            {
+              "step": 9,
+              "H": -2.439453125
+            }
+          ]
+        },
+        {
+          "question_id": 85,
+          "category": "writing",
+          "turn_index": 0,
+          "call_index": 21,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -0.7841796875
+            },
+            {
+              "step": 7,
+              "H": -1.27734375
+            },
+            {
+              "step": 9,
+              "H": -2.0234375
+            }
+          ]
+        },
+        {
+          "question_id": 85,
+          "category": "writing",
+          "turn_index": 0,
+          "call_index": 22,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -1.58984375
+            },
+            {
+              "step": 7,
+              "H": -2.939453125
+            },
+            {
+              "step": 9,
+              "H": -4.11328125
+            }
+          ]
+        },
+        {
+          "question_id": 85,
+          "category": "writing",
+          "turn_index": 1,
+          "call_index": 0,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -0.595703125
+            },
+            {
+              "step": 7,
+              "H": -1.4912109375
+            },
+            {
+              "step": 9,
+              "H": -2.25390625
+            }
+          ]
+        },
+        {
+          "question_id": 85,
+          "category": "writing",
+          "turn_index": 1,
+          "call_index": 1,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -0.75048828125
+            },
+            {
+              "step": 7,
+              "H": -1.7001953125
+            },
+            {
+              "step": 9,
+              "H": -4.2265625
+            }
+          ]
+        },
+        {
+          "question_id": 85,
+          "category": "writing",
+          "turn_index": 1,
+          "call_index": 2,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -1.974609375
+            },
+            {
+              "step": 7,
+              "H": -2.73828125
+            },
+            {
+              "step": 9,
+              "H": -4.30859375
+            }
+          ]
+        },
+        {
+          "question_id": 85,
+          "category": "writing",
+          "turn_index": 1,
+          "call_index": 3,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -4.37890625
+            },
+            {
+              "step": 7,
+              "H": -5.0546875
+            },
+            {
+              "step": 9,
+              "H": -6.2265625
+            }
+          ]
+        },
+        {
+          "question_id": 85,
+          "category": "writing",
+          "turn_index": 1,
+          "call_index": 4,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -3.9609375
+            },
+            {
+              "step": 7,
+              "H": -4.29296875
+            },
+            {
+              "step": 9,
+              "H": -5.5703125
+            }
+          ]
+        },
+        {
+          "question_id": 85,
+          "category": "writing",
+          "turn_index": 1,
+          "call_index": 5,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -3.50390625
+            },
+            {
+              "step": 7,
+              "H": -5.26953125
+            },
+            {
+              "step": 9,
+              "H": -6.44140625
+            }
+          ]
+        },
+        {
+          "question_id": 85,
+          "category": "writing",
+          "turn_index": 1,
+          "call_index": 6,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -0.8251953125
+            },
+            {
+              "step": 7,
+              "H": -2.17578125
+            },
+            {
+              "step": 9,
+              "H": -3.642578125
+            }
+          ]
+        },
+        {
+          "question_id": 85,
+          "category": "writing",
+          "turn_index": 1,
+          "call_index": 7,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -1.4228515625
+            },
+            {
+              "step": 7,
+              "H": -1.96875
+            },
+            {
+              "step": 9,
+              "H": -2.48046875
+            }
+          ]
+        },
+        {
+          "question_id": 85,
+          "category": "writing",
+          "turn_index": 1,
+          "call_index": 8,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -1.291015625
+            },
+            {
+              "step": 7,
+              "H": -1.9375
+            },
+            {
+              "step": 9,
+              "H": -3.7421875
+            }
+          ]
+        },
+        {
+          "question_id": 85,
+          "category": "writing",
+          "turn_index": 1,
+          "call_index": 9,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -3.57421875
+            },
+            {
+              "step": 7,
+              "H": -5.2578125
+            },
+            {
+              "step": 9,
+              "H": -6.578125
+            }
+          ]
+        },
+        {
+          "question_id": 85,
+          "category": "writing",
+          "turn_index": 1,
+          "call_index": 10,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -2.46484375
+            },
+            {
+              "step": 7,
+              "H": -2.81640625
+            },
+            {
+              "step": 9,
+              "H": -3.607421875
+            }
+          ]
+        },
+        {
+          "question_id": 85,
+          "category": "writing",
+          "turn_index": 1,
+          "call_index": 11,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -1.888671875
+            },
+            {
+              "step": 7,
+              "H": -2.361328125
+            },
+            {
+              "step": 9,
+              "H": -2.666015625
+            }
+          ]
+        },
+        {
+          "question_id": 85,
+          "category": "writing",
+          "turn_index": 1,
+          "call_index": 12,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -0.05572509765625
+            },
+            {
+              "step": 7,
+              "H": -0.20751953125
+            },
+            {
+              "step": 9,
+              "H": -1.287109375
+            }
+          ]
+        },
+        {
+          "question_id": 85,
+          "category": "writing",
+          "turn_index": 1,
+          "call_index": 13,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -0.11083984375
+            },
+            {
+              "step": 7,
+              "H": -0.81494140625
+            },
+            {
+              "step": 9,
+              "H": -3.22265625
+            }
+          ]
+        },
+        {
+          "question_id": 85,
+          "category": "writing",
+          "turn_index": 1,
+          "call_index": 14,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -4.08984375
+            },
+            {
+              "step": 7,
+              "H": -5.96484375
+            },
+            {
+              "step": 9,
+              "H": -8.6015625
+            }
+          ]
+        },
+        {
+          "question_id": 85,
+          "category": "writing",
+          "turn_index": 1,
+          "call_index": 15,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -4.546875
+            },
+            {
+              "step": 7,
+              "H": -4.76953125
+            },
+            {
+              "step": 9,
+              "H": -5.578125
+            }
+          ]
+        },
+        {
+          "question_id": 85,
+          "category": "writing",
+          "turn_index": 1,
+          "call_index": 16,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -0.7041015625
+            },
+            {
+              "step": 7,
+              "H": -0.8671875
+            },
+            {
+              "step": 9,
+              "H": -2.009765625
+            }
+          ]
+        },
+        {
+          "question_id": 85,
+          "category": "writing",
+          "turn_index": 1,
+          "call_index": 17,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -0.6064453125
+            },
+            {
+              "step": 7,
+              "H": -0.6552734375
+            },
+            {
+              "step": 9,
+              "H": -1.19921875
+            }
+          ]
+        },
+        {
+          "question_id": 85,
+          "category": "writing",
+          "turn_index": 1,
+          "call_index": 18,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -0.107421875
+            },
+            {
+              "step": 7,
+              "H": -0.137939453125
+            },
+            {
+              "step": 9,
+              "H": -0.69677734375
+            }
+          ]
+        },
+        {
+          "question_id": 85,
+          "category": "writing",
+          "turn_index": 1,
+          "call_index": 19,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -1.63671875
+            },
+            {
+              "step": 7,
+              "H": -2.3671875
+            },
+            {
+              "step": 9,
+              "H": -5.265625
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

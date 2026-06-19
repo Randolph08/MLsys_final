@@ -1,0 +1,424 @@
+{
+  "metadata": {
+    "base_model_path": "/home/hzliu/AD/Homework_haozhe/MLsys_final/models/Llama-3.1-8B-Instruct",
+    "ea_model_path": "/home/hzliu/AD/Homework_haozhe/MLsys_final/EAGLE_checkpoints/EAGLE3-LLaMA3.1-Instruct-8B",
+    "prompt_source": "toy",
+    "num_records": 2,
+    "max_new_tokens": 64,
+    "total_token": 60,
+    "base_depth": 5,
+    "tree_top_k": 10,
+    "ddd_max_depth": 11,
+    "ddd_check_steps": [
+      5,
+      7,
+      9
+    ],
+    "ddd_threshold": -1000000000.0,
+    "torch_dtype": "fp16",
+    "device_map": "auto",
+    "cuda_visible_devices": "0,1,2,3,4",
+    "use_system_prompt": true,
+    "early_stop_should_be_disabled": true
+  },
+  "summary": {
+    "num_calls": 12,
+    "num_checks": 36,
+    "early_stops": 0,
+    "actual_depth": {
+      "count": 12,
+      "min": 12.0,
+      "max": 12.0,
+      "mean": 12.0,
+      "p05": 12.0,
+      "p10": 12.0,
+      "p25": 12.0,
+      "p50": 12.0,
+      "p75": 12.0,
+      "p90": 12.0,
+      "p95": 12.0,
+      "std": 0.0
+    },
+    "H_global": {
+      "count": 36,
+      "min": -5.34375,
+      "max": -0.012817,
+      "mean": -2.109473,
+      "p05": -4.206543,
+      "p10": -3.710938,
+      "p25": -2.889648,
+      "p50": -1.981445,
+      "p75": -1.213623,
+      "p90": -0.5625,
+      "p95": -0.370117,
+      "std": 1.276437
+    },
+    "H_by_step": {
+      "5": {
+        "count": 12,
+        "min": -2.193359,
+        "max": -0.012817,
+        "mean": -1.19927,
+        "p05": -2.138574,
+        "p10": -2.089453,
+        "p25": -1.861816,
+        "p50": -1.227051,
+        "p75": -0.606445,
+        "p90": -0.422754,
+        "p95": -0.235114,
+        "std": 0.700674
+      },
+      "7": {
+        "count": 12,
+        "min": -3.777344,
+        "max": -0.229492,
+        "mean": -2.012288,
+        "p05": -3.689258,
+        "p10": -3.535156,
+        "p25": -2.55957,
+        "p50": -2.085938,
+        "p75": -1.213623,
+        "p90": -1.117383,
+        "p95": -0.715576,
+        "std": 1.020567
+      },
+      "9": {
+        "count": 12,
+        "min": -5.34375,
+        "max": -1.572266,
+        "mean": -3.116862,
+        "p05": -5.294336,
+        "p10": -5.114258,
+        "p25": -3.697754,
+        "p50": -3.230469,
+        "p75": -1.976562,
+        "p90": -1.822461,
+        "p95": -1.709766,
+        "std": 1.225815
+      }
+    },
+    "suggested_threshold_grid": [
+      -4.207,
+      -3.711,
+      -2.89,
+      -1.981,
+      -1.214
+    ]
+  },
+  "records": [
+    {
+      "question_id": "toy-0",
+      "source": "toy",
+      "category": null,
+      "num_turns": 1,
+      "turns": [
+        {
+          "turn_index": 0,
+          "input_tokens": 141,
+          "prompt_chars": 765,
+          "generated_trimmed_tokens": 7,
+          "generated_raw_tokens": 8,
+          "ddd_calls": 2,
+          "wall_time_s": 0.8653
+        }
+      ],
+      "ddd_call_records": [
+        {
+          "question_id": "toy-0",
+          "category": null,
+          "turn_index": 0,
+          "call_index": 0,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -0.0128173828125
+            },
+            {
+              "step": 7,
+              "H": -0.2294921875
+            },
+            {
+              "step": 9,
+              "H": -1.572265625
+            }
+          ]
+        },
+        {
+          "question_id": "toy-0",
+          "category": null,
+          "turn_index": 0,
+          "call_index": 1,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -1.798828125
+            },
+            {
+              "step": 7,
+              "H": -2.48046875
+            },
+            {
+              "step": 9,
+              "H": -3.30859375
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "question_id": "toy-1",
+      "source": "toy",
+      "category": null,
+      "num_turns": 1,
+      "turns": [
+        {
+          "turn_index": 0,
+          "input_tokens": 147,
+          "prompt_chars": 797,
+          "generated_trimmed_tokens": 64,
+          "generated_raw_tokens": 64,
+          "ddd_calls": 10,
+          "wall_time_s": 0.9028
+        }
+      ],
+      "ddd_call_records": [
+        {
+          "question_id": "toy-1",
+          "category": null,
+          "turn_index": 0,
+          "call_index": 0,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -0.4169921875
+            },
+            {
+              "step": 7,
+              "H": -1.154296875
+            },
+            {
+              "step": 9,
+              "H": -1.822265625
+            }
+          ]
+        },
+        {
+          "question_id": "toy-1",
+          "category": null,
+          "turn_index": 0,
+          "call_index": 1,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -1.1298828125
+            },
+            {
+              "step": 7,
+              "H": -1.935546875
+            },
+            {
+              "step": 9,
+              "H": -3.29296875
+            }
+          ]
+        },
+        {
+          "question_id": "toy-1",
+          "category": null,
+          "turn_index": 0,
+          "call_index": 2,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -0.85791015625
+            },
+            {
+              "step": 7,
+              "H": -1.2939453125
+            },
+            {
+              "step": 9,
+              "H": -1.82421875
+            }
+          ]
+        },
+        {
+          "question_id": "toy-1",
+          "category": null,
+          "turn_index": 0,
+          "call_index": 3,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -0.474609375
+            },
+            {
+              "step": 7,
+              "H": -1.11328125
+            },
+            {
+              "step": 9,
+              "H": -2.02734375
+            }
+          ]
+        },
+        {
+          "question_id": "toy-1",
+          "category": null,
+          "turn_index": 0,
+          "call_index": 4,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -1.32421875
+            },
+            {
+              "step": 7,
+              "H": -2.236328125
+            },
+            {
+              "step": 9,
+              "H": -3.64453125
+            }
+          ]
+        },
+        {
+          "question_id": "toy-1",
+          "category": null,
+          "turn_index": 0,
+          "call_index": 5,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -2.09375
+            },
+            {
+              "step": 7,
+              "H": -2.796875
+            },
+            {
+              "step": 9,
+              "H": -3.857421875
+            }
+          ]
+        },
+        {
+          "question_id": "toy-1",
+          "category": null,
+          "turn_index": 0,
+          "call_index": 6,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -2.05078125
+            },
+            {
+              "step": 7,
+              "H": -3.6171875
+            },
+            {
+              "step": 9,
+              "H": -5.34375
+            }
+          ]
+        },
+        {
+          "question_id": "toy-1",
+          "category": null,
+          "turn_index": 0,
+          "call_index": 7,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -2.193359375
+            },
+            {
+              "step": 7,
+              "H": -3.77734375
+            },
+            {
+              "step": 9,
+              "H": -5.25390625
+            }
+          ]
+        },
+        {
+          "question_id": "toy-1",
+          "category": null,
+          "turn_index": 0,
+          "call_index": 8,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -0.650390625
+            },
+            {
+              "step": 7,
+              "H": -1.2333984375
+            },
+            {
+              "step": 9,
+              "H": -2.287109375
+            }
+          ]
+        },
+        {
+          "question_id": "toy-1",
+          "category": null,
+          "turn_index": 0,
+          "call_index": 9,
+          "actual_depth": 12,
+          "early_stopped": false,
+          "early_stop_step": null,
+          "checks": [
+            {
+              "step": 5,
+              "H": -1.3876953125
+            },
+            {
+              "step": 7,
+              "H": -2.279296875
+            },
+            {
+              "step": 9,
+              "H": -3.16796875
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

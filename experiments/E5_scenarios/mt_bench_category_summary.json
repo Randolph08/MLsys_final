@@ -1,0 +1,1912 @@
+{
+  "inputs": {
+    "official_baseline": "/home/hzliu/AD/Homework_haozhe/MLsys_final/experiments/E1_official_baseline/official_baseline_mt_bench_limit-80_max-128.json",
+    "fixed_depth": "/home/hzliu/AD/Homework_haozhe/MLsys_final/experiments/E3_ddd/fixed_depth_mt_bench_limit-80_max-128_depths-5-11.json",
+    "ddd": "/home/hzliu/AD/Homework_haozhe/MLsys_final/experiments/E3_ddd/ddd_sweep_mt_bench_limit-80_max-128_depth-11_tau-m2p0-m0p5.json",
+    "ddd_optimized": "/home/hzliu/AD/Homework_haozhe/MLsys_final/experiments/E6_optimizations/ddd_sweep_mt_bench_limit-80_max-128_depth-11_tau-m1p0-m0p3.json",
+    "opt_dynamic": "/home/hzliu/AD/Homework_haozhe/MLsys_final/experiments/E4_opt_tree/opt_dynamic_mt_bench_limit-80_max-128_expand-1p5_single_repeat.json"
+  },
+  "official_baseline": {
+    "summary": {
+      "all_records_match": false,
+      "matching_records": 63,
+      "total_records": 80,
+      "methods": {
+        "naive": {
+          "turns": 160,
+          "total_trimmed_tokens": 18845,
+          "total_raw_tokens": 18872,
+          "total_wall_time_s": 1123.9953,
+          "mean_tok_per_s_trimmed": 17.5932,
+          "mean_tok_per_s_raw": 17.663,
+          "mean_loop_count": 117.95
+        },
+        "eagle": {
+          "turns": 160,
+          "total_trimmed_tokens": 18903,
+          "total_raw_tokens": 19261,
+          "total_wall_time_s": 294.0619,
+          "mean_tok_per_s_trimmed": 68.5542,
+          "mean_tok_per_s_raw": 69.8912,
+          "mean_loop_count": 22.4062
+        }
+      },
+      "speedup_eagle_vs_naive_trimmed_mean": 3.8966
+    },
+    "category_order": [
+      "writing",
+      "roleplay",
+      "reasoning",
+      "math",
+      "coding",
+      "extraction",
+      "stem",
+      "humanities"
+    ],
+    "by_category": {
+      "writing": {
+        "naive": {
+          "records": 10,
+          "turns": 20,
+          "trimmed_tokens": 2290,
+          "raw_tokens": 2294,
+          "wall_time_s": 130.8958,
+          "tok_per_s": 17.494832,
+          "accept_per_step": 0.998256,
+          "mean_loop_count": 114.7,
+          "mean_input_tokens": 256.15,
+          "raw_overshoot_turns": 0
+        },
+        "eagle": {
+          "records": 10,
+          "turns": 20,
+          "trimmed_tokens": 2328,
+          "raw_tokens": 2370,
+          "wall_time_s": 34.9643,
+          "tok_per_s": 66.5822,
+          "accept_per_step": 5.150442,
+          "mean_loop_count": 22.6,
+          "mean_input_tokens": 256.15,
+          "raw_overshoot_turns": 0
+        },
+        "speedup": 3.805821,
+        "match": {
+          "records": 10,
+          "record_matches": 7,
+          "turns": 20,
+          "turn_matches": 16,
+          "record_match_rate": 0.7,
+          "turn_match_rate": 0.8
+        }
+      },
+      "roleplay": {
+        "naive": {
+          "records": 10,
+          "turns": 20,
+          "trimmed_tokens": 2496,
+          "raw_tokens": 2498,
+          "wall_time_s": 185.2457,
+          "tok_per_s": 13.473997,
+          "accept_per_step": 0.999199,
+          "mean_loop_count": 124.9,
+          "mean_input_tokens": 272.85,
+          "raw_overshoot_turns": 0
+        },
+        "eagle": {
+          "records": 10,
+          "turns": 20,
+          "trimmed_tokens": 2496,
+          "raw_tokens": 2546,
+          "wall_time_s": 54.6874,
+          "tok_per_s": 45.641226,
+          "accept_per_step": 4.449198,
+          "mean_loop_count": 28.05,
+          "mean_input_tokens": 272.85,
+          "raw_overshoot_turns": 0
+        },
+        "speedup": 3.387356,
+        "match": {
+          "records": 10,
+          "record_matches": 6,
+          "turns": 20,
+          "turn_matches": 13,
+          "record_match_rate": 0.6,
+          "turn_match_rate": 0.65
+        }
+      },
+      "reasoning": {
+        "naive": {
+          "records": 10,
+          "turns": 20,
+          "trimmed_tokens": 2017,
+          "raw_tokens": 2027,
+          "wall_time_s": 97.8261,
+          "tok_per_s": 20.618219,
+          "accept_per_step": 0.995067,
+          "mean_loop_count": 101.35,
+          "mean_input_tokens": 266.95,
+          "raw_overshoot_turns": 0
+        },
+        "eagle": {
+          "records": 10,
+          "turns": 20,
+          "trimmed_tokens": 2037,
+          "raw_tokens": 2070,
+          "wall_time_s": 25.7334,
+          "tok_per_s": 79.157826,
+          "accept_per_step": 5.236504,
+          "mean_loop_count": 19.45,
+          "mean_input_tokens": 266.95,
+          "raw_overshoot_turns": 0
+        },
+        "speedup": 3.839217,
+        "match": {
+          "records": 10,
+          "record_matches": 8,
+          "turns": 20,
+          "turn_matches": 17,
+          "record_match_rate": 0.8,
+          "turn_match_rate": 0.85
+        }
+      },
+      "math": {
+        "naive": {
+          "records": 10,
+          "turns": 20,
+          "trimmed_tokens": 2460,
+          "raw_tokens": 2463,
+          "wall_time_s": 117.306,
+          "tok_per_s": 20.970794,
+          "accept_per_step": 0.998782,
+          "mean_loop_count": 123.15,
+          "mean_input_tokens": 254.1,
+          "raw_overshoot_turns": 0
+        },
+        "eagle": {
+          "records": 10,
+          "turns": 20,
+          "trimmed_tokens": 2460,
+          "raw_tokens": 2510,
+          "wall_time_s": 27.5269,
+          "tok_per_s": 89.367128,
+          "accept_per_step": 5.815603,
+          "mean_loop_count": 21.15,
+          "mean_input_tokens": 254.1,
+          "raw_overshoot_turns": 0
+        },
+        "speedup": 4.261504,
+        "match": {
+          "records": 10,
+          "record_matches": 9,
+          "turns": 20,
+          "turn_matches": 19,
+          "record_match_rate": 0.9,
+          "turn_match_rate": 0.95
+        }
+      },
+      "coding": {
+        "naive": {
+          "records": 10,
+          "turns": 20,
+          "trimmed_tokens": 2560,
+          "raw_tokens": 2560,
+          "wall_time_s": 169.6483,
+          "tok_per_s": 15.090042,
+          "accept_per_step": 1.0,
+          "mean_loop_count": 128.0,
+          "mean_input_tokens": 261.65,
+          "raw_overshoot_turns": 0
+        },
+        "eagle": {
+          "records": 10,
+          "turns": 20,
+          "trimmed_tokens": 2560,
+          "raw_tokens": 2609,
+          "wall_time_s": 40.4889,
+          "tok_per_s": 63.227205,
+          "accept_per_step": 5.831435,
+          "mean_loop_count": 21.95,
+          "mean_input_tokens": 261.65,
+          "raw_overshoot_turns": 0
+        },
+        "speedup": 4.189995,
+        "match": {
+          "records": 10,
+          "record_matches": 9,
+          "turns": 20,
+          "turn_matches": 18,
+          "record_match_rate": 0.9,
+          "turn_match_rate": 0.9
+        }
+      },
+      "extraction": {
+        "naive": {
+          "records": 10,
+          "turns": 20,
+          "trimmed_tokens": 1902,
+          "raw_tokens": 1910,
+          "wall_time_s": 94.2813,
+          "tok_per_s": 20.173672,
+          "accept_per_step": 0.995812,
+          "mean_loop_count": 95.5,
+          "mean_input_tokens": 421.75,
+          "raw_overshoot_turns": 0
+        },
+        "eagle": {
+          "records": 10,
+          "turns": 20,
+          "trimmed_tokens": 1902,
+          "raw_tokens": 1931,
+          "wall_time_s": 24.3665,
+          "tok_per_s": 78.057989,
+          "accept_per_step": 5.465517,
+          "mean_loop_count": 17.4,
+          "mean_input_tokens": 421.75,
+          "raw_overshoot_turns": 0
+        },
+        "speedup": 3.8693,
+        "match": {
+          "records": 10,
+          "record_matches": 10,
+          "turns": 20,
+          "turn_matches": 20,
+          "record_match_rate": 1.0,
+          "turn_match_rate": 1.0
+        }
+      },
+      "stem": {
+        "naive": {
+          "records": 10,
+          "turns": 20,
+          "trimmed_tokens": 2560,
+          "raw_tokens": 2560,
+          "wall_time_s": 173.7518,
+          "tok_per_s": 14.73366,
+          "accept_per_step": 1.0,
+          "mean_loop_count": 128.0,
+          "mean_input_tokens": 251.1,
+          "raw_overshoot_turns": 0
+        },
+        "eagle": {
+          "records": 10,
+          "turns": 20,
+          "trimmed_tokens": 2560,
+          "raw_tokens": 2610,
+          "wall_time_s": 44.8966,
+          "tok_per_s": 57.019908,
+          "accept_per_step": 5.389474,
+          "mean_loop_count": 23.75,
+          "mean_input_tokens": 251.1,
+          "raw_overshoot_turns": 0
+        },
+        "speedup": 3.870044,
+        "match": {
+          "records": 10,
+          "record_matches": 7,
+          "turns": 20,
+          "turn_matches": 16,
+          "record_match_rate": 0.7,
+          "turn_match_rate": 0.8
+        }
+      },
+      "humanities": {
+        "naive": {
+          "records": 10,
+          "turns": 20,
+          "trimmed_tokens": 2560,
+          "raw_tokens": 2560,
+          "wall_time_s": 155.0403,
+          "tok_per_s": 16.511836,
+          "accept_per_step": 1.0,
+          "mean_loop_count": 128.0,
+          "mean_input_tokens": 244.45,
+          "raw_overshoot_turns": 0
+        },
+        "eagle": {
+          "records": 10,
+          "turns": 20,
+          "trimmed_tokens": 2560,
+          "raw_tokens": 2615,
+          "wall_time_s": 41.3979,
+          "tok_per_s": 61.838886,
+          "accept_per_step": 5.140562,
+          "mean_loop_count": 24.9,
+          "mean_input_tokens": 244.45,
+          "raw_overshoot_turns": 0
+        },
+        "speedup": 3.745125,
+        "match": {
+          "records": 10,
+          "record_matches": 7,
+          "turns": 20,
+          "turn_matches": 16,
+          "record_match_rate": 0.7,
+          "turn_match_rate": 0.8
+        }
+      }
+    }
+  },
+  "fixed_depth": {
+    "summary": [
+      {
+        "depth": 5,
+        "turns": 160,
+        "total_trimmed_tokens": 18903,
+        "total_raw_tokens": 19261,
+        "total_wall_time_s": 298.0771,
+        "raw_overshoot_turns": 105,
+        "mean_tok_per_s_trimmed": 65.23,
+        "mean_accept_per_step_trimmed": 5.341164,
+        "mean_loop_count": 22.4062,
+        "mean_trimmed_tokens": 118.1437,
+        "speed_vs_first_depth": 1.0
+      },
+      {
+        "depth": 11,
+        "turns": 160,
+        "total_trimmed_tokens": 18903,
+        "total_raw_tokens": 19442,
+        "total_wall_time_s": 259.5147,
+        "raw_overshoot_turns": 115,
+        "mean_tok_per_s_trimmed": 77.03,
+        "mean_accept_per_step_trimmed": 6.392234,
+        "mean_loop_count": 19.4625,
+        "mean_trimmed_tokens": 118.1437,
+        "speed_vs_first_depth": 1.1809
+      }
+    ],
+    "category_order": [
+      "writing",
+      "roleplay",
+      "reasoning",
+      "math",
+      "coding",
+      "extraction",
+      "stem",
+      "humanities"
+    ],
+    "by_depth": {
+      "5": {
+        "summary": {
+          "turns": 160,
+          "total_trimmed_tokens": 18903,
+          "total_raw_tokens": 19261,
+          "total_wall_time_s": 298.0771,
+          "raw_overshoot_turns": 105,
+          "mean_tok_per_s_trimmed": 65.23,
+          "mean_accept_per_step_trimmed": 5.341164,
+          "mean_loop_count": 22.4062,
+          "mean_trimmed_tokens": 118.1437
+        },
+        "by_category": {
+          "writing": {
+            "records": 10,
+            "turns": 20,
+            "trimmed_tokens": 2328,
+            "raw_tokens": 2370,
+            "wall_time_s": 30.0965,
+            "tok_per_s": 77.351187,
+            "accept_per_step": 5.150442,
+            "mean_loop_count": 22.6,
+            "mean_input_tokens": 256.15,
+            "raw_overshoot_turns": 13
+          },
+          "roleplay": {
+            "records": 10,
+            "turns": 20,
+            "trimmed_tokens": 2496,
+            "raw_tokens": 2546,
+            "wall_time_s": 36.0684,
+            "tok_per_s": 69.20185,
+            "accept_per_step": 4.449198,
+            "mean_loop_count": 28.05,
+            "mean_input_tokens": 272.85,
+            "raw_overshoot_turns": 14
+          },
+          "reasoning": {
+            "records": 10,
+            "turns": 20,
+            "trimmed_tokens": 2037,
+            "raw_tokens": 2070,
+            "wall_time_s": 31.2415,
+            "tok_per_s": 65.201735,
+            "accept_per_step": 5.236504,
+            "mean_loop_count": 19.45,
+            "mean_input_tokens": 266.95,
+            "raw_overshoot_turns": 7
+          },
+          "math": {
+            "records": 10,
+            "turns": 20,
+            "trimmed_tokens": 2460,
+            "raw_tokens": 2510,
+            "wall_time_s": 43.3619,
+            "tok_per_s": 56.731831,
+            "accept_per_step": 5.815603,
+            "mean_loop_count": 21.15,
+            "mean_input_tokens": 254.1,
+            "raw_overshoot_turns": 16
+          },
+          "coding": {
+            "records": 10,
+            "turns": 20,
+            "trimmed_tokens": 2560,
+            "raw_tokens": 2609,
+            "wall_time_s": 45.2447,
+            "tok_per_s": 56.581213,
+            "accept_per_step": 5.831435,
+            "mean_loop_count": 21.95,
+            "mean_input_tokens": 261.65,
+            "raw_overshoot_turns": 16
+          },
+          "extraction": {
+            "records": 10,
+            "turns": 20,
+            "trimmed_tokens": 1902,
+            "raw_tokens": 1931,
+            "wall_time_s": 37.406,
+            "tok_per_s": 50.847458,
+            "accept_per_step": 5.465517,
+            "mean_loop_count": 17.4,
+            "mean_input_tokens": 421.75,
+            "raw_overshoot_turns": 9
+          },
+          "stem": {
+            "records": 10,
+            "turns": 20,
+            "trimmed_tokens": 2560,
+            "raw_tokens": 2610,
+            "wall_time_s": 41.5049,
+            "tok_per_s": 61.679464,
+            "accept_per_step": 5.389474,
+            "mean_loop_count": 23.75,
+            "mean_input_tokens": 251.1,
+            "raw_overshoot_turns": 14
+          },
+          "humanities": {
+            "records": 10,
+            "turns": 20,
+            "trimmed_tokens": 2560,
+            "raw_tokens": 2615,
+            "wall_time_s": 33.1532,
+            "tok_per_s": 77.217282,
+            "accept_per_step": 5.140562,
+            "mean_loop_count": 24.9,
+            "mean_input_tokens": 244.45,
+            "raw_overshoot_turns": 16
+          }
+        }
+      },
+      "11": {
+        "summary": {
+          "turns": 160,
+          "total_trimmed_tokens": 18903,
+          "total_raw_tokens": 19442,
+          "total_wall_time_s": 259.5147,
+          "raw_overshoot_turns": 115,
+          "mean_tok_per_s_trimmed": 77.03,
+          "mean_accept_per_step_trimmed": 6.392234,
+          "mean_loop_count": 19.4625,
+          "mean_trimmed_tokens": 118.1437
+        },
+        "by_category": {
+          "writing": {
+            "records": 10,
+            "turns": 20,
+            "trimmed_tokens": 2328,
+            "raw_tokens": 2398,
+            "wall_time_s": 31.404,
+            "tok_per_s": 74.130684,
+            "accept_per_step": 5.776675,
+            "mean_loop_count": 20.15,
+            "mean_input_tokens": 256.15,
+            "raw_overshoot_turns": 14
+          },
+          "roleplay": {
+            "records": 10,
+            "turns": 20,
+            "trimmed_tokens": 2496,
+            "raw_tokens": 2556,
+            "wall_time_s": 41.2039,
+            "tok_per_s": 60.57679,
+            "accept_per_step": 4.665421,
+            "mean_loop_count": 26.75,
+            "mean_input_tokens": 272.85,
+            "raw_overshoot_turns": 16
+          },
+          "reasoning": {
+            "records": 10,
+            "turns": 20,
+            "trimmed_tokens": 2037,
+            "raw_tokens": 2083,
+            "wall_time_s": 26.8449,
+            "tok_per_s": 75.880335,
+            "accept_per_step": 6.026627,
+            "mean_loop_count": 16.9,
+            "mean_input_tokens": 266.95,
+            "raw_overshoot_turns": 10
+          },
+          "math": {
+            "records": 10,
+            "turns": 20,
+            "trimmed_tokens": 2460,
+            "raw_tokens": 2524,
+            "wall_time_s": 28.3856,
+            "tok_per_s": 86.66366,
+            "accept_per_step": 6.833333,
+            "mean_loop_count": 18.0,
+            "mean_input_tokens": 254.1,
+            "raw_overshoot_turns": 16
+          },
+          "coding": {
+            "records": 10,
+            "turns": 20,
+            "trimmed_tokens": 2560,
+            "raw_tokens": 2646,
+            "wall_time_s": 26.9451,
+            "tok_per_s": 95.007998,
+            "accept_per_step": 7.551622,
+            "mean_loop_count": 16.95,
+            "mean_input_tokens": 261.65,
+            "raw_overshoot_turns": 16
+          },
+          "extraction": {
+            "records": 10,
+            "turns": 20,
+            "trimmed_tokens": 1902,
+            "raw_tokens": 1985,
+            "wall_time_s": 23.0601,
+            "tok_per_s": 82.480128,
+            "accept_per_step": 7.01845,
+            "mean_loop_count": 13.55,
+            "mean_input_tokens": 421.75,
+            "raw_overshoot_turns": 11
+          },
+          "stem": {
+            "records": 10,
+            "turns": 20,
+            "trimmed_tokens": 2560,
+            "raw_tokens": 2618,
+            "wall_time_s": 33.0003,
+            "tok_per_s": 77.575052,
+            "accept_per_step": 5.981308,
+            "mean_loop_count": 21.4,
+            "mean_input_tokens": 251.1,
+            "raw_overshoot_turns": 16
+          },
+          "humanities": {
+            "records": 10,
+            "turns": 20,
+            "trimmed_tokens": 2560,
+            "raw_tokens": 2632,
+            "wall_time_s": 48.6708,
+            "tok_per_s": 52.598272,
+            "accept_per_step": 5.818182,
+            "mean_loop_count": 22.0,
+            "mean_input_tokens": 244.45,
+            "raw_overshoot_turns": 16
+          }
+        }
+      }
+    }
+  },
+  "ddd": {
+    "summary": [
+      {
+        "threshold": -2.0,
+        "turns": 160,
+        "total_trimmed_tokens": 18896,
+        "total_raw_tokens": 19415,
+        "total_wall_time_s": 288.7916,
+        "raw_overshoot_turns": 113,
+        "mean_tok_per_s_trimmed": 68.5052,
+        "mean_accept_per_step_trimmed": 6.364545,
+        "mean_loop_count": 19.5312,
+        "mean_trimmed_tokens": 118.1,
+        "ddd_calls": 3285,
+        "early_stops": 2334,
+        "early_stop_rate": 0.710502,
+        "mean_actual_depth": 9.121461,
+        "actual_depth_min": 6,
+        "actual_depth_max": 12,
+        "early_stop_step_hist": {
+          "5": 820,
+          "7": 754,
+          "9": 760
+        },
+        "speed_vs_first_threshold": 1.0
+      },
+      {
+        "threshold": -0.5,
+        "turns": 160,
+        "total_trimmed_tokens": 18902,
+        "total_raw_tokens": 19338,
+        "total_wall_time_s": 280.4928,
+        "raw_overshoot_turns": 107,
+        "mean_tok_per_s_trimmed": 70.741,
+        "mean_accept_per_step_trimmed": 6.040638,
+        "mean_loop_count": 20.4312,
+        "mean_trimmed_tokens": 118.1375,
+        "ddd_calls": 3429,
+        "early_stops": 3195,
+        "early_stop_rate": 0.931759,
+        "mean_actual_depth": 6.990959,
+        "actual_depth_min": 6,
+        "actual_depth_max": 12,
+        "early_stop_step_hist": {
+          "5": 2505,
+          "7": 383,
+          "9": 307
+        },
+        "speed_vs_first_threshold": 1.0326
+      }
+    ],
+    "category_order": [
+      "writing",
+      "roleplay",
+      "reasoning",
+      "math",
+      "coding",
+      "extraction",
+      "stem",
+      "humanities"
+    ],
+    "by_threshold": {
+      "-2.0": {
+        "summary": {
+          "turns": 160,
+          "total_trimmed_tokens": 18896,
+          "total_raw_tokens": 19415,
+          "total_wall_time_s": 288.7916,
+          "raw_overshoot_turns": 113,
+          "mean_tok_per_s_trimmed": 68.5052,
+          "mean_accept_per_step_trimmed": 6.364545,
+          "mean_loop_count": 19.5312,
+          "mean_trimmed_tokens": 118.1,
+          "ddd_calls": 3285,
+          "early_stops": 2334,
+          "early_stop_rate": 0.710502,
+          "mean_actual_depth": 9.121461,
+          "actual_depth_min": 6,
+          "actual_depth_max": 12,
+          "early_stop_step_hist": {
+            "5": 820,
+            "7": 754,
+            "9": 760
+          }
+        },
+        "by_category": {
+          "writing": {
+            "records": 10,
+            "turns": 20,
+            "trimmed_tokens": 2328,
+            "raw_tokens": 2399,
+            "wall_time_s": 30.4563,
+            "tok_per_s": 76.437387,
+            "accept_per_step": 5.762376,
+            "mean_loop_count": 20.2,
+            "mean_input_tokens": 256.15,
+            "raw_overshoot_turns": 15,
+            "ddd_calls": 424,
+            "early_stops": 330,
+            "early_stop_rate": 0.778302,
+            "mean_actual_depth": 8.679245,
+            "early_stop_step_hist": {
+              "5": 139,
+              "7": 96,
+              "9": 95
+            }
+          },
+          "roleplay": {
+            "records": 10,
+            "turns": 20,
+            "trimmed_tokens": 2489,
+            "raw_tokens": 2550,
+            "wall_time_s": 37.394,
+            "tok_per_s": 66.56148,
+            "accept_per_step": 4.635009,
+            "mean_loop_count": 26.85,
+            "mean_input_tokens": 272.85,
+            "raw_overshoot_turns": 15,
+            "ddd_calls": 557,
+            "early_stops": 509,
+            "early_stop_rate": 0.913824,
+            "mean_actual_depth": 7.881508,
+            "early_stop_step_hist": {
+              "5": 241,
+              "7": 156,
+              "9": 112
+            }
+          },
+          "reasoning": {
+            "records": 10,
+            "turns": 20,
+            "trimmed_tokens": 2037,
+            "raw_tokens": 2078,
+            "wall_time_s": 24.714,
+            "tok_per_s": 82.422918,
+            "accept_per_step": 6.00885,
+            "mean_loop_count": 16.95,
+            "mean_input_tokens": 266.95,
+            "raw_overshoot_turns": 10,
+            "ddd_calls": 359,
+            "early_stops": 287,
+            "early_stop_rate": 0.799443,
+            "mean_actual_depth": 8.75766,
+            "early_stop_step_hist": {
+              "5": 100,
+              "7": 95,
+              "9": 92
+            }
+          },
+          "math": {
+            "records": 10,
+            "turns": 20,
+            "trimmed_tokens": 2460,
+            "raw_tokens": 2522,
+            "wall_time_s": 34.3978,
+            "tok_per_s": 71.516202,
+            "accept_per_step": 6.833333,
+            "mean_loop_count": 18.0,
+            "mean_input_tokens": 254.1,
+            "raw_overshoot_turns": 16,
+            "ddd_calls": 380,
+            "early_stops": 178,
+            "early_stop_rate": 0.468421,
+            "mean_actual_depth": 10.468421,
+            "early_stop_step_hist": {
+              "5": 30,
+              "7": 53,
+              "9": 95
+            }
+          },
+          "coding": {
+            "records": 10,
+            "turns": 20,
+            "trimmed_tokens": 2560,
+            "raw_tokens": 2644,
+            "wall_time_s": 40.8979,
+            "tok_per_s": 62.594901,
+            "accept_per_step": 7.551622,
+            "mean_loop_count": 16.95,
+            "mean_input_tokens": 261.65,
+            "raw_overshoot_turns": 15,
+            "ddd_calls": 359,
+            "early_stops": 159,
+            "early_stop_rate": 0.442897,
+            "mean_actual_depth": 10.48468,
+            "early_stop_step_hist": {
+              "5": 31,
+              "7": 51,
+              "9": 77
+            }
+          },
+          "extraction": {
+            "records": 10,
+            "turns": 20,
+            "trimmed_tokens": 1902,
+            "raw_tokens": 1985,
+            "wall_time_s": 34.4002,
+            "tok_per_s": 55.290376,
+            "accept_per_step": 6.916364,
+            "mean_loop_count": 13.75,
+            "mean_input_tokens": 421.75,
+            "raw_overshoot_turns": 11,
+            "ddd_calls": 295,
+            "early_stops": 158,
+            "early_stop_rate": 0.535593,
+            "mean_actual_depth": 10.067797,
+            "early_stop_step_hist": {
+              "5": 39,
+              "7": 49,
+              "9": 70
+            }
+          },
+          "stem": {
+            "records": 10,
+            "turns": 20,
+            "trimmed_tokens": 2560,
+            "raw_tokens": 2613,
+            "wall_time_s": 49.0685,
+            "tok_per_s": 52.171964,
+            "accept_per_step": 5.953488,
+            "mean_loop_count": 21.5,
+            "mean_input_tokens": 251.1,
+            "raw_overshoot_turns": 16,
+            "ddd_calls": 450,
+            "early_stops": 344,
+            "early_stop_rate": 0.764444,
+            "mean_actual_depth": 9.026667,
+            "early_stop_step_hist": {
+              "5": 102,
+              "7": 121,
+              "9": 121
+            }
+          },
+          "humanities": {
+            "records": 10,
+            "turns": 20,
+            "trimmed_tokens": 2560,
+            "raw_tokens": 2624,
+            "wall_time_s": 37.4629,
+            "tok_per_s": 68.334272,
+            "accept_per_step": 5.804989,
+            "mean_loop_count": 22.05,
+            "mean_input_tokens": 244.45,
+            "raw_overshoot_turns": 15,
+            "ddd_calls": 461,
+            "early_stops": 369,
+            "early_stop_rate": 0.800434,
+            "mean_actual_depth": 8.624729,
+            "early_stop_step_hist": {
+              "5": 138,
+              "7": 133,
+              "9": 98
+            }
+          }
+        }
+      },
+      "-0.5": {
+        "summary": {
+          "turns": 160,
+          "total_trimmed_tokens": 18902,
+          "total_raw_tokens": 19338,
+          "total_wall_time_s": 280.4928,
+          "raw_overshoot_turns": 107,
+          "mean_tok_per_s_trimmed": 70.741,
+          "mean_accept_per_step_trimmed": 6.040638,
+          "mean_loop_count": 20.4312,
+          "mean_trimmed_tokens": 118.1375,
+          "ddd_calls": 3429,
+          "early_stops": 3195,
+          "early_stop_rate": 0.931759,
+          "mean_actual_depth": 6.990959,
+          "actual_depth_min": 6,
+          "actual_depth_max": 12,
+          "early_stop_step_hist": {
+            "5": 2505,
+            "7": 383,
+            "9": 307
+          }
+        },
+        "by_category": {
+          "writing": {
+            "records": 10,
+            "turns": 20,
+            "trimmed_tokens": 2327,
+            "raw_tokens": 2376,
+            "wall_time_s": 28.7228,
+            "tok_per_s": 81.015778,
+            "accept_per_step": 5.527316,
+            "mean_loop_count": 21.05,
+            "mean_input_tokens": 256.15,
+            "raw_overshoot_turns": 13,
+            "ddd_calls": 441,
+            "early_stops": 424,
+            "early_stop_rate": 0.961451,
+            "mean_actual_depth": 6.657596,
+            "early_stop_step_hist": {
+              "5": 360,
+              "7": 34,
+              "9": 30
+            }
+          },
+          "roleplay": {
+            "records": 10,
+            "turns": 20,
+            "trimmed_tokens": 2496,
+            "raw_tokens": 2537,
+            "wall_time_s": 47.2708,
+            "tok_per_s": 52.802153,
+            "accept_per_step": 4.521739,
+            "mean_loop_count": 27.6,
+            "mean_input_tokens": 272.85,
+            "raw_overshoot_turns": 12,
+            "ddd_calls": 572,
+            "early_stops": 568,
+            "early_stop_rate": 0.993007,
+            "mean_actual_depth": 6.237762,
+            "early_stop_step_hist": {
+              "5": 521,
+              "7": 38,
+              "9": 9
+            }
+          },
+          "reasoning": {
+            "records": 10,
+            "turns": 20,
+            "trimmed_tokens": 2037,
+            "raw_tokens": 2070,
+            "wall_time_s": 38.8228,
+            "tok_per_s": 52.469168,
+            "accept_per_step": 5.642659,
+            "mean_loop_count": 18.05,
+            "mean_input_tokens": 266.95,
+            "raw_overshoot_turns": 8,
+            "ddd_calls": 381,
+            "early_stops": 368,
+            "early_stop_rate": 0.965879,
+            "mean_actual_depth": 6.566929,
+            "early_stop_step_hist": {
+              "5": 313,
+              "7": 41,
+              "9": 14
+            }
+          },
+          "math": {
+            "records": 10,
+            "turns": 20,
+            "trimmed_tokens": 2460,
+            "raw_tokens": 2527,
+            "wall_time_s": 41.6989,
+            "tok_per_s": 58.994362,
+            "accept_per_step": 6.612903,
+            "mean_loop_count": 18.6,
+            "mean_input_tokens": 254.1,
+            "raw_overshoot_turns": 17,
+            "ddd_calls": 392,
+            "early_stops": 343,
+            "early_stop_rate": 0.875,
+            "mean_actual_depth": 7.811224,
+            "early_stop_step_hist": {
+              "5": 201,
+              "7": 76,
+              "9": 66
+            }
+          },
+          "coding": {
+            "records": 10,
+            "turns": 20,
+            "trimmed_tokens": 2560,
+            "raw_tokens": 2636,
+            "wall_time_s": 39.258,
+            "tok_per_s": 65.209639,
+            "accept_per_step": 7.071823,
+            "mean_loop_count": 18.1,
+            "mean_input_tokens": 261.65,
+            "raw_overshoot_turns": 14,
+            "ddd_calls": 382,
+            "early_stops": 316,
+            "early_stop_rate": 0.827225,
+            "mean_actual_depth": 8.062827,
+            "early_stop_step_hist": {
+              "5": 190,
+              "7": 56,
+              "9": 70
+            }
+          },
+          "extraction": {
+            "records": 10,
+            "turns": 20,
+            "trimmed_tokens": 1902,
+            "raw_tokens": 1956,
+            "wall_time_s": 23.2609,
+            "tok_per_s": 81.768117,
+            "accept_per_step": 6.513699,
+            "mean_loop_count": 14.6,
+            "mean_input_tokens": 421.75,
+            "raw_overshoot_turns": 10,
+            "ddd_calls": 312,
+            "early_stops": 259,
+            "early_stop_rate": 0.830128,
+            "mean_actual_depth": 7.923077,
+            "early_stop_step_hist": {
+              "5": 169,
+              "7": 39,
+              "9": 51
+            }
+          },
+          "stem": {
+            "records": 10,
+            "turns": 20,
+            "trimmed_tokens": 2560,
+            "raw_tokens": 2622,
+            "wall_time_s": 30.2143,
+            "tok_per_s": 84.728092,
+            "accept_per_step": 5.791855,
+            "mean_loop_count": 22.1,
+            "mean_input_tokens": 251.1,
+            "raw_overshoot_turns": 16,
+            "ddd_calls": 462,
+            "early_stops": 450,
+            "early_stop_rate": 0.974026,
+            "mean_actual_depth": 6.774892,
+            "early_stop_step_hist": {
+              "5": 347,
+              "7": 63,
+              "9": 40
+            }
+          },
+          "humanities": {
+            "records": 10,
+            "turns": 20,
+            "trimmed_tokens": 2560,
+            "raw_tokens": 2614,
+            "wall_time_s": 31.2443,
+            "tok_per_s": 81.934945,
+            "accept_per_step": 5.481799,
+            "mean_loop_count": 23.35,
+            "mean_input_tokens": 244.45,
+            "raw_overshoot_turns": 17,
+            "ddd_calls": 487,
+            "early_stops": 467,
+            "early_stop_rate": 0.958932,
+            "mean_actual_depth": 6.616016,
+            "early_stop_step_hist": {
+              "5": 404,
+              "7": 36,
+              "9": 27
+            }
+          }
+        }
+      }
+    }
+  },
+  "ddd_optimized": {
+    "summary": [
+      {
+        "threshold": -1.0,
+        "turns": 160,
+        "total_trimmed_tokens": 18903,
+        "total_raw_tokens": 19379,
+        "total_wall_time_s": 217.6139,
+        "raw_overshoot_turns": 111,
+        "mean_tok_per_s_trimmed": 88.2706,
+        "mean_accept_per_step_trimmed": 6.251619,
+        "mean_loop_count": 19.8062,
+        "mean_trimmed_tokens": 118.1437,
+        "ddd_calls": 3329,
+        "early_stops": 2883,
+        "early_stop_rate": 0.866026,
+        "mean_actual_depth": 7.695404,
+        "mean_budget_tokens": 59,
+        "budget_tokens_min": 59,
+        "budget_tokens_max": 59,
+        "actual_depth_min": 6,
+        "actual_depth_max": 12,
+        "early_stop_step_hist": {
+          "5": 1850,
+          "7": 582,
+          "9": 451
+        },
+        "speed_vs_first_threshold": 1.0
+      },
+      {
+        "threshold": -0.3,
+        "turns": 160,
+        "total_trimmed_tokens": 18903,
+        "total_raw_tokens": 19333,
+        "total_wall_time_s": 298.8885,
+        "raw_overshoot_turns": 103,
+        "mean_tok_per_s_trimmed": 65.9864,
+        "mean_accept_per_step_trimmed": 5.907291,
+        "mean_loop_count": 20.8438,
+        "mean_trimmed_tokens": 118.1437,
+        "ddd_calls": 3495,
+        "early_stops": 3320,
+        "early_stop_rate": 0.949928,
+        "mean_actual_depth": 6.713591,
+        "mean_budget_tokens": 59,
+        "budget_tokens_min": 59,
+        "budget_tokens_max": 59,
+        "actual_depth_min": 6,
+        "actual_depth_max": 12,
+        "early_stop_step_hist": {
+          "5": 2814,
+          "7": 290,
+          "9": 216
+        },
+        "speed_vs_first_threshold": 0.7475
+      }
+    ],
+    "category_order": [
+      "writing",
+      "roleplay",
+      "reasoning",
+      "math",
+      "coding",
+      "extraction",
+      "stem",
+      "humanities"
+    ],
+    "by_threshold": {
+      "-1.0": {
+        "summary": {
+          "turns": 160,
+          "total_trimmed_tokens": 18903,
+          "total_raw_tokens": 19379,
+          "total_wall_time_s": 217.6139,
+          "raw_overshoot_turns": 111,
+          "mean_tok_per_s_trimmed": 88.2706,
+          "mean_accept_per_step_trimmed": 6.251619,
+          "mean_loop_count": 19.8062,
+          "mean_trimmed_tokens": 118.1437,
+          "ddd_calls": 3329,
+          "early_stops": 2883,
+          "early_stop_rate": 0.866026,
+          "mean_actual_depth": 7.695404,
+          "mean_budget_tokens": 59,
+          "budget_tokens_min": 59,
+          "budget_tokens_max": 59,
+          "actual_depth_min": 6,
+          "actual_depth_max": 12,
+          "early_stop_step_hist": {
+            "5": 1850,
+            "7": 582,
+            "9": 451
+          }
+        },
+        "by_category": {
+          "writing": {
+            "records": 10,
+            "turns": 20,
+            "trimmed_tokens": 2328,
+            "raw_tokens": 2385,
+            "wall_time_s": 27.7196,
+            "tok_per_s": 83.983896,
+            "accept_per_step": 5.623188,
+            "mean_loop_count": 20.7,
+            "mean_input_tokens": 256.15,
+            "raw_overshoot_turns": 14,
+            "ddd_calls": 434,
+            "early_stops": 395,
+            "early_stop_rate": 0.910138,
+            "mean_actual_depth": 7.299539,
+            "early_stop_step_hist": {
+              "5": 275,
+              "7": 75,
+              "9": 45
+            }
+          },
+          "roleplay": {
+            "records": 10,
+            "turns": 20,
+            "trimmed_tokens": 2496,
+            "raw_tokens": 2536,
+            "wall_time_s": 34.8657,
+            "tok_per_s": 71.588983,
+            "accept_per_step": 4.596685,
+            "mean_loop_count": 27.15,
+            "mean_input_tokens": 272.85,
+            "raw_overshoot_turns": 14,
+            "ddd_calls": 563,
+            "early_stops": 550,
+            "early_stop_rate": 0.976909,
+            "mean_actual_depth": 6.600355,
+            "early_stop_step_hist": {
+              "5": 446,
+              "7": 78,
+              "9": 26
+            }
+          },
+          "reasoning": {
+            "records": 10,
+            "turns": 20,
+            "trimmed_tokens": 2037,
+            "raw_tokens": 2076,
+            "wall_time_s": 23.5357,
+            "tok_per_s": 86.54937,
+            "accept_per_step": 5.938776,
+            "mean_loop_count": 17.15,
+            "mean_input_tokens": 266.95,
+            "raw_overshoot_turns": 10,
+            "ddd_calls": 363,
+            "early_stops": 340,
+            "early_stop_rate": 0.936639,
+            "mean_actual_depth": 7.327824,
+            "early_stop_step_hist": {
+              "5": 219,
+              "7": 70,
+              "9": 51
+            }
+          },
+          "math": {
+            "records": 10,
+            "turns": 20,
+            "trimmed_tokens": 2460,
+            "raw_tokens": 2527,
+            "wall_time_s": 26.0613,
+            "tok_per_s": 94.392835,
+            "accept_per_step": 6.739726,
+            "mean_loop_count": 18.25,
+            "mean_input_tokens": 254.1,
+            "raw_overshoot_turns": 16,
+            "ddd_calls": 385,
+            "early_stops": 284,
+            "early_stop_rate": 0.737662,
+            "mean_actual_depth": 8.888312,
+            "early_stop_step_hist": {
+              "5": 116,
+              "7": 83,
+              "9": 85
+            }
+          },
+          "coding": {
+            "records": 10,
+            "turns": 20,
+            "trimmed_tokens": 2560,
+            "raw_tokens": 2638,
+            "wall_time_s": 24.8527,
+            "tok_per_s": 103.006917,
+            "accept_per_step": 7.463557,
+            "mean_loop_count": 17.15,
+            "mean_input_tokens": 261.65,
+            "raw_overshoot_turns": 14,
+            "ddd_calls": 363,
+            "early_stops": 244,
+            "early_stop_rate": 0.672176,
+            "mean_actual_depth": 9.041322,
+            "early_stop_step_hist": {
+              "5": 117,
+              "7": 59,
+              "9": 68
+            }
+          },
+          "extraction": {
+            "records": 10,
+            "turns": 20,
+            "trimmed_tokens": 1902,
+            "raw_tokens": 1972,
+            "wall_time_s": 21.6893,
+            "tok_per_s": 87.69301,
+            "accept_per_step": 6.744681,
+            "mean_loop_count": 14.1,
+            "mean_input_tokens": 421.75,
+            "raw_overshoot_turns": 10,
+            "ddd_calls": 302,
+            "early_stops": 219,
+            "early_stop_rate": 0.725166,
+            "mean_actual_depth": 8.662252,
+            "early_stop_step_hist": {
+              "5": 116,
+              "7": 53,
+              "9": 50
+            }
+          },
+          "stem": {
+            "records": 10,
+            "turns": 20,
+            "trimmed_tokens": 2560,
+            "raw_tokens": 2623,
+            "wall_time_s": 28.8171,
+            "tok_per_s": 88.836142,
+            "accept_per_step": 5.995316,
+            "mean_loop_count": 21.35,
+            "mean_input_tokens": 251.1,
+            "raw_overshoot_turns": 17,
+            "ddd_calls": 447,
+            "early_stops": 415,
+            "early_stop_rate": 0.928412,
+            "mean_actual_depth": 7.47651,
+            "early_stop_step_hist": {
+              "5": 254,
+              "7": 88,
+              "9": 73
+            }
+          },
+          "humanities": {
+            "records": 10,
+            "turns": 20,
+            "trimmed_tokens": 2560,
+            "raw_tokens": 2622,
+            "wall_time_s": 30.0725,
+            "tok_per_s": 85.127608,
+            "accept_per_step": 5.663717,
+            "mean_loop_count": 22.6,
+            "mean_input_tokens": 244.45,
+            "raw_overshoot_turns": 16,
+            "ddd_calls": 472,
+            "early_stops": 436,
+            "early_stop_rate": 0.923729,
+            "mean_actual_depth": 7.228814,
+            "early_stop_step_hist": {
+              "5": 307,
+              "7": 76,
+              "9": 53
+            }
+          }
+        }
+      },
+      "-0.3": {
+        "summary": {
+          "turns": 160,
+          "total_trimmed_tokens": 18903,
+          "total_raw_tokens": 19333,
+          "total_wall_time_s": 298.8885,
+          "raw_overshoot_turns": 103,
+          "mean_tok_per_s_trimmed": 65.9864,
+          "mean_accept_per_step_trimmed": 5.907291,
+          "mean_loop_count": 20.8438,
+          "mean_trimmed_tokens": 118.1437,
+          "ddd_calls": 3495,
+          "early_stops": 3320,
+          "early_stop_rate": 0.949928,
+          "mean_actual_depth": 6.713591,
+          "mean_budget_tokens": 59,
+          "budget_tokens_min": 59,
+          "budget_tokens_max": 59,
+          "actual_depth_min": 6,
+          "actual_depth_max": 12,
+          "early_stop_step_hist": {
+            "5": 2814,
+            "7": 290,
+            "9": 216
+          }
+        },
+        "by_category": {
+          "writing": {
+            "records": 10,
+            "turns": 20,
+            "trimmed_tokens": 2328,
+            "raw_tokens": 2369,
+            "wall_time_s": 27.7149,
+            "tok_per_s": 83.998138,
+            "accept_per_step": 5.451991,
+            "mean_loop_count": 21.35,
+            "mean_input_tokens": 256.15,
+            "raw_overshoot_turns": 13,
+            "ddd_calls": 447,
+            "early_stops": 433,
+            "early_stop_rate": 0.96868,
+            "mean_actual_depth": 6.451902,
+            "early_stop_step_hist": {
+              "5": 395,
+              "7": 17,
+              "9": 21
+            }
+          },
+          "roleplay": {
+            "records": 10,
+            "turns": 20,
+            "trimmed_tokens": 2496,
+            "raw_tokens": 2547,
+            "wall_time_s": 35.163,
+            "tok_per_s": 70.983704,
+            "accept_per_step": 4.481149,
+            "mean_loop_count": 27.85,
+            "mean_input_tokens": 272.85,
+            "raw_overshoot_turns": 14,
+            "ddd_calls": 577,
+            "early_stops": 575,
+            "early_stop_rate": 0.996534,
+            "mean_actual_depth": 6.131716,
+            "early_stop_step_hist": {
+              "5": 551,
+              "7": 16,
+              "9": 8
+            }
+          },
+          "reasoning": {
+            "records": 10,
+            "turns": 20,
+            "trimmed_tokens": 2037,
+            "raw_tokens": 2075,
+            "wall_time_s": 27.5068,
+            "tok_per_s": 74.054416,
+            "accept_per_step": 5.535326,
+            "mean_loop_count": 18.4,
+            "mean_input_tokens": 266.95,
+            "raw_overshoot_turns": 8,
+            "ddd_calls": 388,
+            "early_stops": 380,
+            "early_stop_rate": 0.979381,
+            "mean_actual_depth": 6.371134,
+            "early_stop_step_hist": {
+              "5": 344,
+              "7": 24,
+              "9": 12
+            }
+          },
+          "math": {
+            "records": 10,
+            "turns": 20,
+            "trimmed_tokens": 2460,
+            "raw_tokens": 2530,
+            "wall_time_s": 39.8965,
+            "tok_per_s": 61.659544,
+            "accept_per_step": 6.542553,
+            "mean_loop_count": 18.8,
+            "mean_input_tokens": 254.1,
+            "raw_overshoot_turns": 16,
+            "ddd_calls": 396,
+            "early_stops": 365,
+            "early_stop_rate": 0.921717,
+            "mean_actual_depth": 7.282828,
+            "early_stop_step_hist": {
+              "5": 252,
+              "7": 65,
+              "9": 48
+            }
+          },
+          "coding": {
+            "records": 10,
+            "turns": 20,
+            "trimmed_tokens": 2560,
+            "raw_tokens": 2628,
+            "wall_time_s": 39.9901,
+            "tok_per_s": 64.015844,
+            "accept_per_step": 6.863271,
+            "mean_loop_count": 18.65,
+            "mean_input_tokens": 261.65,
+            "raw_overshoot_turns": 14,
+            "ddd_calls": 393,
+            "early_stops": 332,
+            "early_stop_rate": 0.844784,
+            "mean_actual_depth": 7.689567,
+            "early_stop_step_hist": {
+              "5": 230,
+              "7": 55,
+              "9": 47
+            }
+          },
+          "extraction": {
+            "records": 10,
+            "turns": 20,
+            "trimmed_tokens": 1902,
+            "raw_tokens": 1962,
+            "wall_time_s": 33.0191,
+            "tok_per_s": 57.603024,
+            "accept_per_step": 6.425676,
+            "mean_loop_count": 14.8,
+            "mean_input_tokens": 421.75,
+            "raw_overshoot_turns": 10,
+            "ddd_calls": 316,
+            "early_stops": 278,
+            "early_stop_rate": 0.879747,
+            "mean_actual_depth": 7.544304,
+            "early_stop_step_hist": {
+              "5": 196,
+              "7": 34,
+              "9": 48
+            }
+          },
+          "stem": {
+            "records": 10,
+            "turns": 20,
+            "trimmed_tokens": 2560,
+            "raw_tokens": 2622,
+            "wall_time_s": 47.5431,
+            "tok_per_s": 53.845879,
+            "accept_per_step": 5.481799,
+            "mean_loop_count": 23.35,
+            "mean_input_tokens": 251.1,
+            "raw_overshoot_turns": 14,
+            "ddd_calls": 487,
+            "early_stops": 480,
+            "early_stop_rate": 0.985626,
+            "mean_actual_depth": 6.427105,
+            "early_stop_step_hist": {
+              "5": 416,
+              "7": 45,
+              "9": 19
+            }
+          },
+          "humanities": {
+            "records": 10,
+            "turns": 20,
+            "trimmed_tokens": 2560,
+            "raw_tokens": 2600,
+            "wall_time_s": 48.055,
+            "tok_per_s": 53.272292,
+            "accept_per_step": 5.435244,
+            "mean_loop_count": 23.55,
+            "mean_input_tokens": 244.45,
+            "raw_overshoot_turns": 14,
+            "ddd_calls": 491,
+            "early_stops": 477,
+            "early_stop_rate": 0.971487,
+            "mean_actual_depth": 6.415479,
+            "early_stop_step_hist": {
+              "5": 430,
+              "7": 34,
+              "9": 13
+            }
+          }
+        }
+      }
+    }
+  },
+  "opt_dynamic": {
+    "summary": [
+      {
+        "name": "EAGLE-3",
+        "use_opt_tree": false,
+        "opt_expand_factor": null,
+        "turns": 160,
+        "total_trimmed_tokens": 18903,
+        "total_raw_tokens": 19261,
+        "total_wall_time_s": 324.9695,
+        "raw_overshoot_turns": 105,
+        "mean_tok_per_s_trimmed": 61.6615,
+        "mean_accept_per_step_trimmed": 5.341164,
+        "mean_loop_count": 22.4062,
+        "mean_trimmed_tokens": 118.1437,
+        "speed_vs_eagle3": 1.0,
+        "accept_delta_vs_eagle3": 0.0
+      },
+      {
+        "name": "OPT-1.5",
+        "use_opt_tree": true,
+        "opt_expand_factor": 1.5,
+        "turns": 160,
+        "total_trimmed_tokens": 18903,
+        "total_raw_tokens": 19261,
+        "total_wall_time_s": 409.748,
+        "raw_overshoot_turns": 105,
+        "mean_tok_per_s_trimmed": 47.1776,
+        "mean_accept_per_step_trimmed": 5.341164,
+        "mean_loop_count": 22.4062,
+        "mean_trimmed_tokens": 118.1437,
+        "speed_vs_eagle3": 0.7651,
+        "accept_delta_vs_eagle3": 0.0
+      },
+      {
+        "name": "EAGLE-3-repeat",
+        "use_opt_tree": false,
+        "opt_expand_factor": null,
+        "turns": 160,
+        "total_trimmed_tokens": 18903,
+        "total_raw_tokens": 19261,
+        "total_wall_time_s": 235.618,
+        "raw_overshoot_turns": 105,
+        "mean_tok_per_s_trimmed": 80.5016,
+        "mean_accept_per_step_trimmed": 5.341164,
+        "mean_loop_count": 22.4062,
+        "mean_trimmed_tokens": 118.1437,
+        "speed_vs_eagle3": 1.3055,
+        "accept_delta_vs_eagle3": 0.0
+      }
+    ],
+    "category_order": [
+      "writing",
+      "roleplay",
+      "reasoning",
+      "math",
+      "coding",
+      "extraction",
+      "stem",
+      "humanities"
+    ],
+    "by_config": {
+      "EAGLE-3": {
+        "summary": {
+          "turns": 160,
+          "total_trimmed_tokens": 18903,
+          "total_raw_tokens": 19261,
+          "total_wall_time_s": 324.9695,
+          "raw_overshoot_turns": 105,
+          "mean_tok_per_s_trimmed": 61.6615,
+          "mean_accept_per_step_trimmed": 5.341164,
+          "mean_loop_count": 22.4062,
+          "mean_trimmed_tokens": 118.1437
+        },
+        "use_opt_tree": false,
+        "opt_expand_factor": null,
+        "by_category": {
+          "writing": {
+            "records": 10,
+            "turns": 20,
+            "trimmed_tokens": 2328,
+            "raw_tokens": 2370,
+            "wall_time_s": 45.4425,
+            "tok_per_s": 51.229576,
+            "accept_per_step": 5.150442,
+            "mean_loop_count": 22.6,
+            "mean_input_tokens": 256.15,
+            "raw_overshoot_turns": 13
+          },
+          "roleplay": {
+            "records": 10,
+            "turns": 20,
+            "trimmed_tokens": 2496,
+            "raw_tokens": 2546,
+            "wall_time_s": 55.7059,
+            "tok_per_s": 44.806744,
+            "accept_per_step": 4.449198,
+            "mean_loop_count": 28.05,
+            "mean_input_tokens": 272.85,
+            "raw_overshoot_turns": 14
+          },
+          "reasoning": {
+            "records": 10,
+            "turns": 20,
+            "trimmed_tokens": 2037,
+            "raw_tokens": 2070,
+            "wall_time_s": 39.2964,
+            "tok_per_s": 51.836809,
+            "accept_per_step": 5.236504,
+            "mean_loop_count": 19.45,
+            "mean_input_tokens": 266.95,
+            "raw_overshoot_turns": 7
+          },
+          "math": {
+            "records": 10,
+            "turns": 20,
+            "trimmed_tokens": 2460,
+            "raw_tokens": 2510,
+            "wall_time_s": 46.315,
+            "tok_per_s": 53.114542,
+            "accept_per_step": 5.815603,
+            "mean_loop_count": 21.15,
+            "mean_input_tokens": 254.1,
+            "raw_overshoot_turns": 16
+          },
+          "coding": {
+            "records": 10,
+            "turns": 20,
+            "trimmed_tokens": 2560,
+            "raw_tokens": 2609,
+            "wall_time_s": 30.0359,
+            "tok_per_s": 85.23134,
+            "accept_per_step": 5.831435,
+            "mean_loop_count": 21.95,
+            "mean_input_tokens": 261.65,
+            "raw_overshoot_turns": 16
+          },
+          "extraction": {
+            "records": 10,
+            "turns": 20,
+            "trimmed_tokens": 1902,
+            "raw_tokens": 1931,
+            "wall_time_s": 24.8039,
+            "tok_per_s": 76.68149,
+            "accept_per_step": 5.465517,
+            "mean_loop_count": 17.4,
+            "mean_input_tokens": 421.75,
+            "raw_overshoot_turns": 9
+          },
+          "stem": {
+            "records": 10,
+            "turns": 20,
+            "trimmed_tokens": 2560,
+            "raw_tokens": 2610,
+            "wall_time_s": 32.6352,
+            "tok_per_s": 78.442908,
+            "accept_per_step": 5.389474,
+            "mean_loop_count": 23.75,
+            "mean_input_tokens": 251.1,
+            "raw_overshoot_turns": 14
+          },
+          "humanities": {
+            "records": 10,
+            "turns": 20,
+            "trimmed_tokens": 2560,
+            "raw_tokens": 2615,
+            "wall_time_s": 50.7347,
+            "tok_per_s": 50.458562,
+            "accept_per_step": 5.140562,
+            "mean_loop_count": 24.9,
+            "mean_input_tokens": 244.45,
+            "raw_overshoot_turns": 16
+          }
+        }
+      },
+      "OPT-1.5": {
+        "summary": {
+          "turns": 160,
+          "total_trimmed_tokens": 18903,
+          "total_raw_tokens": 19261,
+          "total_wall_time_s": 409.748,
+          "raw_overshoot_turns": 105,
+          "mean_tok_per_s_trimmed": 47.1776,
+          "mean_accept_per_step_trimmed": 5.341164,
+          "mean_loop_count": 22.4062,
+          "mean_trimmed_tokens": 118.1437
+        },
+        "use_opt_tree": true,
+        "opt_expand_factor": 1.5,
+        "by_category": {
+          "writing": {
+            "records": 10,
+            "turns": 20,
+            "trimmed_tokens": 2328,
+            "raw_tokens": 2370,
+            "wall_time_s": 54.6797,
+            "tok_per_s": 42.575215,
+            "accept_per_step": 5.150442,
+            "mean_loop_count": 22.6,
+            "mean_input_tokens": 256.15,
+            "raw_overshoot_turns": 13
+          },
+          "roleplay": {
+            "records": 10,
+            "turns": 20,
+            "trimmed_tokens": 2496,
+            "raw_tokens": 2546,
+            "wall_time_s": 67.001,
+            "tok_per_s": 37.253175,
+            "accept_per_step": 4.449198,
+            "mean_loop_count": 28.05,
+            "mean_input_tokens": 272.85,
+            "raw_overshoot_turns": 14
+          },
+          "reasoning": {
+            "records": 10,
+            "turns": 20,
+            "trimmed_tokens": 2037,
+            "raw_tokens": 2070,
+            "wall_time_s": 47.2282,
+            "tok_per_s": 43.131011,
+            "accept_per_step": 5.236504,
+            "mean_loop_count": 19.45,
+            "mean_input_tokens": 266.95,
+            "raw_overshoot_turns": 7
+          },
+          "math": {
+            "records": 10,
+            "turns": 20,
+            "trimmed_tokens": 2460,
+            "raw_tokens": 2510,
+            "wall_time_s": 51.2676,
+            "tok_per_s": 47.983522,
+            "accept_per_step": 5.815603,
+            "mean_loop_count": 21.15,
+            "mean_input_tokens": 254.1,
+            "raw_overshoot_turns": 16
+          },
+          "coding": {
+            "records": 10,
+            "turns": 20,
+            "trimmed_tokens": 2560,
+            "raw_tokens": 2609,
+            "wall_time_s": 53.202,
+            "tok_per_s": 48.118492,
+            "accept_per_step": 5.831435,
+            "mean_loop_count": 21.95,
+            "mean_input_tokens": 261.65,
+            "raw_overshoot_turns": 16
+          },
+          "extraction": {
+            "records": 10,
+            "turns": 20,
+            "trimmed_tokens": 1902,
+            "raw_tokens": 1931,
+            "wall_time_s": 43.7733,
+            "tok_per_s": 43.451145,
+            "accept_per_step": 5.465517,
+            "mean_loop_count": 17.4,
+            "mean_input_tokens": 421.75,
+            "raw_overshoot_turns": 9
+          },
+          "stem": {
+            "records": 10,
+            "turns": 20,
+            "trimmed_tokens": 2560,
+            "raw_tokens": 2610,
+            "wall_time_s": 53.959,
+            "tok_per_s": 47.443429,
+            "accept_per_step": 5.389474,
+            "mean_loop_count": 23.75,
+            "mean_input_tokens": 251.1,
+            "raw_overshoot_turns": 14
+          },
+          "humanities": {
+            "records": 10,
+            "turns": 20,
+            "trimmed_tokens": 2560,
+            "raw_tokens": 2615,
+            "wall_time_s": 38.6372,
+            "tok_per_s": 66.257389,
+            "accept_per_step": 5.140562,
+            "mean_loop_count": 24.9,
+            "mean_input_tokens": 244.45,
+            "raw_overshoot_turns": 16
+          }
+        }
+      },
+      "EAGLE-3-repeat": {
+        "summary": {
+          "turns": 160,
+          "total_trimmed_tokens": 18903,
+          "total_raw_tokens": 19261,
+          "total_wall_time_s": 235.618,
+          "raw_overshoot_turns": 105,
+          "mean_tok_per_s_trimmed": 80.5016,
+          "mean_accept_per_step_trimmed": 5.341164,
+          "mean_loop_count": 22.4062,
+          "mean_trimmed_tokens": 118.1437
+        },
+        "use_opt_tree": false,
+        "opt_expand_factor": null,
+        "by_category": {
+          "writing": {
+            "records": 10,
+            "turns": 20,
+            "trimmed_tokens": 2328,
+            "raw_tokens": 2370,
+            "wall_time_s": 29.2337,
+            "tok_per_s": 79.634121,
+            "accept_per_step": 5.150442,
+            "mean_loop_count": 22.6,
+            "mean_input_tokens": 256.15,
+            "raw_overshoot_turns": 13
+          },
+          "roleplay": {
+            "records": 10,
+            "turns": 20,
+            "trimmed_tokens": 2496,
+            "raw_tokens": 2546,
+            "wall_time_s": 36.3724,
+            "tok_per_s": 68.623462,
+            "accept_per_step": 4.449198,
+            "mean_loop_count": 28.05,
+            "mean_input_tokens": 272.85,
+            "raw_overshoot_turns": 14
+          },
+          "reasoning": {
+            "records": 10,
+            "turns": 20,
+            "trimmed_tokens": 2037,
+            "raw_tokens": 2070,
+            "wall_time_s": 25.7116,
+            "tok_per_s": 79.224941,
+            "accept_per_step": 5.236504,
+            "mean_loop_count": 19.45,
+            "mean_input_tokens": 266.95,
+            "raw_overshoot_turns": 7
+          },
+          "math": {
+            "records": 10,
+            "turns": 20,
+            "trimmed_tokens": 2460,
+            "raw_tokens": 2510,
+            "wall_time_s": 27.7799,
+            "tok_per_s": 88.553235,
+            "accept_per_step": 5.815603,
+            "mean_loop_count": 21.15,
+            "mean_input_tokens": 254.1,
+            "raw_overshoot_turns": 16
+          },
+          "coding": {
+            "records": 10,
+            "turns": 20,
+            "trimmed_tokens": 2560,
+            "raw_tokens": 2609,
+            "wall_time_s": 28.779,
+            "tok_per_s": 88.953751,
+            "accept_per_step": 5.831435,
+            "mean_loop_count": 21.95,
+            "mean_input_tokens": 261.65,
+            "raw_overshoot_turns": 16
+          },
+          "extraction": {
+            "records": 10,
+            "turns": 20,
+            "trimmed_tokens": 1902,
+            "raw_tokens": 1931,
+            "wall_time_s": 24.384,
+            "tok_per_s": 78.001969,
+            "accept_per_step": 5.465517,
+            "mean_loop_count": 17.4,
+            "mean_input_tokens": 421.75,
+            "raw_overshoot_turns": 9
+          },
+          "stem": {
+            "records": 10,
+            "turns": 20,
+            "trimmed_tokens": 2560,
+            "raw_tokens": 2610,
+            "wall_time_s": 30.9636,
+            "tok_per_s": 82.677725,
+            "accept_per_step": 5.389474,
+            "mean_loop_count": 23.75,
+            "mean_input_tokens": 251.1,
+            "raw_overshoot_turns": 14
+          },
+          "humanities": {
+            "records": 10,
+            "turns": 20,
+            "trimmed_tokens": 2560,
+            "raw_tokens": 2615,
+            "wall_time_s": 32.3938,
+            "tok_per_s": 79.027468,
+            "accept_per_step": 5.140562,
+            "mean_loop_count": 24.9,
+            "mean_input_tokens": 244.45,
+            "raw_overshoot_turns": 16
+          }
+        }
+      }
+    }
+  }
+}

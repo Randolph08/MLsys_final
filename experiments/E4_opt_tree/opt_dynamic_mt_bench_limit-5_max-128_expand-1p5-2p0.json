@@ -1,0 +1,666 @@
+{
+  "metadata": {
+    "base_model_path": "/home/hzliu/AD/Homework_haozhe/MLsys_final/models/Llama-3.1-8B-Instruct",
+    "ea_model_path": "/home/hzliu/AD/Homework_haozhe/MLsys_final/EAGLE_checkpoints/EAGLE3-LLaMA3.1-Instruct-8B",
+    "prompt_source": "mt_bench",
+    "num_records": 5,
+    "max_new_tokens": 128,
+    "opt_expand_factors": [
+      1.5,
+      2.0
+    ],
+    "total_token": 60,
+    "depth": 5,
+    "tree_top_k": 10,
+    "torch_dtype": "fp16",
+    "device_map": "auto",
+    "cuda_visible_devices": "0,1,2,3,4",
+    "use_system_prompt": true
+  },
+  "summary": [
+    {
+      "name": "EAGLE-3",
+      "use_opt_tree": false,
+      "opt_expand_factor": null,
+      "turns": 10,
+      "total_trimmed_tokens": 1191,
+      "total_raw_tokens": 1211,
+      "total_wall_time_s": 22.3954,
+      "raw_overshoot_turns": 6,
+      "mean_tok_per_s_trimmed": 52.4352,
+      "mean_accept_per_step_trimmed": 5.286013,
+      "mean_loop_count": 22.2,
+      "mean_trimmed_tokens": 119.1,
+      "speed_vs_eagle3": 1.0,
+      "accept_delta_vs_eagle3": 0.0
+    },
+    {
+      "name": "OPT-1.5",
+      "use_opt_tree": true,
+      "opt_expand_factor": 1.5,
+      "turns": 10,
+      "total_trimmed_tokens": 1191,
+      "total_raw_tokens": 1211,
+      "total_wall_time_s": 17.611,
+      "raw_overshoot_turns": 6,
+      "mean_tok_per_s_trimmed": 66.6688,
+      "mean_accept_per_step_trimmed": 5.286013,
+      "mean_loop_count": 22.2,
+      "mean_trimmed_tokens": 119.1,
+      "speed_vs_eagle3": 1.2715,
+      "accept_delta_vs_eagle3": 0.0
+    },
+    {
+      "name": "OPT-2.0",
+      "use_opt_tree": true,
+      "opt_expand_factor": 2.0,
+      "turns": 10,
+      "total_trimmed_tokens": 1191,
+      "total_raw_tokens": 1211,
+      "total_wall_time_s": 18.3723,
+      "raw_overshoot_turns": 6,
+      "mean_tok_per_s_trimmed": 63.9044,
+      "mean_accept_per_step_trimmed": 5.286013,
+      "mean_loop_count": 22.2,
+      "mean_trimmed_tokens": 119.1,
+      "speed_vs_eagle3": 1.2187,
+      "accept_delta_vs_eagle3": 0.0
+    }
+  ],
+  "config_results": [
+    {
+      "name": "EAGLE-3",
+      "use_opt_tree": false,
+      "opt_expand_factor": null,
+      "summary": {
+        "turns": 10,
+        "total_trimmed_tokens": 1191,
+        "total_raw_tokens": 1211,
+        "total_wall_time_s": 22.3954,
+        "raw_overshoot_turns": 6,
+        "mean_tok_per_s_trimmed": 52.4352,
+        "mean_accept_per_step_trimmed": 5.286013,
+        "mean_loop_count": 22.2,
+        "mean_trimmed_tokens": 119.1
+      },
+      "records": [
+        {
+          "question_id": 81,
+          "source": "mt_bench",
+          "category": "writing",
+          "num_turns": 2,
+          "turns": [
+            {
+              "turn_index": 0,
+              "input_tokens": 158,
+              "prompt_chars": 868,
+              "user_prompt_preview": "Compose an engaging travel blog post about a recent trip to Hawaii, highlighting cultural experiences and must-see attractions.",
+              "raw_tokens": 128,
+              "trimmed_tokens": 128,
+              "raw_exceeds_max_new_tokens": false,
+              "reported_new_token": 128,
+              "loop_count": 23,
+              "accept_per_step_trimmed": 5.565217,
+              "wall_time_s": 2.2675,
+              "tok_per_s_trimmed": 56.4498
+            },
+            {
+              "turn_index": 1,
+              "input_tokens": 310,
+              "prompt_chars": 1662,
+              "user_prompt_preview": "Rewrite your previous response. Start every sentence with the letter A.",
+              "raw_tokens": 131,
+              "trimmed_tokens": 128,
+              "raw_exceeds_max_new_tokens": true,
+              "reported_new_token": 131,
+              "loop_count": 24,
+              "accept_per_step_trimmed": 5.333333,
+              "wall_time_s": 2.4451,
+              "tok_per_s_trimmed": 52.349
+            }
+          ]
+        },
+        {
+          "question_id": 82,
+          "source": "mt_bench",
+          "category": "writing",
+          "num_turns": 2,
+          "turns": [
+            {
+              "turn_index": 0,
+              "input_tokens": 182,
+              "prompt_chars": 991,
+              "user_prompt_preview": "Draft a professional email seeking your supervisor's feedback on the 'Quarterly Financial Report' you prepared. Ask specifically about the data analysis, presentation style, and the clarity of conclusions drawn. Keep the email short and to ",
+              "raw_tokens": 130,
+              "trimmed_tokens": 128,
+              "raw_exceeds_max_new_tokens": true,
+              "reported_new_token": 130,
+              "loop_count": 20,
+              "accept_per_step_trimmed": 6.4,
+              "wall_time_s": 1.9819,
+              "tok_per_s_trimmed": 64.5842
+            },
+            {
+              "turn_index": 1,
+              "input_tokens": 331,
+              "prompt_chars": 1847,
+              "user_prompt_preview": "Take a moment to evaluate and critique your own response.",
+              "raw_tokens": 128,
+              "trimmed_tokens": 128,
+              "raw_exceeds_max_new_tokens": false,
+              "reported_new_token": 128,
+              "loop_count": 23,
+              "accept_per_step_trimmed": 5.565217,
+              "wall_time_s": 2.3497,
+              "tok_per_s_trimmed": 54.4757
+            }
+          ]
+        },
+        {
+          "question_id": 83,
+          "source": "mt_bench",
+          "category": "writing",
+          "num_turns": 2,
+          "turns": [
+            {
+              "turn_index": 0,
+              "input_tokens": 191,
+              "prompt_chars": 1033,
+              "user_prompt_preview": "Imagine you are writing a blog post comparing two popular smartphone models. Develop an outline for the blog post, including key points and subheadings to effectively compare and contrast the features, performance, and user experience of th",
+              "raw_tokens": 132,
+              "trimmed_tokens": 128,
+              "raw_exceeds_max_new_tokens": true,
+              "reported_new_token": 132,
+              "loop_count": 22,
+              "accept_per_step_trimmed": 5.818182,
+              "wall_time_s": 2.194,
+              "tok_per_s_trimmed": 58.3413
+            },
+            {
+              "turn_index": 1,
+              "input_tokens": 343,
+              "prompt_chars": 1789,
+              "user_prompt_preview": "Take your previous response and rephrase it as a limerick.",
+              "raw_tokens": 40,
+              "trimmed_tokens": 39,
+              "raw_exceeds_max_new_tokens": false,
+              "reported_new_token": 40,
+              "loop_count": 13,
+              "accept_per_step_trimmed": 3.0,
+              "wall_time_s": 1.3688,
+              "tok_per_s_trimmed": 28.4919
+            }
+          ]
+        },
+        {
+          "question_id": 84,
+          "source": "mt_bench",
+          "category": "writing",
+          "num_turns": 2,
+          "turns": [
+            {
+              "turn_index": 0,
+              "input_tokens": 175,
+              "prompt_chars": 960,
+              "user_prompt_preview": "Write a persuasive email to convince your introverted friend, who dislikes public speaking, to volunteer as a guest speaker at a local event. Use compelling arguments and address potential objections. Please be concise.",
+              "raw_tokens": 133,
+              "trimmed_tokens": 128,
+              "raw_exceeds_max_new_tokens": true,
+              "reported_new_token": 133,
+              "loop_count": 25,
+              "accept_per_step_trimmed": 5.12,
+              "wall_time_s": 2.463,
+              "tok_per_s_trimmed": 51.9684
+            },
+            {
+              "turn_index": 1,
+              "input_tokens": 331,
+              "prompt_chars": 1804,
+              "user_prompt_preview": "Can you rephrase your previous answer and incorporate a metaphor or simile in each sentence?",
+              "raw_tokens": 130,
+              "trimmed_tokens": 128,
+              "raw_exceeds_max_new_tokens": true,
+              "reported_new_token": 130,
+              "loop_count": 22,
+              "accept_per_step_trimmed": 5.818182,
+              "wall_time_s": 2.2676,
+              "tok_per_s_trimmed": 56.4478
+            }
+          ]
+        },
+        {
+          "question_id": 85,
+          "source": "mt_bench",
+          "category": "writing",
+          "num_turns": 2,
+          "turns": [
+            {
+              "turn_index": 0,
+              "input_tokens": 158,
+              "prompt_chars": 867,
+              "user_prompt_preview": "Describe a vivid and unique character, using strong imagery and creative language. Please answer in fewer than two paragraphs.",
+              "raw_tokens": 131,
+              "trimmed_tokens": 128,
+              "raw_exceeds_max_new_tokens": true,
+              "reported_new_token": 131,
+              "loop_count": 25,
+              "accept_per_step_trimmed": 5.12,
+              "wall_time_s": 2.4976,
+              "tok_per_s_trimmed": 51.2485
+            },
+            {
+              "turn_index": 1,
+              "input_tokens": 319,
+              "prompt_chars": 1664,
+              "user_prompt_preview": "Revise your previous response and incorporate an allusion to a famous work of literature or historical event in each sentence.",
+              "raw_tokens": 128,
+              "trimmed_tokens": 128,
+              "raw_exceeds_max_new_tokens": false,
+              "reported_new_token": 128,
+              "loop_count": 25,
+              "accept_per_step_trimmed": 5.12,
+              "wall_time_s": 2.5602,
+              "tok_per_s_trimmed": 49.9951
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "OPT-1.5",
+      "use_opt_tree": true,
+      "opt_expand_factor": 1.5,
+      "summary": {
+        "turns": 10,
+        "total_trimmed_tokens": 1191,
+        "total_raw_tokens": 1211,
+        "total_wall_time_s": 17.611,
+        "raw_overshoot_turns": 6,
+        "mean_tok_per_s_trimmed": 66.6688,
+        "mean_accept_per_step_trimmed": 5.286013,
+        "mean_loop_count": 22.2,
+        "mean_trimmed_tokens": 119.1
+      },
+      "records": [
+        {
+          "question_id": 81,
+          "source": "mt_bench",
+          "category": "writing",
+          "num_turns": 2,
+          "turns": [
+            {
+              "turn_index": 0,
+              "input_tokens": 158,
+              "prompt_chars": 868,
+              "user_prompt_preview": "Compose an engaging travel blog post about a recent trip to Hawaii, highlighting cultural experiences and must-see attractions.",
+              "raw_tokens": 128,
+              "trimmed_tokens": 128,
+              "raw_exceeds_max_new_tokens": false,
+              "reported_new_token": 128,
+              "loop_count": 23,
+              "accept_per_step_trimmed": 5.565217,
+              "wall_time_s": 1.847,
+              "tok_per_s_trimmed": 69.3026
+            },
+            {
+              "turn_index": 1,
+              "input_tokens": 310,
+              "prompt_chars": 1662,
+              "user_prompt_preview": "Rewrite your previous response. Start every sentence with the letter A.",
+              "raw_tokens": 131,
+              "trimmed_tokens": 128,
+              "raw_exceeds_max_new_tokens": true,
+              "reported_new_token": 131,
+              "loop_count": 24,
+              "accept_per_step_trimmed": 5.333333,
+              "wall_time_s": 1.9668,
+              "tok_per_s_trimmed": 65.0799
+            }
+          ]
+        },
+        {
+          "question_id": 82,
+          "source": "mt_bench",
+          "category": "writing",
+          "num_turns": 2,
+          "turns": [
+            {
+              "turn_index": 0,
+              "input_tokens": 182,
+              "prompt_chars": 991,
+              "user_prompt_preview": "Draft a professional email seeking your supervisor's feedback on the 'Quarterly Financial Report' you prepared. Ask specifically about the data analysis, presentation style, and the clarity of conclusions drawn. Keep the email short and to ",
+              "raw_tokens": 130,
+              "trimmed_tokens": 128,
+              "raw_exceeds_max_new_tokens": true,
+              "reported_new_token": 130,
+              "loop_count": 20,
+              "accept_per_step_trimmed": 6.4,
+              "wall_time_s": 1.5694,
+              "tok_per_s_trimmed": 81.5581
+            },
+            {
+              "turn_index": 1,
+              "input_tokens": 331,
+              "prompt_chars": 1847,
+              "user_prompt_preview": "Take a moment to evaluate and critique your own response.",
+              "raw_tokens": 128,
+              "trimmed_tokens": 128,
+              "raw_exceeds_max_new_tokens": false,
+              "reported_new_token": 128,
+              "loop_count": 23,
+              "accept_per_step_trimmed": 5.565217,
+              "wall_time_s": 1.8492,
+              "tok_per_s_trimmed": 69.2182
+            }
+          ]
+        },
+        {
+          "question_id": 83,
+          "source": "mt_bench",
+          "category": "writing",
+          "num_turns": 2,
+          "turns": [
+            {
+              "turn_index": 0,
+              "input_tokens": 191,
+              "prompt_chars": 1033,
+              "user_prompt_preview": "Imagine you are writing a blog post comparing two popular smartphone models. Develop an outline for the blog post, including key points and subheadings to effectively compare and contrast the features, performance, and user experience of th",
+              "raw_tokens": 132,
+              "trimmed_tokens": 128,
+              "raw_exceeds_max_new_tokens": true,
+              "reported_new_token": 132,
+              "loop_count": 22,
+              "accept_per_step_trimmed": 5.818182,
+              "wall_time_s": 1.6978,
+              "tok_per_s_trimmed": 75.39
+            },
+            {
+              "turn_index": 1,
+              "input_tokens": 343,
+              "prompt_chars": 1789,
+              "user_prompt_preview": "Take your previous response and rephrase it as a limerick.",
+              "raw_tokens": 40,
+              "trimmed_tokens": 39,
+              "raw_exceeds_max_new_tokens": false,
+              "reported_new_token": 40,
+              "loop_count": 13,
+              "accept_per_step_trimmed": 3.0,
+              "wall_time_s": 1.1174,
+              "tok_per_s_trimmed": 34.9027
+            }
+          ]
+        },
+        {
+          "question_id": 84,
+          "source": "mt_bench",
+          "category": "writing",
+          "num_turns": 2,
+          "turns": [
+            {
+              "turn_index": 0,
+              "input_tokens": 175,
+              "prompt_chars": 960,
+              "user_prompt_preview": "Write a persuasive email to convince your introverted friend, who dislikes public speaking, to volunteer as a guest speaker at a local event. Use compelling arguments and address potential objections. Please be concise.",
+              "raw_tokens": 133,
+              "trimmed_tokens": 128,
+              "raw_exceeds_max_new_tokens": true,
+              "reported_new_token": 133,
+              "loop_count": 25,
+              "accept_per_step_trimmed": 5.12,
+              "wall_time_s": 1.9124,
+              "tok_per_s_trimmed": 66.9305
+            },
+            {
+              "turn_index": 1,
+              "input_tokens": 331,
+              "prompt_chars": 1804,
+              "user_prompt_preview": "Can you rephrase your previous answer and incorporate a metaphor or simile in each sentence?",
+              "raw_tokens": 130,
+              "trimmed_tokens": 128,
+              "raw_exceeds_max_new_tokens": true,
+              "reported_new_token": 130,
+              "loop_count": 22,
+              "accept_per_step_trimmed": 5.818182,
+              "wall_time_s": 1.7672,
+              "tok_per_s_trimmed": 72.4309
+            }
+          ]
+        },
+        {
+          "question_id": 85,
+          "source": "mt_bench",
+          "category": "writing",
+          "num_turns": 2,
+          "turns": [
+            {
+              "turn_index": 0,
+              "input_tokens": 158,
+              "prompt_chars": 867,
+              "user_prompt_preview": "Describe a vivid and unique character, using strong imagery and creative language. Please answer in fewer than two paragraphs.",
+              "raw_tokens": 131,
+              "trimmed_tokens": 128,
+              "raw_exceeds_max_new_tokens": true,
+              "reported_new_token": 131,
+              "loop_count": 25,
+              "accept_per_step_trimmed": 5.12,
+              "wall_time_s": 1.9056,
+              "tok_per_s_trimmed": 67.1699
+            },
+            {
+              "turn_index": 1,
+              "input_tokens": 319,
+              "prompt_chars": 1664,
+              "user_prompt_preview": "Revise your previous response and incorporate an allusion to a famous work of literature or historical event in each sentence.",
+              "raw_tokens": 128,
+              "trimmed_tokens": 128,
+              "raw_exceeds_max_new_tokens": false,
+              "reported_new_token": 128,
+              "loop_count": 25,
+              "accept_per_step_trimmed": 5.12,
+              "wall_time_s": 1.9782,
+              "tok_per_s_trimmed": 64.705
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "OPT-2.0",
+      "use_opt_tree": true,
+      "opt_expand_factor": 2.0,
+      "summary": {
+        "turns": 10,
+        "total_trimmed_tokens": 1191,
+        "total_raw_tokens": 1211,
+        "total_wall_time_s": 18.3723,
+        "raw_overshoot_turns": 6,
+        "mean_tok_per_s_trimmed": 63.9044,
+        "mean_accept_per_step_trimmed": 5.286013,
+        "mean_loop_count": 22.2,
+        "mean_trimmed_tokens": 119.1
+      },
+      "records": [
+        {
+          "question_id": 81,
+          "source": "mt_bench",
+          "category": "writing",
+          "num_turns": 2,
+          "turns": [
+            {
+              "turn_index": 0,
+              "input_tokens": 158,
+              "prompt_chars": 868,
+              "user_prompt_preview": "Compose an engaging travel blog post about a recent trip to Hawaii, highlighting cultural experiences and must-see attractions.",
+              "raw_tokens": 128,
+              "trimmed_tokens": 128,
+              "raw_exceeds_max_new_tokens": false,
+              "reported_new_token": 128,
+              "loop_count": 23,
+              "accept_per_step_trimmed": 5.565217,
+              "wall_time_s": 1.8773,
+              "tok_per_s_trimmed": 68.1817
+            },
+            {
+              "turn_index": 1,
+              "input_tokens": 310,
+              "prompt_chars": 1662,
+              "user_prompt_preview": "Rewrite your previous response. Start every sentence with the letter A.",
+              "raw_tokens": 131,
+              "trimmed_tokens": 128,
+              "raw_exceeds_max_new_tokens": true,
+              "reported_new_token": 131,
+              "loop_count": 24,
+              "accept_per_step_trimmed": 5.333333,
+              "wall_time_s": 2.0468,
+              "tok_per_s_trimmed": 62.537
+            }
+          ]
+        },
+        {
+          "question_id": 82,
+          "source": "mt_bench",
+          "category": "writing",
+          "num_turns": 2,
+          "turns": [
+            {
+              "turn_index": 0,
+              "input_tokens": 182,
+              "prompt_chars": 991,
+              "user_prompt_preview": "Draft a professional email seeking your supervisor's feedback on the 'Quarterly Financial Report' you prepared. Ask specifically about the data analysis, presentation style, and the clarity of conclusions drawn. Keep the email short and to ",
+              "raw_tokens": 130,
+              "trimmed_tokens": 128,
+              "raw_exceeds_max_new_tokens": true,
+              "reported_new_token": 130,
+              "loop_count": 20,
+              "accept_per_step_trimmed": 6.4,
+              "wall_time_s": 1.6523,
+              "tok_per_s_trimmed": 77.4688
+            },
+            {
+              "turn_index": 1,
+              "input_tokens": 331,
+              "prompt_chars": 1847,
+              "user_prompt_preview": "Take a moment to evaluate and critique your own response.",
+              "raw_tokens": 128,
+              "trimmed_tokens": 128,
+              "raw_exceeds_max_new_tokens": false,
+              "reported_new_token": 128,
+              "loop_count": 23,
+              "accept_per_step_trimmed": 5.565217,
+              "wall_time_s": 1.9398,
+              "tok_per_s_trimmed": 65.9865
+            }
+          ]
+        },
+        {
+          "question_id": 83,
+          "source": "mt_bench",
+          "category": "writing",
+          "num_turns": 2,
+          "turns": [
+            {
+              "turn_index": 0,
+              "input_tokens": 191,
+              "prompt_chars": 1033,
+              "user_prompt_preview": "Imagine you are writing a blog post comparing two popular smartphone models. Develop an outline for the blog post, including key points and subheadings to effectively compare and contrast the features, performance, and user experience of th",
+              "raw_tokens": 132,
+              "trimmed_tokens": 128,
+              "raw_exceeds_max_new_tokens": true,
+              "reported_new_token": 132,
+              "loop_count": 22,
+              "accept_per_step_trimmed": 5.818182,
+              "wall_time_s": 1.7631,
+              "tok_per_s_trimmed": 72.6012
+            },
+            {
+              "turn_index": 1,
+              "input_tokens": 343,
+              "prompt_chars": 1789,
+              "user_prompt_preview": "Take your previous response and rephrase it as a limerick.",
+              "raw_tokens": 40,
+              "trimmed_tokens": 39,
+              "raw_exceeds_max_new_tokens": false,
+              "reported_new_token": 40,
+              "loop_count": 13,
+              "accept_per_step_trimmed": 3.0,
+              "wall_time_s": 1.1667,
+              "tok_per_s_trimmed": 33.4282
+            }
+          ]
+        },
+        {
+          "question_id": 84,
+          "source": "mt_bench",
+          "category": "writing",
+          "num_turns": 2,
+          "turns": [
+            {
+              "turn_index": 0,
+              "input_tokens": 175,
+              "prompt_chars": 960,
+              "user_prompt_preview": "Write a persuasive email to convince your introverted friend, who dislikes public speaking, to volunteer as a guest speaker at a local event. Use compelling arguments and address potential objections. Please be concise.",
+              "raw_tokens": 133,
+              "trimmed_tokens": 128,
+              "raw_exceeds_max_new_tokens": true,
+              "reported_new_token": 133,
+              "loop_count": 25,
+              "accept_per_step_trimmed": 5.12,
+              "wall_time_s": 1.9958,
+              "tok_per_s_trimmed": 64.1348
+            },
+            {
+              "turn_index": 1,
+              "input_tokens": 331,
+              "prompt_chars": 1804,
+              "user_prompt_preview": "Can you rephrase your previous answer and incorporate a metaphor or simile in each sentence?",
+              "raw_tokens": 130,
+              "trimmed_tokens": 128,
+              "raw_exceeds_max_new_tokens": true,
+              "reported_new_token": 130,
+              "loop_count": 22,
+              "accept_per_step_trimmed": 5.818182,
+              "wall_time_s": 1.852,
+              "tok_per_s_trimmed": 69.1145
+            }
+          ]
+        },
+        {
+          "question_id": 85,
+          "source": "mt_bench",
+          "category": "writing",
+          "num_turns": 2,
+          "turns": [
+            {
+              "turn_index": 0,
+              "input_tokens": 158,
+              "prompt_chars": 867,
+              "user_prompt_preview": "Describe a vivid and unique character, using strong imagery and creative language. Please answer in fewer than two paragraphs.",
+              "raw_tokens": 131,
+              "trimmed_tokens": 128,
+              "raw_exceeds_max_new_tokens": true,
+              "reported_new_token": 131,
+              "loop_count": 25,
+              "accept_per_step_trimmed": 5.12,
+              "wall_time_s": 1.9967,
+              "tok_per_s_trimmed": 64.1073
+            },
+            {
+              "turn_index": 1,
+              "input_tokens": 319,
+              "prompt_chars": 1664,
+              "user_prompt_preview": "Revise your previous response and incorporate an allusion to a famous work of literature or historical event in each sentence.",
+              "raw_tokens": 128,
+              "trimmed_tokens": 128,
+              "raw_exceeds_max_new_tokens": false,
+              "reported_new_token": 128,
+              "loop_count": 25,
+              "accept_per_step_trimmed": 5.12,
+              "wall_time_s": 2.0818,
+              "tok_per_s_trimmed": 61.4839
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

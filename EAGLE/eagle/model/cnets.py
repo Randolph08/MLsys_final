@@ -479,6 +479,7 @@ class Model(nn.Module):
     def __init__(self, config, load_emb=False, path=None, bias=True, total_tokens=63, depth=5, top_k=8, threshold=1.0,
                  # DDD parameters
                  use_ddd=False, ddd_max_depth=9, ddd_check_steps=None, ddd_threshold=-10.0,
+                 use_ddd_dynamic_budget=False, ddd_min_budget=32,
                  # OPT-Tree parameters
                  use_opt_tree=False, opt_expand_factor=2.0):
         super().__init__()
@@ -536,8 +537,21 @@ class Model(nn.Module):
         else:
             self.ddd_check_steps = ddd_check_steps
         self.ddd_threshold = ddd_threshold
-        # Stats tracking
-        self._ddd_stats = {"early_stops": 0, "total_checks": 0, "depths": []}
+        self.use_ddd_dynamic_budget = use_ddd_dynamic_budget
+        self.ddd_min_budget = ddd_min_budget
+        # Stats tracking. Keep legacy keys while adding per-call records for
+        # threshold profiling.
+        self._ddd_stats = {
+            "calls": 0,
+            "early_stops": 0,
+            "total_checks": 0,
+            "depths": [],
+            "actual_depths": [],
+            "early_stop_steps": [],
+            "checked_H": [],
+            "budget_tokens": [],
+            "call_records": [],
+        }
         # ---- end DDD ----
 
         # ---- OPT-Tree ----
@@ -779,6 +793,9 @@ class Model(nn.Module):
         scores_list = []
         parents_list = []
         ss_token = []
+        ddd_call_checks = []
+        ddd_early_stopped = False
+        ddd_early_stop_step = None
 
         input_ids = input_ids[:, 1:]
         input_ids = input_ids.to(hidden_states.device)
@@ -861,25 +878,79 @@ class Model(nn.Module):
                 self._ddd_stats["total_checks"] += 1
                 # H = logsumexp(scores): log of total probability mass of top-k beams
                 H = torch.logsumexp(scores, dim=0).item()
+                check_record = {"step": i + 1, "H": H}
+                ddd_call_checks.append(check_record)
+                self._ddd_stats["checked_H"].append(check_record)
                 if H < self.ddd_threshold:
                     self._ddd_stats["early_stops"] += 1
-                    self._ddd_stats["depths"].append(i + 1)
+                    ddd_early_stopped = True
+                    ddd_early_stop_step = i + 1
+                    self._ddd_stats["early_stop_steps"].append(i + 1)
                     break
             # ---- end DDD check ----
 
 
         # ---- DDD: record actual depth ----
         actual_depth = len(ss_token)
+        budget_tokens = total_tokens
+        if self.use_ddd and self.use_ddd_dynamic_budget:
+            max_actual_depth = max(1, self.ddd_max_depth + 1)
+            scaled_budget = math.ceil(total_tokens * actual_depth / max_actual_depth)
+            budget_tokens = max(self.ddd_min_budget, scaled_budget)
+            budget_tokens = min(total_tokens, budget_tokens)
+
         if self.use_ddd:
+            self._ddd_stats["calls"] += 1
             self._ddd_stats["depths"].append(actual_depth)
+            self._ddd_stats["actual_depths"].append(actual_depth)
+            self._ddd_stats["budget_tokens"].append(budget_tokens)
+            self._ddd_stats["call_records"].append({
+                "actual_depth": actual_depth,
+                "budget_tokens": budget_tokens,
+                "early_stopped": ddd_early_stopped,
+                "early_stop_step": ddd_early_stop_step,
+                "checks": ddd_call_checks,
+            })
         # ---- end DDD ----
 
         scores_list = torch.cat(scores_list, dim=0).view(-1)
         ss_token_list = torch.cat(ss_token, dim=0).view(-1)
 
+        tree_diff_record = None
+        if hasattr(self, "_tree_diff_records"):
+            parents_flat_for_diff = torch.cat(parents_list, dim=0).long()
+            baseline_indices_for_diff = torch.sort(
+                torch.topk(scores_list, budget_tokens, dim=-1).indices
+            ).values
+
+            def _candidate_depth_for_diff(candidate_index):
+                depth_for_diff = 1
+                parent_ref = int(parents_flat_for_diff[candidate_index // top_k].item())
+                while parent_ref > 0:
+                    candidate_index = parent_ref - 1
+                    depth_for_diff += 1
+                    parent_ref = int(parents_flat_for_diff[candidate_index // top_k].item())
+                return depth_for_diff
+
+            def _depth_hist_for_diff(indices):
+                hist = {}
+                for idx in indices.detach().cpu().tolist():
+                    depth_key = str(_candidate_depth_for_diff(int(idx)))
+                    hist[depth_key] = hist.get(depth_key, 0) + 1
+                return dict(sorted(hist.items(), key=lambda item: int(item[0])))
+
+            tree_diff_record = {
+                "candidate_count": int(scores_list.shape[0]),
+                "budget": int(budget_tokens),
+                "top_k": int(top_k),
+                "depth": int(depth),
+                "baseline_indices": [int(x) for x in baseline_indices_for_diff.detach().cpu().tolist()],
+                "baseline_depth_hist": _depth_hist_for_diff(baseline_indices_for_diff),
+            }
+
         # ---- OPT-Tree: over-expand + greedy selection ----
         if self.use_opt_tree:
-            over_N = max(total_tokens + 1, int(total_tokens * self.opt_expand_factor))
+            over_N = max(budget_tokens + 1, int(budget_tokens * self.opt_expand_factor))
             over_N = min(over_N, scores_list.shape[0] - 1)  # cap at available candidates
 
             # 1) Select over_N nodes by score → intermediate tree
@@ -918,7 +989,7 @@ class Model(nn.Module):
 
             sorted_idx = torch.argsort(contributions, descending=True)
             selected_over_positions = set()
-            budget = total_tokens
+            budget = budget_tokens
 
             for idx in sorted_idx:
                 idx_i = int(idx.item())
@@ -948,6 +1019,7 @@ class Model(nn.Module):
             final_N = len(selected_sorted)
             draft_tokens_list = [sample_token]
             draft_parents_final = []
+            opt_selected_indices = [int(over_indices[inter_pos - 1].item()) for inter_pos in selected_sorted]
 
             for inter_pos in selected_sorted:
                 orig_idx = int(over_indices[inter_pos - 1].item())
@@ -972,9 +1044,30 @@ class Model(nn.Module):
             mask_index_actual = torch.tensor(draft_parents_final, dtype=torch.long,
                                              device=scores_list.device)
 
+            if tree_diff_record is not None:
+                baseline_set = set(tree_diff_record["baseline_indices"])
+                opt_set = set(opt_selected_indices)
+                union_count = len(baseline_set | opt_set)
+                overlap_count = len(baseline_set & opt_set)
+                opt_indices_tensor = torch.tensor(opt_selected_indices, device=scores_list.device)
+                tree_diff_record.update({
+                    "opt_expand_factor": float(self.opt_expand_factor),
+                    "over_budget": int(over_N),
+                    "opt_final_count": int(final_N),
+                    "opt_over_indices": [int(x) for x in over_indices.detach().cpu().tolist()],
+                    "opt_selected_indices": opt_selected_indices,
+                    "opt_depth_hist": _depth_hist_for_diff(opt_indices_tensor),
+                    "overlap_count": int(overlap_count),
+                    "union_count": int(union_count),
+                    "jaccard": float(overlap_count / union_count) if union_count else 1.0,
+                    "baseline_only_count": int(len(baseline_set - opt_set)),
+                    "opt_only_count": int(len(opt_set - baseline_set)),
+                })
+                self._tree_diff_records.append(tree_diff_record)
+
         else:
             # ---- Original EAGLE selection (unchanged) ----
-            top_scores = torch.topk(scores_list, total_tokens, dim=-1)
+            top_scores = torch.topk(scores_list, budget_tokens, dim=-1)
             top_scores_index = top_scores.indices
             top_scores_index = torch.sort(top_scores_index).values
 
@@ -986,16 +1079,16 @@ class Model(nn.Module):
             mask_index[draft_parents == 0] = -1
             mask_index = mask_index + 1
             mask_index_list = mask_index.tolist()
-            tree_mask = torch.eye(total_tokens + 1).bool()
+            tree_mask = torch.eye(budget_tokens + 1).bool()
             tree_mask[:, 0] = True
-            for i in range(total_tokens):
+            for i in range(budget_tokens):
                 tree_mask[i + 1].add_(tree_mask[mask_index_list[i]])
 
             tree_position_ids = torch.sum(tree_mask, dim=1) - 1
             tree_mask = tree_mask.float()[None, None]
             draft_tokens = draft_tokens[None]
 
-            total_tokens_actual = total_tokens
+            total_tokens_actual = budget_tokens
             mask_index_actual = mask_index
 
         del parents_list, scores_list, ss_token, ss_token_list
